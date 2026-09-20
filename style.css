@@ -4,7 +4,7 @@ a{color:inherit}.site-head{position:relative;z-index:10;padding:22px 34px;displa
 .brand{text-decoration:none;font:32px Georgia,serif}.brand small{display:block;margin-top:5px;font:12px Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;opacity:.72}
 .nav{display:flex;gap:24px;flex-wrap:wrap;justify-content:flex-end}.nav a{text-decoration:none;font-size:13px;letter-spacing:.06em;text-transform:uppercase;opacity:.88}.nav a:hover,.nav a.active{opacity:1;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:7px}
 .home{min-height:calc(100vh - 91px);position:relative;overflow:hidden;background:#26332f}
-.home:before,.home:after{content:"";position:absolute;inset:0;background-image:url('stegny.jpg');background-size:cover;background-position:center;pointer-events:none}
+.home:before,.home:after{content:"";position:absolute;inset:0;background-image:url('Stegny.jpg');background-size:cover;background-position:center;pointer-events:none}
 .home:before{filter:grayscale(1) contrast(.95);opacity:.95}
 .home:after{clip-path:polygon(0 0,49% 0,51% 5%,49% 10%,52% 15%,49% 21%,52% 27%,49% 33%,52% 39%,49% 45%,52% 51%,49% 57%,52% 63%,49% 69%,52% 75%,49% 81%,52% 87%,49% 93%,51% 100%,0 100%);filter:saturate(1.04);}
 .home-inner{position:relative;z-index:2;min-height:calc(100vh - 91px);padding:10vh 7vw 8vh;display:flex;align-items:flex-end;justify-content:space-between;gap:40px;color:#fff}
