@@ -1,51 +1,5 @@
-<!-- GitHub Pages rebuild trigger -->
-<!doctype html>
-<html lang="pl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kronika Stegien</title>
-<style>
-*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Arial,sans-serif;color:#24342f;background:#eee9dc}body{overflow-x:hidden}
-header{padding:28px 42px 8px;display:flex;justify-content:space-between;position:relative;z-index:5}
-h1{margin:0;font-size:30px;letter-spacing:.05em;text-transform:uppercase}.sub,.year{font-size:13px;color:#6b7771;margin-top:5px}
-.estate{position:relative;min-height:calc(100vh - 90px);overflow:hidden;padding:40px 7vw 90px}
-.ground{position:absolute;inset:40px 3% 30px;border:1px solid #d0d0c3;border-radius:10px;background:#e3e3d7}
-.path{position:absolute;height:12px;background:#d3cfc1;border-top:1px solid #c8c4b7;border-bottom:1px solid #c8c4b7}.p1{width:78%;left:11%;top:53%;transform:rotate(-5deg)}.p2{width:52%;left:25%;top:68%;transform:rotate(12deg)}
-.tree{position:absolute;width:25px;height:25px;border-radius:50%;background:#7d9078;box-shadow:0 15px 0 -7px #756d5e}.t1{left:8%;top:35%}.t2{right:9%;top:47%}.t3{left:19%;bottom:18%}.t4{right:19%;bottom:13%}
-.building{position:absolute;border:1px solid #59645f;border-radius:2px 2px 0 0;background:#d1cec2;box-shadow:7px 9px 0 #00000018;cursor:pointer;transition:.25s;z-index:2}
-.building:hover{transform:translateY(-5px);box-shadow:10px 14px 0 #00000022}
-.windows{position:absolute;inset:15px 10px 38px;display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:1fr;gap:7px}.windows i{border:1px solid #59645f55;background:#89999a}
-.door{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:34px;height:39px;background:#59615e;border:1px solid #444c49}
-.label{position:absolute;bottom:-31px;left:50%;transform:translateX(-50%);font-size:11px;font-weight:bold;letter-spacing:.08em;white-space:nowrap}
-.chronicle{left:16%;top:16%;width:155px;height:250px}.map{right:17%;top:21%;width:190px;height:190px}.buildings{left:22%;bottom:15%;width:190px;height:130px}.photos{right:24%;bottom:20%;width:140px;height:120px}
-.backdrop{position:fixed;inset:0;background:#1c232052;opacity:0;visibility:hidden;transition:.4s;z-index:10}.backdrop.show{opacity:1;visibility:visible}
-.drawer{position:fixed;z-index:20;top:0;right:0;bottom:0;width:min(76vw,1050px);background:#f7f4eb;border-left:1px solid #bdb9ac;box-shadow:-20px 0 60px #141c192e;transform:translateX(105%);transition:transform .65s cubic-bezier(.77,0,.18,1);display:flex;flex-direction:column}.drawer.open{transform:translateX(0)}
-.drawer-head{flex:none;padding:25px 35px;border-bottom:1px solid #d1cdc1;background:#f3f0e7;display:flex;justify-content:space-between}.close{border:0;background:none;cursor:pointer;color:#33443e;text-transform:uppercase;letter-spacing:.08em}
-.content{overflow:auto;padding:55px clamp(30px,7vw,100px) 100px}.article{max-width:720px;margin:auto}.kicker{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#718078}.title{font:normal clamp(38px,5vw,65px)/1 Georgia,serif;color:#263b35;margin:15px 0 18px}.intro,p{font:17px/1.85 Georgia,serif;color:#343d39}.intro{font-size:20px;color:#52605a;margin-bottom:50px}.chapter{margin-bottom:60px}.chapter h2{font:normal 28px Georgia,serif;color:#263b35}.year{font-size:12px;font-weight:bold;letter-spacing:.1em}
-@media(max-width:700px){header{padding:22px 20px}.year{display:none}.estate{min-height:calc(100vh - 80px)}.chronicle{left:13%;top:18%;width:105px;height:190px}.map{right:10%;top:25%;width:125px;height:135px}.buildings{left:14%;bottom:18%;width:140px;height:100px}.photos{right:12%;bottom:21%;width:100px;height:90px}.windows{inset:10px 7px 30px;gap:4px}.door{width:25px;height:30px}.label{font-size:9px}.drawer{width:94vw}.drawer-head{padding:20px}.content{padding:40px 25px 70px}.title{font-size:42px}}
-</style>
-</head>
-<body>
-<header><div><h1>Kronika Stegien</h1><div class="sub">historia osiedla mieszkaniowego w Warszawie</div></div><div class="year">Warszawa • 2026</div></header>
-<main class="estate"><div class="ground"></div><div class="path p1"></div><div class="path p2"></div><div class="tree t1"></div><div class="tree t2"></div><div class="tree t3"></div><div class="tree t4"></div>
-<button class="building chronicle" id="open" aria-label="Otwórz Kronikę"><div class="windows"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="door"></div><div class="label">Kronika</div></button>
-<div class="building map"><div class="windows"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="door"></div><div class="label">Mapa</div></div>
-<div class="building buildings"><div class="windows"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="door"></div><div class="label">Budynki</div></div>
-<div class="building photos"><div class="windows"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></i><i></i></div><div class="door"></div><div class="label">Zdjęcia</div></div></main>
-<div class="backdrop" id="back"></div>
-<aside class="drawer" id="drawer" aria-hidden="true"><div class="drawer-head"><b>KRONIKA STEGIEN</b><button class="close" id="close">× Zamknij</button></div>
-<div class="content"><article class="article"><div class="kicker">Historia osiedla • Warszawa</div><h2 class="title">Kronika Stegien</h2><p class="intro">Opowieść o osiedlu, jego architekturze, mieszkańcach i zmianach zachodzących tutaj przez kolejne dekady.</p>
-<section class="chapter"><div class="year">ROZDZIAŁ 01</div><h2>Stegny przed osiedlem</h2><p>Zanim pojawiły się charakterystyczne bloki mieszkalne, teren Stegien miał zupełnie inny charakter. Była to część południowej Warszawy, której krajobraz tworzyły pola, drogi, zieleń oraz istniejąca zabudowa.</p><p>Sama nazwa Stegny jest starsza niż współczesne osiedle. Współczesna historia tego miejsca zaczyna się jednak wraz z planowaniem wielkiego zespołu mieszkaniowego.</p></section>
-<section class="chapter"><div class="year">ROZDZIAŁ 02</div><h2>Projekt i budowa</h2><p>Na początku lat siedemdziesiątych rozpoczęto realizację nowego osiedla mieszkaniowego. Projekt zakładał stworzenie nie tylko zespołu bloków, ale całego fragmentu miasta.</p><p>Pomiędzy budynkami zaplanowano drogi, chodniki, szkoły, przedszkola, sklepy, tereny zielone i miejsca codziennego życia mieszkańców.</p></section>
-<section class="chapter"><div class="year">ROZDZIAŁ 03</div><h2>Pierwsi mieszkańcy</h2><p>Nowe mieszkania oznaczały dla wielu rodzin początek zupełnie nowego etapu życia. Osiedle szybko zaczęło funkcjonować jako lokalna społeczność.</p></section>
-<section class="chapter"><div class="year">ROZDZIAŁ 04</div><h2>Stegny przez kolejne dekady</h2><p>W kolejnych latach osiedle zmieniało się razem z Warszawą. Modernizowano budynki, zmieniały się sklepy i usługi, a przestrzeń między blokami otrzymywała nowe funkcje.</p></section>
-<section class="chapter"><div class="year">ROZDZIAŁ 05</div><h2>Stegny dzisiaj</h2><p>Dzisiejsze Stegny są częścią współczesnej Warszawy, ale w przestrzeni osiedla nadal można odnaleźć ślady jego początków. Ta kronika ma je zachować.</p></section>
-</article></div></aside>
-<script>
-const drawer=document.getElementById('drawer'),back=document.getElementById('back');
-function openDrawer(){drawer.classList.add('open');back.classList.add('show');drawer.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'}
-function closeDrawer(){drawer.classList.remove('open');back.classList.remove('show');drawer.setAttribute('aria-hidden','true');document.body.style.overflow=''}
-document.getElementById('open').onclick=openDrawer;document.getElementById('close').onclick=closeDrawer;back.onclick=closeDrawer;document.onkeydown=e=>{if(e.key==='Escape')closeDrawer()};
-</script>
-</body></html>
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kronika Stegien</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="site-head"><a class="brand" href="index.html">Kronika Stegien<small>historia osiedla mieszkaniowego w Warszawie</small></a><nav class="nav"><a href="mapy.html">Mapy</a><a href="budynki.html">Budynki</a><a href="zdjecia.html">Zdjęcia</a><a href="dokumenty.html">Dokumenty</a><a href="ludzie.html">Ludzie</a><a href="os-czasu.html">Oś czasu</a><a href="o-stegnach.html">O Stegnach</a></nav></header>
+<main class="home"><div class="home-inner"><section class="hero"><div class="eyebrow">Warszawa • Mokotów</div><h1>Stegny.<br>Osiedle i pamięć.</h1><p>Wirtualna kronika miejsca: jego budynków, mieszkańców, fotografii, dokumentów, map i przemian.</p><div class="credit">Tło: Osiedle Stegny w Warszawie w latach 70. • Wikimedia Commons, domena publiczna</div></section>
+<div class="blocks"><a class="block" href="kronika.html">Kronika</a><a class="block" href="mapy.html">Mapy</a><a class="block" href="budynki.html">Budynki</a><a class="block" href="zdjecia.html">Zdjęcia</a><a class="block" href="dokumenty.html">Dokumenty</a><a class="block" href="ludzie.html">Ludzie</a><a class="block" href="os-czasu.html">Oś czasu</a><a class="block" href="o-stegnach.html">O Stegnach</a></div></div></main>
+<footer class="footer">Kronika Stegien • projekt dokumentacyjny</footer></body></html>
