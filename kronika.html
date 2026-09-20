@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Kronika Stegien — Kronika Stegien</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Kronika Stegien — Kronika osiedla</title>
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
   <header class="site-head">
@@ -33,38 +33,30 @@
 
       <div class="cards">
         <details class="card drawer">
-          <summary>
-            <h2>Stegny przed Stegnami</h2>
-          </summary>
+          <summary>Stegny przed Stegnami</summary>
           <div class="drawer-content">
-            <p>Historia terenu przed rozpoczęciem wielkiej budowy mieszkaniowej</p>
+            <p>Historia terenu przed rozpoczęciem wielkiej budowy mieszkaniowej.</p>
           </div>
         </details>
 
         <details class="card drawer">
-          <summary>
-            <h2>Projekt i budowa</h2>
-          </summary>
+          <summary>Projekt i budowa</summary>
           <div class="drawer-content">
-            <p>Plan osiedla, architektura, technologie budowlane i kolejne etapy realizacji</p>
+            <p>Plan osiedla, architektura, technologie budowlane i kolejne etapy realizacji.</p>
           </div>
         </details>
 
         <details class="card drawer">
-          <summary>
-            <h2>Pierwsi mieszkańcy</h2>
-          </summary>
+          <summary>Pierwsi mieszkańcy</summary>
           <div class="drawer-content">
-            <p>Przeprowadzki, pierwsze szkoły, sklepy, usługi i tworzenie lokalnej społeczności</p>
+            <p>Przeprowadzki, pierwsze szkoły, sklepy, usługi i tworzenie lokalnej społeczności.</p>
           </div>
         </details>
 
         <details class="card drawer">
-          <summary>
-            <h2>Stegny przez dekady</h2>
-          </summary>
+          <summary>Stegny przez dekady</summary>
           <div class="drawer-content">
-            <p>Zmiany przestrzeni, budynków i codzienności od lat 70. do współczesności</p>
+            <p>Zmiany przestrzeni, budynków i codzienności od lat 70. do współczesności.</p>
           </div>
         </details>
       </div>
@@ -74,19 +66,5 @@
   <footer class="footer">
     Kronika Stegien • <a href="index.html">strona główna</a>
   </footer>
-
-  <script>
-    document.querySelectorAll(".drawer").forEach((drawer) => {
-      drawer.addEventListener("toggle", () => {
-        if (drawer.open) {
-          document.querySelectorAll(".drawer").forEach((other) => {
-            if (other !== drawer) {
-              other.open = false;
-            }
-          });
-        }
-      });
-    });
-  </script>
 </body>
 </html>
