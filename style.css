@@ -549,18 +549,95 @@ a{color:inherit}.site-head{position:relative;z-index:10;padding:18px 34px;displa
 }
 
 /* MAPY — stara mapa kartograficzna */
+.page-grid > h1.section-map{
+  color:#4b3b25;
+  background-color:#d8c79e;
+  background-image:
+    repeating-linear-gradient(0deg,rgba(82,65,37,.18) 0 1px,transparent 1px 28px),
+    repeating-linear-gradient(90deg,rgba(82,65,37,.14) 0 1px,transparent 1px 28px),
+    radial-gradient(ellipse at 28% 58%,transparent 0 18%,rgba(80,105,77,.18) 18.5% 19%,transparent 19.5%),
+    radial-gradient(ellipse at 72% 35%,transparent 0 24%,rgba(80,105,77,.14) 24.5% 25%,transparent 25.5%),
+    linear-gradient(125deg,rgba(255,255,255,.22),transparent 45%),
+    #d8c79e;
+  border-color:#a8956d;
+}
 
 /* BUDYNKI — beton/tynk elewacji */
+.page-grid > h1.section-buildings{
+  color:#f1eee7;
+  text-shadow:0 1px 2px #393631;
+  background-color:#8b8983;
+  background-image:
+    radial-gradient(circle at 14% 24%,rgba(255,255,255,.18) 0 1px,transparent 2px),
+    radial-gradient(circle at 67% 73%,rgba(35,32,28,.22) 0 1px,transparent 2px),
+    repeating-linear-gradient(90deg,rgba(255,255,255,.045) 0 2px,transparent 2px 13px),
+    linear-gradient(180deg,#a19f99,#706e69);
+  background-size:19px 17px,23px 21px,100% 100%,100% 100%;
+  border-color:#6e6c67;
+}
 
-/* ZDJĘCIA — płótno/okładka albumu fotograficznego */
+/* ZDJĘCIA — płótno oprawionego albumu */
+.page-grid > h1.section-photos{
+  color:#eee5d4;
+  text-shadow:0 2px 2px #171512;
+  background-color:#302d29;
+  background-image:
+    repeating-linear-gradient(0deg,rgba(255,255,255,.055) 0 1px,transparent 1px 4px),
+    repeating-linear-gradient(90deg,rgba(0,0,0,.12) 0 1px,transparent 1px 5px),
+    linear-gradient(135deg,#514940,#272421);
+  border:5px solid #211f1c;
+  box-shadow:inset 0 0 0 1px #7b6b55, inset 0 0 24px rgba(0,0,0,.45), 0 6px 14px rgba(0,0,0,.3);
+}
 
-/* DOKUMENTY — papier kancelaryjny / maszynopis */
+/* DOKUMENTY — papier kancelaryjny z liniaturą i marginesem */
+.page-grid > h1.section-documents{
+  color:#463a2c;
+  background-color:#e7dcc3;
+  background-image:
+    linear-gradient(90deg,transparent 0 42px,rgba(151,67,54,.34) 42px 44px,transparent 44px),
+    repeating-linear-gradient(0deg,transparent 0 26px,rgba(77,105,125,.16) 26px 27px),
+    linear-gradient(90deg,rgba(255,255,255,.25),transparent 55%),
+    #e7dcc3;
+  border-color:#b8a98e;
+}
 
-/* LUDZIE — papier starej odbitki fotograficznej */
+/* LUDZIE — papier starej odbitki, wyraźnie sepia */
+.page-grid > h1.section-people{
+  color:#3d2b20;
+  background-color:#c4aa82;
+  background-image:
+    radial-gradient(circle at 18% 28%,rgba(73,48,31,.18) 0 1px,transparent 2px),
+    radial-gradient(circle at 74% 66%,rgba(255,245,218,.22) 0 2px,transparent 3px),
+    linear-gradient(90deg,rgba(75,48,30,.12),transparent 12%,rgba(75,48,30,.08) 88%,rgba(75,48,30,.16)),
+    linear-gradient(135deg,#d7c29d,#a88b62);
+  border:3px solid #806744;
+  box-shadow:inset 0 0 0 2px rgba(245,224,186,.35),0 6px 14px rgba(70,45,25,.25);
+}
 
-/* OŚ CZASU — papier kalendarium z podziałką */
+/* OŚ CZASU — kalendarium / papier milimetrowy */
+.page-grid > h1.section-timeline{
+  color:#40382d;
+  background-color:#ddd2b9;
+  background-image:
+    repeating-linear-gradient(90deg,rgba(74,67,53,.16) 0 1px,transparent 1px 40px),
+    repeating-linear-gradient(0deg,rgba(74,67,53,.10) 0 1px,transparent 1px 20px),
+    repeating-linear-gradient(90deg,transparent 0 199px,rgba(121,82,45,.28) 199px 201px,transparent 201px 240px),
+    linear-gradient(#f0e8d5,#d6c9aa);
+  border-color:#b3a484;
+}
 
-/* O STEGNACH — płótno starej książki/monografii */
+/* O STEGNACH — płótno starej monografii */
+.page-grid > h1.section-about{
+  color:#eadfc9;
+  text-shadow:0 2px 2px #17120e;
+  background-color:#4b382b;
+  background-image:
+    repeating-linear-gradient(0deg,rgba(255,255,255,.045) 0 1px,transparent 1px 6px),
+    repeating-linear-gradient(90deg,rgba(0,0,0,.10) 0 1px,transparent 1px 8px),
+    linear-gradient(90deg,#34261e,#624936 48%,#38291f);
+  border:4px solid #2c211a;
+  box-shadow:inset 0 0 0 1px #856746,inset 0 0 18px rgba(0,0,0,.35),0 6px 14px rgba(0,0,0,.3);
+}
 
 @media(max-width:800px){
   .page-grid > h1[class^="section-"]{
