@@ -301,3 +301,150 @@ a{color:inherit}.site-head{position:relative;z-index:10;padding:18px 34px;displa
     transition:none;
   }
 }
+
+
+/* =========================================================
+   KRONIKA — DOPASOWANIE TYTUŁU I PODROZDZIAŁÓW DO DREWNIANYCH SZUFLAD
+   ========================================================= */
+
+.page-grid > h1{
+  position:relative;
+  display:inline-block;
+  margin:0 0 24px;
+  padding:14px 24px 16px;
+  color:#ead9ba;
+  font:600 clamp(32px,5vw,54px)/1 Georgia,"Times New Roman",serif;
+  letter-spacing:.025em;
+  text-shadow:0 2px 2px rgba(0,0,0,.65);
+  border:1px solid rgba(48,27,12,.85);
+  border-radius:3px;
+  background:
+    repeating-linear-gradient(3deg,rgba(55,29,12,.12) 0,rgba(55,29,12,.12) 1px,transparent 1px,transparent 7px),
+    linear-gradient(90deg,#684525,#805a36 28%,#704a29 55%,#855d37 78%,#684322);
+  box-shadow:
+    inset 0 2px 0 rgba(255,222,164,.16),
+    inset 0 -4px 0 rgba(39,20,8,.35),
+    0 6px 12px rgba(0,0,0,.24),
+    0 2px 0 rgba(48,25,10,.8);
+}
+
+.page-grid > h1:before{
+  content:"";
+  display:inline-block;
+  width:9px;
+  height:9px;
+  margin:0 12px 4px 0;
+  border-radius:50%;
+  background:#c5a76b;
+  box-shadow:inset 0 1px 1px rgba(255,255,255,.45),0 1px 2px rgba(0,0,0,.55);
+}
+
+.page-grid > .rule{
+  height:4px;
+  margin:-8px 0 26px;
+  border:0;
+  border-radius:2px;
+  background:linear-gradient(to bottom,#6b4728,#a87b49,#5a381e);
+  box-shadow:0 1px 2px rgba(0,0,0,.18);
+}
+
+.chapters{
+  position:relative;
+  display:grid;
+  gap:8px;
+  border:0;
+  margin:0;
+  padding:8px;
+  background:#e8dfcf;
+  border:1px solid #c8b99f;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.45), inset 0 5px 12px rgba(67,43,21,.08);
+}
+
+.chapter{
+  overflow:hidden;
+  border:1px solid #c4b18f;
+  border-radius:2px;
+  background:#f5efe2;
+  box-shadow:0 2px 4px rgba(54,35,18,.12);
+}
+
+.chapter summary{
+  min-height:54px;
+  padding:13px 18px;
+  color:#4b3926;
+  font:600 14px/1.25 Georgia,"Times New Roman",serif;
+  letter-spacing:.06em;
+  text-shadow:none;
+  background:
+    linear-gradient(to right,rgba(122,88,49,.08),transparent 22%),
+    linear-gradient(#f8f2e7,#e9decb);
+  border-bottom:1px solid #d2c3a9;
+  transition:background .2s ease, padding-left .2s ease;
+}
+
+.chapter summary:hover{
+  padding-left:22px;
+  background:
+    linear-gradient(to right,rgba(122,88,49,.14),transparent 25%),
+    linear-gradient(#fbf6ec,#e9decb);
+}
+
+.chapter summary span:first-child{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:32px;
+  height:28px;
+  color:#ead9ba;
+  font:600 11px/1 Arial,sans-serif;
+  letter-spacing:.08em;
+  background:linear-gradient(#8a633c,#5e3b20);
+  border:1px solid #4c2f19;
+  border-radius:2px;
+  box-shadow:inset 0 1px 0 rgba(255,222,164,.18),0 1px 2px rgba(0,0,0,.18);
+}
+
+.chapter summary .chapter-title{
+  color:#4b3926;
+}
+
+.chapter summary:after{
+  color:#8a6b42;
+  font-size:19px;
+}
+
+.chapter[open] summary{
+  background:
+    linear-gradient(to right,rgba(122,88,49,.12),transparent 25%),
+    linear-gradient(#eee3d1,#dfd0b8);
+}
+
+.chapter-content{
+  padding:20px 22px 22px 70px;
+  background:#fbf8f1;
+  border-top:1px solid rgba(126,91,51,.12);
+}
+
+@media(max-width:800px){
+  .page-grid > h1{
+    padding:11px 17px 13px;
+    font-size:32px;
+  }
+
+  .chapters{
+    padding:6px;
+  }
+
+  .chapter summary{
+    min-height:50px;
+    padding:11px 12px;
+  }
+
+  .chapter summary:hover{
+    padding-left:15px;
+  }
+
+  .chapter-content{
+    padding:17px 15px 20px 50px;
+  }
+}
