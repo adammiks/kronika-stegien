@@ -550,16 +550,27 @@ a{color:inherit}.site-head{position:relative;z-index:10;padding:18px 34px;displa
 
 /* MAPY — stara mapa kartograficzna */
 .page-grid > h1.section-map{
-  color:#4b3b25;
-  background-color:#d8c79e;
+  color:#4a3b28;
+  background-color:#cdbb91;
   background-image:
-    repeating-linear-gradient(0deg,rgba(82,65,37,.18) 0 1px,transparent 1px 28px),
-    repeating-linear-gradient(90deg,rgba(82,65,37,.14) 0 1px,transparent 1px 28px),
-    radial-gradient(ellipse at 28% 58%,transparent 0 18%,rgba(80,105,77,.18) 18.5% 19%,transparent 19.5%),
-    radial-gradient(ellipse at 72% 35%,transparent 0 24%,rgba(80,105,77,.14) 24.5% 25%,transparent 25.5%),
-    linear-gradient(125deg,rgba(255,255,255,.22),transparent 45%),
-    #d8c79e;
-  border-color:#a8956d;
+    /* drobna siatka kartograficzna */
+    repeating-linear-gradient(0deg,rgba(86,67,39,.14) 0 1px,transparent 1px 22px),
+    repeating-linear-gradient(90deg,rgba(86,67,39,.12) 0 1px,transparent 1px 22px),
+    /* poziomice */
+    repeating-radial-gradient(ellipse at 18% 68%,transparent 0 12px,rgba(93,76,48,.18) 13px 14px,transparent 15px 29px),
+    repeating-radial-gradient(ellipse at 78% 28%,transparent 0 18px,rgba(93,76,48,.14) 19px 20px,transparent 21px 40px),
+    /* stara rzeka */
+    linear-gradient(74deg,transparent 0 46%,rgba(70,108,126,.28) 47%,rgba(70,108,126,.18) 48%,transparent 50%),
+    /* wyblakłe plamy papieru */
+    radial-gradient(ellipse at 12% 22%,rgba(105,77,42,.16),transparent 24%),
+    radial-gradient(ellipse at 86% 76%,rgba(255,244,205,.22),transparent 27%),
+    linear-gradient(135deg,#dfcfaa,#c4ae7d);
+  background-blend-mode:multiply,multiply,normal,normal,normal,multiply,normal,normal;
+  border:2px solid #9b8760;
+  box-shadow:
+    inset 0 0 0 2px rgba(245,231,190,.38),
+    inset 0 0 28px rgba(83,61,31,.16),
+    0 5px 14px rgba(48,34,19,.18);
 }
 
 /* BUDYNKI — beton/tynk elewacji */
