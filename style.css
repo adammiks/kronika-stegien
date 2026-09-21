@@ -549,145 +549,18 @@ a{color:inherit}.site-head{position:relative;z-index:10;padding:18px 34px;displa
 }
 
 /* MAPY — stara mapa kartograficzna */
-.page-grid > h1.section-map{
-  color:#4b3e2b;
-  background-color:#d9caa9;
-  background-image:
-    repeating-linear-gradient(0deg,rgba(92,72,40,.11) 0,rgba(92,72,40,.11) 1px,transparent 1px,transparent 13px),
-    repeating-linear-gradient(90deg,rgba(92,72,40,.08) 0,rgba(92,72,40,.08) 1px,transparent 1px,transparent 18px),
-    linear-gradient(25deg,transparent 48%,rgba(81,110,91,.16) 49%,transparent 51%),
-    radial-gradient(circle at 20% 65%,rgba(91,119,95,.18) 0 7%,transparent 7.5%),
-    #d9caa9;
-}
-.page-grid > h1.section-map:before{
-  content:"MAPA • ";
-  position:relative;
-  z-index:2;
-  margin-right:8px;
-  font:600 11px Arial,sans-serif;
-  letter-spacing:.16em;
-  color:#746244;
-}
 
 /* BUDYNKI — beton/tynk elewacji */
-.page-grid > h1.section-buildings{
-  color:#eee9df;
-  text-shadow:0 1px 2px #2c2924;
-  background-color:#8c8981;
-  background-image:
-    radial-gradient(circle at 20% 30%,rgba(255,255,255,.12) 0 1px,transparent 1.5px),
-    radial-gradient(circle at 70% 65%,rgba(35,32,28,.14) 0 1px,transparent 1.5px),
-    repeating-linear-gradient(92deg,rgba(255,255,255,.035) 0,rgba(255,255,255,.035) 2px,transparent 2px,transparent 11px),
-    linear-gradient(180deg,#9b9890,#77746d);
-  background-size:17px 19px,23px 21px,100% 100%,100% 100%;
-}
-.page-grid > h1.section-buildings:before{
-  content:"ELEWACJA • ";
-  position:relative;
-  z-index:2;
-  margin-right:8px;
-  font:600 11px Arial,sans-serif;
-  letter-spacing:.16em;
-  color:#d8d2c7;
-}
 
 /* ZDJĘCIA — płótno/okładka albumu fotograficznego */
-.page-grid > h1.section-photos{
-  color:#f0e7d5;
-  text-shadow:0 1px 2px rgba(0,0,0,.75);
-  background-color:#3e3932;
-  background-image:
-    repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0,rgba(255,255,255,.035) 1px,transparent 1px,transparent 4px),
-    repeating-linear-gradient(90deg,rgba(0,0,0,.08) 0,rgba(0,0,0,.08) 1px,transparent 1px,transparent 5px),
-    linear-gradient(135deg,#51483b,#302c27);
-}
-.page-grid > h1.section-photos:before{
-  content:"ALBUM • ";
-  position:relative;
-  z-index:2;
-  margin-right:8px;
-  font:600 11px Arial,sans-serif;
-  letter-spacing:.16em;
-  color:#cdbb9d;
-}
 
 /* DOKUMENTY — papier kancelaryjny / maszynopis */
-.page-grid > h1.section-documents{
-  color:#41382c;
-  background-color:#e7dcc5;
-  background-image:
-    repeating-linear-gradient(0deg,rgba(100,78,48,.08) 0,rgba(100,78,48,.08) 1px,transparent 1px,transparent 7px),
-    repeating-linear-gradient(90deg,rgba(255,255,255,.18) 0,rgba(255,255,255,.18) 1px,transparent 1px,transparent 31px),
-    linear-gradient(90deg,transparent 7%,rgba(159,62,46,.14) 7.1%,transparent 7.35%),
-    #e7dcc5;
-}
-.page-grid > h1.section-documents:before{
-  content:"ARCHIWUM • ";
-  position:relative;
-  z-index:2;
-  margin-right:8px;
-  font:600 11px Arial,sans-serif;
-  letter-spacing:.16em;
-  color:#89684b;
-}
 
 /* LUDZIE — papier starej odbitki fotograficznej */
-.page-grid > h1.section-people{
-  color:#382f28;
-  background-color:#cbbda6;
-  background-image:
-    radial-gradient(circle at 30% 25%,rgba(255,255,255,.18) 0 2px,transparent 2.5px),
-    radial-gradient(circle at 72% 70%,rgba(54,43,33,.12) 0 1px,transparent 1.5px),
-    linear-gradient(135deg,#d5c8b1,#b9aa91);
-}
-.page-grid > h1.section-people:before{
-  content:"PORTRETY • ";
-  position:relative;
-  z-index:2;
-  margin-right:8px;
-  font:600 11px Arial,sans-serif;
-  letter-spacing:.16em;
-  color:#725d48;
-}
 
 /* OŚ CZASU — papier kalendarium z podziałką */
-.page-grid > h1.section-timeline{
-  color:#443729;
-  background-color:#ddd0b5;
-  background-image:
-    repeating-linear-gradient(90deg,rgba(93,73,43,.13) 0,rgba(93,73,43,.13) 1px,transparent 1px,transparent 40px),
-    repeating-linear-gradient(0deg,rgba(93,73,43,.06) 0,rgba(93,73,43,.06) 1px,transparent 1px,transparent 10px),
-    linear-gradient(90deg,rgba(113,74,40,.18) 0 2px,transparent 2px 33%,rgba(113,74,40,.18) 33% 35%,transparent 35% 66%,rgba(113,74,40,.18) 66% 68%,transparent 68%);
-}
-.page-grid > h1.section-timeline:before{
-  content:"CHRONOLOGIA • ";
-  position:relative;
-  z-index:2;
-  margin-right:8px;
-  font:600 11px Arial,sans-serif;
-  letter-spacing:.16em;
-  color:#806343;
-}
 
 /* O STEGNACH — płótno starej książki/monografii */
-.page-grid > h1.section-about{
-  color:#eadcc3;
-  text-shadow:0 1px 2px rgba(0,0,0,.75);
-  background-color:#4e3b2b;
-  background-image:
-    repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0,rgba(255,255,255,.035) 1px,transparent 1px,transparent 5px),
-    repeating-linear-gradient(90deg,rgba(0,0,0,.08) 0,rgba(0,0,0,.08) 1px,transparent 1px,transparent 7px),
-    linear-gradient(90deg,#3f3024,#66503a 48%,#3d2e22);
-}
-.page-grid > h1.section-about:before{
-  content:"MONOGRAFIA • ";
-  position:relative;
-  z-index:2;
-  margin-right:8px;
-  font:600 11px Arial,sans-serif;
-  letter-spacing:.16em;
-  color:#c6ad86;
-}
 
 @media(max-width:800px){
   .page-grid > h1[class^="section-"]{
