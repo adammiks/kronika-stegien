@@ -602,14 +602,23 @@ a{color:inherit}.site-head{position:relative;z-index:10;padding:18px 34px;displa
 
 /* DOKUMENTY — papier kancelaryjny z liniaturą i marginesem */
 .page-grid > h1.section-documents{
-  color:#463a2c;
-  background-color:#e7dcc3;
+  color:#40362a;
+  background-color:#dfd2b7;
   background-image:
-    linear-gradient(90deg,transparent 0 42px,rgba(151,67,54,.34) 42px 44px,transparent 44px),
-    repeating-linear-gradient(0deg,transparent 0 26px,rgba(77,105,125,.16) 26px 27px),
-    linear-gradient(90deg,rgba(255,255,255,.25),transparent 55%),
-    #e7dcc3;
-  border-color:#b8a98e;
+    /* czerwony margines urzędowego arkusza */
+    linear-gradient(90deg,transparent 0 46px,rgba(151,67,54,.42) 46px 48px,transparent 48px),
+    /* maszynopis */
+    repeating-linear-gradient(0deg,transparent 0 25px,rgba(79,103,116,.20) 25px 26px),
+    /* ślady starego papieru */
+    radial-gradient(ellipse at 78% 22%,rgba(126,91,48,.13),transparent 25%),
+    radial-gradient(ellipse at 20% 78%,rgba(255,250,226,.30),transparent 30%),
+    linear-gradient(90deg,rgba(255,255,255,.30),transparent 65%),
+    #dfd2b7;
+  border:1px solid #a99a7e;
+  box-shadow:
+    inset 0 0 0 2px rgba(255,255,255,.28),
+    inset 0 0 20px rgba(90,65,38,.12),
+    0 5px 14px rgba(48,34,19,.18);
 }
 
 /* LUDZIE — papier starej odbitki, wyraźnie sepia */
