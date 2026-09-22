@@ -669,3 +669,36 @@ a{color:inherit}.site-head{position:relative;z-index:10;padding:18px 34px;displa
     margin:0 0 7px;
   }
 }
+
+
+/* mapa osadzona w felietonie */
+.felieton-map{
+  margin:28px 0 34px;
+  padding:14px;
+  background:#f8f5ed;
+  border:1px solid var(--line);
+  box-shadow:0 4px 12px rgba(48,34,19,.10);
+}
+.felieton-map a{
+  display:block;
+  text-decoration:none;
+}
+.felieton-map img{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid #c8b99f;
+  background:#eee7d9;
+}
+.felieton-map figcaption{
+  margin-top:11px;
+  color:var(--muted);
+  font:13px/1.55 Georgia,"Times New Roman",serif;
+}
+.felieton-map .map-link{
+  display:inline-block;
+  margin-top:6px;
+  color:var(--ink);
+  font:600 12px/1.4 Arial,Helvetica,sans-serif;
+  letter-spacing:.04em;
+}
