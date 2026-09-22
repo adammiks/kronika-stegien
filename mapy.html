@@ -5,6 +5,36 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Mapy — Kronika Stegien</title>
   <link rel="stylesheet" href="style.css?v=9">
+  <style>
+    .historical-map{
+      margin:32px 0 36px;
+      padding:20px;
+      background:#f8f5ed;
+      border:1px solid var(--line);
+      box-shadow:0 5px 14px rgba(48,34,19,.12);
+    }
+    .historical-map img{
+      display:block;
+      width:100%;
+      max-width:100%;
+      height:auto;
+      border:1px solid #c8b99f;
+      background:#eee7d9;
+    }
+    .historical-map figcaption{
+      margin-top:14px;
+      color:var(--muted);
+      font:14px/1.6 Georgia,serif;
+    }
+    .map-intro{
+      max-width:760px;
+      color:var(--muted);
+      font:17px/1.7 Georgia,serif;
+    }
+    @media(max-width:800px){
+      .historical-map{padding:12px}
+    }
+  </style>
 </head>
 <body>
   <header class="site-head">
@@ -29,6 +59,31 @@
 
       <h1 class="section-map">Mapy</h1>
       <p class="lead">Różne sposoby patrzenia na Stegny: współczesne, historyczne i tematyczne.</p>
+
+      <div class="rule"></div>
+
+      <section aria-labelledby="polozenie-stegien">
+        <h2 id="polozenie-stegien" style="font:28px Georgia,serif;margin:0 0 12px;color:var(--ink);">
+          Położenie Stegien na mapie Warszawy
+        </h2>
+
+        <p class="map-intro">
+          Plan sytuacyjny pokazujący położenie Stegien na tle Warszawy. Mapa znajduje się już w repozytorium
+          „Kroniki Stegien” i została tutaj włączona jako osobny materiał kartograficzny.
+        </p>
+
+        <figure class="historical-map">
+          <img
+            src="Po%C5%82o%C5%BCenie%20Stegien%20na%20mapie%20Warszawy.jpg"
+            alt="Położenie Stegien na mapie Warszawy"
+            loading="lazy"
+          >
+          <figcaption>
+            <strong>Położenie Stegien na mapie Warszawy.</strong>
+            Plan sytuacyjny znajdujący się w repozytorium „Kroniki Stegien”.
+          </figcaption>
+        </figure>
+      </section>
 
       <div class="rule"></div>
 
