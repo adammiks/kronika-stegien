@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="775" height="601" viewBox="0 0 775 601" role="img" aria-labelledby="title desc">
+<title id="title">Stegny na zarysie mapy Mokotowa</title>
+<desc id="desc">Schematyczna mapa Mokotowa z zaznaczonym na czerwono obszarem Stegien oraz nazwami sąsiednich obszarów.</desc>
+<rect width="775" height="601" fill="#fff"/>
+<line x1="0" y1="1" x2="775" y2="1" stroke="#d7d7d7" stroke-width="2"/>
+<path d="M 752,254 752,180 741,133 714,82 682,53 646,30 619,16 513,11 489,45 492,75 507,105 511,151 504,174 518,194 552,210 565,228 560,254 535,277 533,291 560,326 567,361 559,382 562,415 569,459 623,465 692,439 720,408 722,364 708,332 719,305 742,284 Z" fill="#0000ff" stroke="#fff" stroke-width="4" stroke-linejoin="round"/>
+<path d="M 392,591 362,580 316,565 279,568 247,557 205,552 170,568 110,553 139,457 136,425 138,361 181,342 252,343 300,329 328,337 391,348 392,419 381,450 398,468 454,486 454,516 432,548 414,562 Z" fill="#0000ff" stroke="#fff" stroke-width="4" stroke-linejoin="round"/>
+<path d="M 412,43 455,36 489,43 495,77 503,100 507,153 498,177 513,199 522,218 522,272 501,286 484,289 450,291 434,273 432,240 419,202 413,168 418,113 410,65 Z" fill="#0000ff" stroke="#fff" stroke-width="4" stroke-linejoin="round"/>
+<path d="M 40,120 116,123 118,217 140,263 133,340 40,342 39,293 8,306 15,240 Z" fill="#0000ff" stroke="#fff" stroke-width="4" stroke-linejoin="round"/>
+<path d="M 119,80 253,77 280,99 291,139 276,161 281,194 306,214 310,229 301,263 279,297 237,303 184,315 139,337 138,260 120,216 Z" fill="#0000ff" stroke="#fff" stroke-width="4" stroke-linejoin="round"/>
+<path d="M 412,11 453,5 486,9 500,36 491,44 458,54 411,62 Z" fill="#0000ff" stroke="#fff" stroke-width="4" stroke-linejoin="round"/>
+<path d="M 344,116 394,112 412,99 419,143 415,176 405,208 411,241 426,271 418,291 392,304 351,302 308,321 303,288 285,272 308,230 301,214 280,194 282,160 290,144 Z" fill="#0000ff" stroke="#fff" stroke-width="4" stroke-linejoin="round"/>
+<path d="M 138,345 170,344 191,354 246,352 299,345 308,376 309,431 328,451 318,461 273,456 247,438 208,438 171,456 139,443 Z" fill="#0000ff" stroke="#fff" stroke-width="4" stroke-linejoin="round"/>
+<path d="M 40,345 98,345 136,345 137,398 138,441 119,503 104,549 48,530 47,460 Z" fill="#0000ff" stroke="#fff" stroke-width="4" stroke-linejoin="round"/>
+<path d="M 412,286 441,278 483,289 527,286 554,300 562,326 552,350 543,363 516,373 485,384 456,370 436,349 416,334 Z" fill="#0000ff" stroke="#fff" stroke-width="4" stroke-linejoin="round"/>
+<path d="M 140,224 183,212 228,199 275,211 282,229 302,240 298,270 281,292 237,302 184,315 141,336 Z" fill="#0000ff" stroke="#fff" stroke-width="4" stroke-linejoin="round"/>
+<path d="M 308,337 393,305 417,338 433,354 453,372 469,393 491,424 513,453 538,486 540,506 495,501 458,510 432,487 391,467 330,451 318,428 Z" fill="#ff0000" stroke="#fff" stroke-width="4" stroke-linejoin="round"/>
+<text x="205" y="163" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">STARY</text>
+<text x="205" y="183" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">MOKOTÓW</text>
+<text x="70" y="286" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">WYGŁĘDÓW</text>
+<text x="203" y="298" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">WIERZBNO</text>
+<text x="220" y="397" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">KSAWERÓW</text>
+<text x="78" y="414" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">SŁU-</text>
+<text x="78" y="434" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">ŻEWIEC</text>
+<text x="235" y="507" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">SŁUŻEW</text>
+<text x="365" y="217" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">SIELCE</text>
+<text x="578" y="91" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">SIEKIERKI</text>
+<text x="486" y="260" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">CZER-</text>
+<text x="486" y="280" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">NIAKÓW</text>
+<text x="500" y="340" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">SADYBA</text>
+<text x="652" y="232" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">AUGUSTÓWKA</text>
+<text x="404" y="416" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">STEGNY</text>
+</svg>
