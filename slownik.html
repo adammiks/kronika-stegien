@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Słownik — Kronika Stegien</title>
+  <link rel="stylesheet" href="style.css?v=9">
+  <style>
+    .dictionary-intro{max-width:780px;color:var(--muted);font:17px/1.7 Georgia,serif;margin:0 0 30px}
+    .dictionary{display:grid;gap:10px}
+    .entry{border:1px solid var(--line);background:#f8f5ed;border-radius:3px;overflow:hidden}
+    .entry summary{cursor:pointer;list-style:none;padding:18px 22px;display:flex;align-items:center;gap:18px;font:23px Georgia,serif;color:var(--ink)}
+    .entry summary::-webkit-details-marker{display:none}
+    .entry summary:after{content:"+";margin-left:auto;color:var(--accent);font:25px Georgia,serif}
+    .entry[open] summary{border-bottom:1px solid var(--line)}
+    .entry[open] summary:after{content:"−"}
+    .letter{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;flex:0 0 34px;background:linear-gradient(#8a633c,#5e3b20);border:1px solid #4c2f19;border-radius:2px;color:#ead9ba;font:600 12px Arial,sans-serif}
+    .entry-content{padding:0 22px 20px 74px}
+    .entry-content p{margin:0;color:var(--muted);font:16px/1.7 Georgia,serif}
+    .entry-content .read{margin-top:10px;font:12px/1.5 Arial,sans-serif;letter-spacing:.03em;color:var(--muted)}
+    .entry-content .read a{color:var(--ink)}
+    @media(max-width:800px){.entry summary{padding:16px 15px;font-size:20px}.entry-content{padding:0 15px 18px 64px}}
+  </style>
+</head>
+<body>
+  <header class="site-head">
+    <a class="brand" href="index.html">
+      Kronika Stegien
+      <small>historia osiedla mieszkaniowego w Warszawie</small>
+    </a>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav class="nav">
+        <a href="kronika.html">Kronika</a>
+        <a href="mapy.html">Mapy</a>
+        <a href="budynki.html">Budynki</a>
+        <a href="zdjecia.html">Zdjęcia</a>
+        <a href="dokumenty.html">Dokumenty</a>
+        <a href="ludzie.html">Ludzie</a>
+        <a href="os-czasu.html">Oś czasu</a>
+        <a href="slownik.html">Słownik</a>
+        <a href="o-stegnach.html">O Stegnach</a>
+      </nav>
+    </details>
+  </header>
+
+  <main class="page">
+    <div class="page-grid">
+      <a class="back" href="index.html">← Osiedle</a>
+      <h1 class="section-documents">Słownik</h1>
+      <p class="dictionary-intro">Niektóre słowa z opowieści o dawnych Stegnach mogą dziś brzmieć obco. Wyjaśniamy je krótko i bez historycznego żargonu. Słownik będzie rósł razem z „Kroniką” — nowe hasła będziemy dodawać wraz z kolejnymi felietonami.</p>
+      <div class="dictionary">
+
+        <details class="entry"><summary><span class="letter">A</span>Arteria</summary><div class="entry-content"><p>Ważna, zwykle szeroka ulica przeznaczona do prowadzenia dużego ruchu.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">C</span>Czynsz</summary><div class="entry-content"><p>Opłata za użytkowanie ziemi, domu, lokalu lub innego majątku.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+
+        <details class="entry"><summary><span class="letter">D</span>Dobra</summary><div class="entry-content"><p>Dawne określenie majątku, zwłaszcza nieruchomości wraz z prawami związanymi z ich posiadaniem.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">D</span>Dobra ziemskie</summary><div class="entry-content"><p>Większy majątek ziemski należący do jednego właściciela. Mógł obejmować ziemię, wsie, folwarki, lasy i zabudowania.</p><p class="read">Hasło przygotowane także z myślą o przyszłych felietonach.</p></div></details>
+        <details class="entry"><summary><span class="letter">D</span>Dzierżawa</summary><div class="entry-content"><p>Użytkowanie cudzej ziemi, domu lub innego majątku w zamian za ustaloną opłatę.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">D</span>Dzierżawca</summary><div class="entry-content"><p>Osoba, która użytkuje cudzy majątek na podstawie umowy dzierżawy.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">D</span>Dziedzic</summary><div class="entry-content"><p>Dawne określenie właściciela majątku ziemskiego, zwłaszcza osoby, która odziedziczyła go po rodzinie.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+
+        <details class="entry"><summary><span class="letter">F</span>Folwark</summary><div class="entry-content"><p>Duże gospodarstwo rolne należące do właściciela ziemskiego. Produkowano w nim przede wszystkim na potrzeby właściciela i na sprzedaż.</p><p class="read">Hasło przygotowane z myślą o przyszłych felietonach.</p></div></details>
+
+        <details class="entry"><summary><span class="letter">G</span>Gmina</summary><div class="entry-content"><p>Podstawowa jednostka administracji lokalnej. Jej znaczenie i sposób organizacji zmieniały się w różnych okresach historycznych.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">G</span>Gościniec</summary><div class="entry-content"><p>Dawna droga, zwykle ważniejsza i bardziej uczęszczana. Słowem tym określano również zajazd lub gospodę przy drodze.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">G</span>Gubernia</summary><div class="entry-content"><p>Duża jednostka podziału administracyjnego Imperium Rosyjskiego. Gubernie istniały również na ziemiach Królestwa Polskiego w XIX i na początku XX wieku.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+
+        <details class="entry"><summary><span class="letter">H</span>Hipoteka</summary><div class="entry-content"><p>System prawnych zapisów dotyczących nieruchomości, jej własności i obciążeń. Dawniej słowo to oznaczało również księgi i dokumenty, w których takie informacje zapisywano.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">I</span>Inwentaryzacja</summary><div class="entry-content"><p>Dokładne spisanie i opisanie istniejących obiektów lub elementów, np. budynków, drzew czy innych składników terenu.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">J</span>Jurysdykcja</summary><div class="entry-content"><p>Zakres władzy sądu lub innej instytucji uprawnionej do rozstrzygania określonych spraw.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+
+        <details class="entry"><summary><span class="letter">K</span>Karczma</summary><div class="entry-content"><p>Dawny lokal przy drodze lub we wsi, w którym można było zjeść, napić się i często przenocować. Karczmy były także miejscem spotkań i handlu.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">K</span>Kolonia</summary><div class="entry-content"><p>Osada powstała w wyniku wydzielenia i zagospodarowania nowych gruntów. W XIX wieku słowo to często oznaczało nową osadę lub skupisko gospodarstw.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">K</span>Kompozycja urbanistyczna</summary><div class="entry-content"><p>Sposób rozmieszczenia budynków, ulic, zieleni i innych elementów przestrzeni, tworzący określony układ miasta lub osiedla.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+
+        <details class="entry"><summary><span class="letter">M</span>Majątek ziemski</summary><div class="entry-content"><p>Większy obszar ziemi wraz z należącymi do niego zabudowaniami i gospodarstwami, stanowiący własność jednej osoby, rodziny lub instytucji.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">M</span>Mikroklimat</summary><div class="entry-content"><p>Warunki klimatyczne charakterystyczne dla niewielkiego obszaru, np. parku, doliny albo przestrzeni pomiędzy budynkami.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+
+        <details class="entry"><summary><span class="letter">O</span>Oś kompozycyjna</summary><div class="entry-content"><p>Umowna linia, która porządkuje układ przestrzenny i wyznacza rozmieszczenie budynków, ulic lub innych elementów.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">O</span>Osada</summary><div class="entry-content"><p>Niewielkie skupisko zabudowań i mieszkańców. Dawniej słowem tym określano również nowo powstające miejscowości.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+
+        <details class="entry"><summary><span class="letter">P</span>Pańszczyzna</summary><div class="entry-content"><p>Obowiązkowa praca chłopów na rzecz właściciela majątku. Była jednym z podstawowych obciążeń związanych z użytkowaniem ziemi przed uwłaszczeniem.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">P</span>Parafia</summary><div class="entry-content"><p>Jednostka organizacyjna Kościoła obejmująca określony obszar i jego mieszkańców, skupiona wokół kościoła parafialnego.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">P</span>Prefabrykacja</summary><div class="entry-content"><p>Technologia budowlana polegająca na wykonywaniu elementów budynku wcześniej, poza miejscem jego wznoszenia, a następnie montowaniu ich na budowie.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">P</span>Prefabrykat</summary><div class="entry-content"><p>Gotowy element budowlany wykonany wcześniej w zakładzie produkcyjnym i przeznaczony do zamontowania na budowie.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">P</span>Przysiółek</summary><div class="entry-content"><p>Niewielkie skupisko kilku gospodarstw położone poza główną częścią wsi.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">P</span>Punktowiec</summary><div class="entry-content"><p>Wysoki budynek mieszkalny o zwartej, punktowej formie, charakterystyczny dla części powojennej architektury mieszkaniowej.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+
+        <details class="entry"><summary><span class="letter">R</span>Rzeźba terenu</summary><div class="entry-content"><p>Ukształtowanie powierzchni ziemi: wzniesienia, obniżenia, skarpy, doliny i inne formy terenu.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+
+        <details class="entry"><summary><span class="letter">S</span>Serwitut</summary><div class="entry-content"><p>Dawne prawo do korzystania z cudzej ziemi w określony sposób, np. do wypasu zwierząt albo pobierania drewna z lasu.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">S</span>Stosunki wodne</summary><div class="entry-content"><p>Warunki związane z występowaniem, przepływem i poziomem wód na określonym terenie.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+
+        <details class="entry"><summary><span class="letter">T</span>Tkan­ka miejska</summary><div class="entry-content"><p>Całość zabudowy, ulic, przestrzeni publicznych, zieleni i innych elementów tworzących strukturę miasta.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">T</span>Toponim</summary><div class="entry-content"><p>Nazwa własna miejsca — np. miejscowości, ulicy, rzeki, wzgórza czy części miasta.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">T</span>Toponimia</summary><div class="entry-content"><p>Dziedzina zajmująca się nazwami miejsc, ich pochodzeniem, znaczeniem i historią.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">T</span>Trakt</summary><div class="entry-content"><p>Ważna droga lub szlak komunikacyjny łączący miejscowości albo regiony.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+
+        <details class="entry"><summary><span class="letter">U</span>Uwłaszczenie</summary><div class="entry-content"><p>Proces, w wyniku którego chłopi otrzymali na własność użytkowaną przez siebie ziemię. W Królestwie Polskim nastąpiło ono na mocy ukazu z 1864 roku.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+
+        <details class="entry"><summary><span class="letter">W</span>Włościanin</summary><div class="entry-content"><p>Dawne określenie chłopa, zwłaszcza gospodarującego na własnej lub użytkowanej ziemi.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+        <details class="entry"><summary><span class="letter">W</span>Wody gruntowe</summary><div class="entry-content"><p>Wody znajdujące się pod powierzchnią ziemi, w warstwach gruntu i skał.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+
+        <details class="entry"><summary><span class="letter">Z</span>Zaścianek</summary><div class="entry-content"><p>Niewielka osada, której mieszkańcami była tradycyjnie drobna szlachta.</p><p class="read">Czytaj w: <a href="kronika.html">„Stegny przed Stegnami”</a></p></div></details>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <span>Kronika Stegien</span>
+    <span>© Kronika Stegien • Warszawa • Mokotów</span>
+  </footer>
+</body>
+</html>
