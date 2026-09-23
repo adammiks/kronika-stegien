@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ulice — Kronika Stegien</title>
+  <link rel="stylesheet" href="style.css?v=9">
+  <style>
+    .street-index{display:grid;gap:10px}
+    .street{border:1px solid var(--line);background:#f8f5ed;border-radius:3px;overflow:hidden}
+    .street summary{cursor:pointer;list-style:none;padding:18px 22px;display:flex;align-items:center;gap:18px;font:23px Georgia,serif;color:var(--ink)}
+    .street summary::-webkit-details-marker{display:none}
+    .street summary:after{content:"+";margin-left:auto;color:var(--accent);font:25px Georgia,serif}
+    .street[open] summary{border-bottom:1px solid var(--line)}
+    .street[open] summary:after{content:"−"}
+    .street-content{padding:0 22px 20px 74px;color:var(--muted);font:16px/1.7 Georgia,serif}
+    .street-content p{margin:0 0 10px}
+    .street-content p:last-child{margin-bottom:0}
+    @media(max-width:800px){.street summary{padding:16px 15px;font-size:20px}.street-content{padding:0 15px 18px 64px}}
+  </style>
+</head>
+<body>
+  <header class="site-head">
+    <a class="brand" href="index.html">Kronika Stegien<small>historia osiedla mieszkaniowego w Warszawie</small></a>
+    <details class="menu"><summary>Menu</summary>
+      <nav class="nav">
+        <a href="kronika.html">Kronika</a><a href="mapy.html">Mapy</a><a href="budynki.html">Budynki</a><a href="zdjecia.html">Zdjęcia</a><a href="dokumenty.html">Dokumenty</a><a href="ludzie.html">Ludzie</a><a href="osoby.html">Osoby</a><a href="ulice.html">Ulice</a><a href="os-czasu.html">Oś czasu</a><a href="slownik.html">Słownik</a><a href="o-stegnach.html">O Stegnach</a>
+      </nav>
+    </details>
+  </header>
+  <main class="page"><div class="page-grid">
+    <a class="back" href="index.html">← Osiedle</a>
+    <h1>Ulice</h1>
+    <p class="people-intro">Indeks ulic związanych z historią Stegien. Nazwa ulicy może prowadzić do jej wystąpień w Kronice, a jeśli ulica ma patrona — także do odpowiedniej osoby w indeksie „Osoby”.</p>
+    <div class="street-index">
+      <details class="street" id="ulica-sikorskiego">
+        <summary>al. gen. Władysława Sikorskiego</summary>
+        <div class="street-content">
+          <p><strong>Patron:</strong> <a href="osoby.html#osoba-wladyslaw-sikorski">Władysław Sikorski</a> (1881–1943).</p>
+          <p>W Kronice aleja jest wymieniana jako jedna z głównych arterii związanych z położeniem i komunikacją Stegien.</p>
+          <p><a href="kronika.html#osoba-wladyslaw-sikorski">Przejdź do pierwszego wystąpienia w Kronice →</a></p>
+        </div>
+      </details>
+    </div>
+  </div></main>
+  <footer class="footer"><span>Kronika Stegien</span><span>© Kronika Stegien • Warszawa • Mokotów</span></footer>
+</body>
+</html>
