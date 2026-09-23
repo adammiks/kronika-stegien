@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Osoby — Kronika Stegien</title>
+  <link rel="stylesheet" href="style.css?v=9">
+  <style>
+    .people-intro{max-width:780px;color:var(--muted);font:17px/1.7 Georgia,serif;margin:0 0 30px}
+    .people-index{display:grid;gap:10px}
+    .person{border:1px solid var(--line);background:#f8f5ed;border-radius:3px;overflow:hidden}
+    .person summary{cursor:pointer;list-style:none;padding:18px 22px;display:flex;align-items:center;gap:18px;font:23px Georgia,serif;color:var(--ink)}
+    .person summary::-webkit-details-marker{display:none}
+    .person summary:after{content:"+";
+      margin-left:auto;color:var(--accent);font:25px Georgia,serif}
+    .person[open] summary{border-bottom:1px solid var(--line)}
+    .person[open] summary:after{content:"−"}
+    .initial{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;flex:0 0 34px;background:linear-gradient(#8a633c,#5e3b20);border:1px solid #4c2f19;border-radius:2px;color:#ead9ba;font:600 12px Arial,sans-serif}
+    .person-content{padding:0 22px 20px 74px}
+    .person-content p{margin:0;color:var(--muted);font:16px/1.7 Georgia,serif}
+    .person-content .read{margin-top:10px;font:12px/1.5 Arial,sans-serif;letter-spacing:.03em;color:var(--muted)}
+    .person-content .read a{color:var(--ink)}
+    @media(max-width:800px){.person summary{padding:16px 15px;font-size:20px}.person-content{padding:0 15px 18px 64px}}
+  </style>
+</head>
+<body>
+  <header class="site-head">
+    <a class="brand" href="index.html">
+      Kronika Stegien
+      <small>historia osiedla mieszkaniowego w Warszawie</small>
+    </a>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav class="nav">
+        <a href="kronika.html">Kronika</a>
+        <a href="mapy.html">Mapy</a>
+        <a href="budynki.html">Budynki</a>
+        <a href="zdjecia.html">Zdjęcia</a>
+        <a href="dokumenty.html">Dokumenty</a>
+        <a href="ludzie.html">Ludzie</a>
+        <a href="osoby.html">Osoby</a>
+        <a href="os-czasu.html">Oś czasu</a>
+        <a href="slownik.html">Słownik</a>
+        <a href="o-stegnach.html">O Stegnach</a>
+      </nav>
+    </details>
+  </header>
+
+  <main class="page">
+    <div class="page-grid">
+      <a class="back" href="index.html">← Osiedle</a>
+      <h1>Osoby</h1>
+      <p class="people-intro">Indeks osób związanych z historią Stegien. Na razie obejmuje osoby wymienione w opublikowanych tekstach. Wraz z kolejnymi rozdziałami będziemy dodawać następne nazwiska, a przy każdym odsyłać bezpośrednio do miejsca, w którym pojawia się ono w kronice.</p>
+
+      <div class="people-index">
+
+        <details class="person">
+          <summary><span class="initial">G</span>Jadwiga Grębecka</summary>
+          <div class="person-content">
+            <p>Architektka, współautorka projektu zespołu mieszkaniowego Stegny.</p>
+            <p class="read">Czytaj w: <a href="kronika.html#osoba-jadwiga-grebecka">„Stegny przed Stegnami”</a></p>
+          </div>
+        </details>
+
+        <details class="person">
+          <summary><span class="initial">S</span>Jan Szpakowicz</summary>
+          <div class="person-content">
+            <p>Architekt, współautor projektu zespołu mieszkaniowego Stegny.</p>
+            <p class="read">Czytaj w: <a href="kronika.html#osoba-jan-szpakowicz">„Stegny przed Stegnami”</a></p>
+          </div>
+        </details>
+
+        <details class="person">
+          <summary><span class="initial">W</span>Romuald Welder</summary>
+          <div class="person-content">
+            <p>Architekt, współautor projektu zespołu mieszkaniowego Stegny.</p>
+            <p class="read">Czytaj w: <a href="kronika.html#osoba-romuald-welder">„Stegny przed Stegnami”</a></p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <span>Kronika Stegien</span>
+    <span>© Kronika Stegien • Warszawa • Mokotów</span>
+  </footer>
+</body>
+</html>
