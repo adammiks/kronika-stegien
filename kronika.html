@@ -6,7 +6,8 @@
   <title>Kronika Stegien — Kronika osiedla</title>
   <link rel="stylesheet" href="style.css?v=9">
 <style>
-.slownik-target:target{
+.slownik-target:target,
+.osoba-target:target{
   text-decoration:underline;
   text-decoration-thickness:2px;
   text-underline-offset:4px;
@@ -112,7 +113,7 @@
                   <p>Liczba mieszkańców Stegien zależy od przyjętej granicy obszaru i źródła danych. W dokumentacji projektowej z lat 70. pojawiają się wartości planistyczne związane z liczbą mieszkań i projektowaną populacją, ale nie można ich utożsamiać z obecną liczbą mieszkańców. Dla przykładu miejski raport oparty na danych mobilnych oszacował dzienną populację obszaru MSI Stegny w maju 2018 roku na około 22–26 tys. osób zależnie od dnia tygodnia. Są to dane o mobilności i obecności ludności, a nie współczesny spis mieszkańców. Dlatego nie należy przedstawiać ich jako aktualnej liczby ludności w 2026 roku.</p>
 
                   <h3>14. Zabudowa i charakter przestrzenny</h3>
-                  <p>Stegny są jednym z charakterystycznych przykładów warszawskiej architektury mieszkaniowej lat 70. Projekt zespołu przygotowali Jadwiga Grębecka, Jan Szpakowicz i Romuald Welder. Budowę rozpoczęto w 1971 roku. W projekcie zastosowano zarówno niższe budynki pasmowe, jak i wysokie <span id="slownik-punktowiec" class="slownik-target">punktowce</span>. Dokumentacja „Architektury” z 1972 roku wymienia wysokości 5, 11, 13 i 16 kondygnacji. Ważną zasadą było oddzielenie ruchu pieszego od samochodowego i pozostawienie dużej części zieleni pomiędzy budynkami. Budynki mieszkalne wykonywano w systemie „Szczecin”, z elementów <span id="slownik-prefabrykat" class="slownik-target">prefabrykowanych</span> produkowanych w Fabryce Domów na Służewcu. Stegny były więc także ważnym eksperymentem technologicznym warszawskiego budownictwa mieszkaniowego.</p>
+                  <p>Stegny są jednym z charakterystycznych przykładów warszawskiej architektury mieszkaniowej lat 70. Projekt zespołu przygotowali <span id="osoba-jadwiga-grebecka" class="osoba-target">Jadwiga Grębecka</span>, <span id="osoba-jan-szpakowicz" class="osoba-target">Jan Szpakowicz</span> i <span id="osoba-romuald-welder" class="osoba-target">Romuald Welder</span>. Budowę rozpoczęto w 1971 roku. W projekcie zastosowano zarówno niższe budynki pasmowe, jak i wysokie <span id="slownik-punktowiec" class="slownik-target">punktowce</span>. Dokumentacja „Architektury” z 1972 roku wymienia wysokości 5, 11, 13 i 16 kondygnacji. Ważną zasadą było oddzielenie ruchu pieszego od samochodowego i pozostawienie dużej części zieleni pomiędzy budynkami. Budynki mieszkalne wykonywano w systemie „Szczecin”, z elementów <span id="slownik-prefabrykat" class="slownik-target">prefabrykowanych</span> produkowanych w Fabryce Domów na Służewcu. Stegny były więc także ważnym eksperymentem technologicznym warszawskiego budownictwa mieszkaniowego.</p>
 
                   <h3>15. Infrastruktura — szkoły, przedszkola, sklepy i usługi</h3>
                   <p>Budowa Stegien nie oznaczała jedynie wzniesienia tysięcy mieszkań. Od początku zakładano, że powstanie tutaj samowystarczalne osiedle, w którym mieszkańcy będą mogli nie tylko mieszkać, ale również korzystać z podstawowych usług, edukacji, handlu, rekreacji i komunikacji. Było to zgodne z zasadami projektowania dużych zespołów mieszkaniowych charakterystycznymi dla Warszawy lat 60. i 70. XX wieku.</p>
@@ -250,7 +251,7 @@
 (function(){
   function showGlossaryTarget(){
     var id=decodeURIComponent(window.location.hash.slice(1));
-    if(!id || id.indexOf('slownik-')!==0) return;
+    if(!id || (id.indexOf('slownik-')!==0 && id.indexOf('osoba-')!==0)) return;
     var target=document.getElementById(id);
     if(!target) return;
     var details=target.closest('details');
