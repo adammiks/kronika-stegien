@@ -246,5 +246,27 @@
   <footer class="footer">
     Kronika Stegien • <a href="index.html">strona główna</a>
   </footer>
+<script>
+(function(){
+  function showGlossaryTarget(){
+    var id=decodeURIComponent(window.location.hash.slice(1));
+    if(!id || id.indexOf('slownik-')!==0) return;
+    var target=document.getElementById(id);
+    if(!target) return;
+    var details=target.closest('details');
+    while(details){
+      details.open=true;
+      details=details.parentElement ? details.parentElement.closest('details') : null;
+    }
+    requestAnimationFrame(function(){
+      requestAnimationFrame(function(){
+        target.scrollIntoView({behavior:'smooth',block:'center'});
+      });
+    });
+  }
+  window.addEventListener('hashchange',showGlossaryTarget);
+  window.addEventListener('load',showGlossaryTarget);
+})();
+</script>
 </body>
 </html>
