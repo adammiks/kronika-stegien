@@ -9,7 +9,8 @@
 .slownik-target:target,
 .ulica-target:target,
 .osoba-target:target,
-.osoba-target:target{
+.osoba-target:target,
+.geo-target:target{
   text-decoration:underline;
   text-decoration-thickness:2px;
   text-underline-offset:4px;
@@ -39,6 +40,7 @@
       <a href="ludzie.html">Ludzie</a>
         <a href="osoby.html">Indeks osób</a>
         <a href="ulice.html">Indeks ulic</a>
+      <a href="geografia.html">Indeks nazw geograficznych</a>
       <a href="os-czasu.html">Oś czasu</a>
       <a href="o-stegnach.html">O Stegnach</a>
     </nav>
@@ -448,7 +450,7 @@
 (function(){
   function showGlossaryTarget(){
     var id=decodeURIComponent(window.location.hash.slice(1));
-    if(!id || (id.indexOf('slownik-')!==0 && id.indexOf('osoba-')!==0)) return;
+    if(!id || (id.indexOf('slownik-')!==0 && id.indexOf('osoba-')!==0 && id.indexOf('geo-')!==0)) return;
     var target=document.getElementById(id);
     if(!target) return;
     var details=target.closest('details');
