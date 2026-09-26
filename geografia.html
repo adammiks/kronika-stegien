@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Indeks nazw geograficznych — Kronika Stegien</title>
+  <link rel="stylesheet" href="style.css?v=9">
+  <style>
+    .geo-index{display:grid;gap:10px}
+    .geo{border:1px solid var(--line);background:#f8f5ed;border-radius:3px;overflow:hidden}
+    .geo summary{cursor:pointer;list-style:none;padding:18px 22px;display:flex;align-items:center;gap:18px;font:23px Georgia,serif;color:var(--ink)}
+    .geo summary::-webkit-details-marker{display:none}
+    .geo summary:after{content:"+";margin-left:auto;color:var(--accent);font:25px Georgia,serif}
+    .geo[open] summary{border-bottom:1px solid var(--line)}
+    .geo[open] summary:after{content:"−"}
+    .geo-content{padding:0 22px 20px 74px;color:var(--muted);font:16px/1.7 Georgia,serif}
+    .geo-content p{margin:0 0 10px}
+    .geo-content p:last-child{margin-bottom:0}
+    @media(max-width:800px){.geo summary{padding:16px 15px;font-size:20px}.geo-content{padding:0 15px 18px 64px}}
+  </style>
+</head>
+<body>
+  <header class="site-head">
+    <a class="brand" href="index.html">Kronika Stegien<small>historia osiedla mieszkaniowego w Warszawie</small></a>
+    <details class="menu"><summary>Menu</summary>
+      <nav class="nav">
+        <a href="kronika.html">Kronika</a><a href="mapy.html">Mapy</a><a href="budynki.html">Budynki</a><a href="zdjecia.html">Zdjęcia</a><a href="dokumenty.html">Dokumenty</a><a href="ludzie.html">Ludzie</a><a href="osoby.html">Indeks osób</a><a href="ulice.html">Indeks ulic</a><a href="geografia.html">Indeks nazw geograficznych</a><a href="os-czasu.html">Oś czasu</a><a href="slownik.html">Słownik</a><a href="o-stegnach.html">O Stegnach</a>
+      </nav>
+    </details>
+  </header>
+  <main class="page"><div class="page-grid">
+    <a class="back" href="index.html">← Osiedle</a>
+    <h1>Indeks nazw geograficznych</h1>
+    <p class="people-intro">Indeks nazw miejsc, obszarów, cieków wodnych i innych elementów krajobrazu, które pojawiają się w Kronice Stegien. Nazwy ulic pozostają w osobnym „Indeksie ulic”.</p>
+    <div class="geo-index">
+      <details class="geo" id="geo-stegny"><summary>Stegny</summary><div class="geo-content"><p>Nazwa geograficzna współczesnego obszaru oraz nazwa osiedla mieszkaniowego. W Kronice pojawia się jako główny punkt odniesienia całej opowieści.</p><p><a href="kronika.html#geo-stegny">Przejdź do wystąpienia w Kronice →</a></p></div></details>
+      <details class="geo" id="geo-sluzew"><summary>Służew</summary><div class="geo-content"><p>Dawna wieś i historyczny obszar południowego Mokotowa, ważny dla dziejów terenu przyszłych Stegien.</p><p><a href="kronika.html#geo-sluzew">Przejdź do wystąpienia w Kronice →</a></p></div></details>
+      <details class="geo" id="geo-wisla"><summary>Wisła</summary><div class="geo-content"><p>Rzeka wyznaczająca wschodnią część krajobrazu południowej Warszawy; w Kronice pojawia się przy opisie Czerniakowa i Siekierek.</p><p><a href="kronika.html#geo-wisla">Przejdź do wystąpienia w Kronice →</a></p></div></details>
+      <details class="geo" id="geo-potok-sluzewiecki"><summary>Potok Służewiecki</summary><div class="geo-content"><p>Ciek wodny związany z krajobrazem Służewa i południowego Mokotowa, istotny także dla opisu stosunków wodnych okolic Stegien.</p><p><a href="kronika.html#geo-potok-sluzewiecki">Przejdź do wystąpienia w Kronice →</a></p></div></details>
+      <details class="geo" id="geo-dolinka-sluzewska"><summary>Dolinka Służewska</summary><div class="geo-content"><p>Dolina związana z Potokiem Służewieckim, przywoływana w opisie dawnego krajobrazu południowego Mokotowa.</p><p><a href="kronika.html#geo-dolinka-sluzewska">Przejdź do wystąpienia w Kronice →</a></p></div></details>
+    </div>
+  </div></main>
+  <footer class="footer"><span>Kronika Stegien</span><span>© Kronika Stegien • Warszawa • Mokotów</span></footer>
+</body>
+</html>
