@@ -34,6 +34,10 @@
     @media(max-width:800px){
       .historical-map{padding:12px}
     }
+
+    .xviii-map-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 18px;}
+    .xviii-map-grid .historical-map{margin:0 0 28px;}
+    @media(max-width:800px){.xviii-map-grid{grid-template-columns:1fr;gap:0;}}
   </style>
 </head>
 <body>
@@ -144,6 +148,50 @@
         </figure>
       </section>
 
+
+      <div class="rule"></div>
+
+      <section id="stegny-xviii-wiek" aria-labelledby="stegny-xviii-title">
+        <h2 id="stegny-xviii-title" style="font:28px Georgia,serif;margin:36px 0 12px;color:var(--ink);">
+          Stegny przed Stegnami — XVIII wiek
+        </h2>
+        <p class="map-intro">
+          Sześć map tematycznych opracowanych na podstawie mapy Karola de Perthéesa z końca XVIII wieku.
+          Każda pokazuje inny aspekt krajobrazu, dróg, religii, gospodarki i przemian tej części Warszawy.
+        </p>
+
+        <div class="xviii-map-grid">
+          <figure class="historical-map">
+            <img src="images/mapy-xviii/01-przyszle-stegny.svg" alt="Przyszłe Stegny — Szopy, Służew, Czerniaków, Siekierki i Wilanów" loading="lazy">
+            <figcaption><strong>1. Przyszłe Stegny.</strong> Najważniejsze osady i miejsca bezpośrednio związane z krajobrazem przyszłych Stegien.</figcaption>
+          </figure>
+
+          <figure class="historical-map">
+            <img src="images/mapy-xviii/02-drogi-i-polaczenia.svg" alt="Drogi i połączenia w okolicy przyszłych Stegien" loading="lazy">
+            <figcaption><strong>2. Drogi i połączenia.</strong> Główne kierunki ruchu oraz przeprawa przez Wisłę.</figcaption>
+          </figure>
+
+          <figure class="historical-map">
+            <img src="images/mapy-xviii/03-miejsca-religijne.svg" alt="Miejsca religijne w okolicy przyszłych Stegien" loading="lazy">
+            <figcaption><strong>3. Miejsca religijne.</strong> Służew, Czerniaków i Wilanów jako ważne punkty krajobrazu sakralnego.</figcaption>
+          </figure>
+
+          <figure class="historical-map">
+            <img src="images/mapy-xviii/04-gospodarka-i-codziennosc.svg" alt="Gospodarka i codzienność w okolicy przyszłych Stegien" loading="lazy">
+            <figcaption><strong>4. Gospodarka i codzienność.</strong> Osady rolnicze, dobra wilanowskie i miejsca wymiany.</figcaption>
+          </figure>
+
+          <figure class="historical-map">
+            <img src="images/mapy-xviii/05-warszawa-zaplecze.svg" alt="Warszawa jako zaplecze dla okolic przyszłych Stegien" loading="lazy">
+            <figcaption><strong>5. Warszawa jako zaplecze.</strong> Miejskie centrum dróg i instytucji opisanych w felietonie.</figcaption>
+          </figure>
+
+          <figure class="historical-map">
+            <img src="images/mapy-xviii/06-koniec-xviii-wieku.svg" alt="Koniec XVIII wieku — Służew i Szopy" loading="lazy">
+            <figcaption><strong>6. Koniec XVIII wieku.</strong> Służew i Szopy na tle przemian lat 1794–1795.</figcaption>
+          </figure>
+        </div>
+      </section>
 
       <div class="rule"></div>
 
