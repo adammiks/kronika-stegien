@@ -1,7 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
-<rect width="1200" height="900" fill="#f4eee2"/><image href="mapa-perthees-warszawa.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
-<rect x="0" y="600" width="1200" height="300" fill="#f4eee2"/><text x="32" y="646" font-family="Georgia,serif" font-size="32" font-weight="bold" fill="#2f241a">05 • Warszawa jako zaplecze</text>
-<text x="32" y="682" font-family="Arial,sans-serif" font-size="18" fill="#66594c">Miejska sieć instytucji obsługująca mieszkańców okolic.</text>
-<circle cx="38" cy="713" r="5" fill="#8f3f27"/><text x="54" y="718" font-family="Arial,sans-serif" font-size="17" fill="#2f241a">Poczta i szpitale omawiane w felietonie znajdowały się w Warszawie. Ta mapa pokazuje Warszawę jako miejskie centrum sieci dróg;</text>
-<text x="54" y="741" font-family="Arial,sans-serif" font-size="17" fill="#2f241a">dokładnych lokalizacji instytucji nie nanoszę bezpośrednio na mapę Perthéesa.</text>
-<text x="870" y="868" font-family="Arial,sans-serif" font-size="13" fill="#786b5c">Źródło: Karol de Perthées, mapa ok. 1786</text></svg>
+<rect width="1200" height="900" fill="#f4eee2"/>
+<image href="mapa-perthees-warszawa.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
+
+<!-- Warszawa jako centrum zaplecza; pozycje instytucji są pokazane schematycznie, bez udawania dokładnej georeferencji. -->
+<ellipse cx="600" cy="270" rx="150" ry="105" fill="#8f3f27" fill-opacity=".08" stroke="#8f3f27" stroke-width="4" stroke-dasharray="10 8"/>
+<circle cx="600" cy="270" r="20" fill="#8f3f27" fill-opacity=".25" stroke="#8f3f27" stroke-width="4"/>
+<text x="600" y="258" text-anchor="middle" font-family="Georgia,serif" font-size="26" font-weight="bold" fill="#2f241a" stroke="#f4eee2" stroke-width="6" paint-order="stroke">WARSZAWA</text>
+<text x="600" y="292" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#2f241a" stroke="#f4eee2" stroke-width="4" paint-order="stroke">miejskie zaplecze okolicy</text>
+
+<!-- Trzy grupy funkcji, nie dokładne lokalizacje pojedynczych obiektów. -->
+<line x1="505" y1="205" x2="355" y2="120" stroke="#8f3f27" stroke-width="4" opacity=".8"/>
+<circle cx="355" cy="120" r="11" fill="#8f3f27"/>
+<rect x="60" y="72" width="300" height="92" rx="10" fill="#f4eee2" fill-opacity=".94" stroke="#8f3f27" stroke-width="2"/>
+<text x="82" y="104" font-family="Georgia,serif" font-size="22" font-weight="bold" fill="#2f241a">Poczta</text>
+<text x="82" y="130" font-family="Arial,sans-serif" font-size="15" fill="#2f241a">kolejne warszawskie siedziby</text>
+<text x="82" y="151" font-family="Arial,sans-serif" font-size="14" fill="#66594c">Dwór Warecki → Marywil → Pałac Wesslów</text>
+
+<line x1="695" y1="205" x2="850" y2="120" stroke="#8f3f27" stroke-width="4" opacity=".8"/>
+<circle cx="850" cy="120" r="11" fill="#8f3f27"/>
+<rect x="835" y="72" width="305" height="92" rx="10" fill="#f4eee2" fill-opacity=".94" stroke="#8f3f27" stroke-width="2"/>
+<text x="857" y="104" font-family="Georgia,serif" font-size="22" font-weight="bold" fill="#2f241a">Szpitale</text>
+<text x="857" y="130" font-family="Arial,sans-serif" font-size="15" fill="#2f241a">warszawskie zaplecze medyczne</text>
+<text x="857" y="151" font-family="Arial,sans-serif" font-size="14" fill="#66594c">Dzieciątka Jezus • św. Łazarza</text>
+
+<line x1="600" y1="355" x2="600" y2="470" stroke="#8f3f27" stroke-width="4" opacity=".8"/>
+<circle cx="600" cy="470" r="11" fill="#8f3f27"/>
+<rect x="390" y="462" width="420" height="100" rx="10" fill="#f4eee2" fill-opacity=".94" stroke="#8f3f27" stroke-width="2"/>
+<text x="600" y="496" text-anchor="middle" font-family="Georgia,serif" font-size="22" font-weight="bold" fill="#2f241a">Drogi i instytucje</text>
+<text x="600" y="522" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#2f241a">Warszawa jako centrum obsługi i punkt odniesienia</text>
+<text x="600" y="545" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#66594c">dla mieszkańców okolic przyszłych Stegien</text>
+
+<!-- Dyskretna legenda metodologiczna -->
+<rect x="34" y="510" width="300" height="58" rx="8" fill="#f4eee2" fill-opacity=".92"/>
+<line x1="55" y1="532" x2="95" y2="532" stroke="#8f3f27" stroke-width="4" stroke-dasharray="8 6"/>
+<text x="108" y="537" font-family="Arial,sans-serif" font-size="13" fill="#66594c">obszar poglądowy, nie ścisła lokalizacja</text>
+
+<rect x="0" y="600" width="1200" height="300" fill="#f4eee2"/>
+<text x="32" y="646" font-family="Georgia,serif" font-size="32" font-weight="bold" fill="#2f241a">05 • Warszawa jako zaplecze</text>
+<text x="32" y="682" font-family="Arial,sans-serif" font-size="18" fill="#66594c">Warszawa jako miejskie centrum dróg, usług i instytucji obsługujących okolicę.</text>
+<circle cx="38" cy="713" r="5" fill="#8f3f27"/>
+<text x="54" y="718" font-family="Arial,sans-serif" font-size="17" fill="#2f241a">Zaznaczono poglądowo trzy funkcje opisane w felietonie: pocztę, szpitale oraz sieć dróg i instytucji.</text>
+<text x="54" y="741" font-family="Arial,sans-serif" font-size="17" fill="#2f241a">Nie są to dokładne punkty georeferencyjne; podkład Perthéesa służy tu jako historyczne tło Warszawy.</text>
+<text x="54" y="764" font-family="Arial,sans-serif" font-size="17" fill="#2f241a">Poczta: Dwór Warecki → okolice Marywilu → Pałac Wesslów. Szpitale: Dzieciątka Jezus i św. Łazarza.</text>
+<text x="870" y="868" font-family="Arial,sans-serif" font-size="13" fill="#786b5c">Źródło: Karol de Perthées, mapa ok. 1786</text>
+</svg>
