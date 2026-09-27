@@ -760,3 +760,35 @@ a{color:inherit}.site-head{position:relative;z-index:10;padding:18px 34px;displa
     height:110px !important;
   }
 }
+
+
+/* sześć map tematycznych XVIII wieku */
+.map-gallery{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+  margin:24px 0 36px;
+}
+.map-gallery figure{
+  margin:0;
+  padding:10px;
+  background:#f8f5ed;
+  border:1px solid var(--line);
+  box-shadow:0 3px 10px rgba(48,34,19,.10);
+}
+.map-gallery img{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid #c8b99f;
+  background:#eee7d9;
+}
+.map-gallery figcaption{
+  margin-top:9px;
+  color:var(--muted);
+  font:13px/1.5 Georgia,"Times New Roman",serif;
+}
+.map-gallery figcaption strong{ color:var(--ink); }
+@media(max-width:800px){
+  .map-gallery{ grid-template-columns:1fr; gap:14px; }
+}

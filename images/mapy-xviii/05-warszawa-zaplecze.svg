@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<rect width="1200" height="900" fill="#f4eee2"/><image href="mapa-perthees-warszawa.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
+<rect x="0" y="600" width="1200" height="300" fill="#f4eee2"/><text x="32" y="646" font-family="Georgia,serif" font-size="32" font-weight="bold" fill="#2f241a">05 • Warszawa jako zaplecze</text>
+<text x="32" y="682" font-family="Arial,sans-serif" font-size="18" fill="#66594c">Miejska sieć instytucji obsługująca mieszkańców okolic.</text>
+<circle cx="38" cy="713" r="5" fill="#8f3f27"/><text x="54" y="718" font-family="Arial,sans-serif" font-size="17" fill="#2f241a">Poczta i szpitale omawiane w felietonie znajdowały się w Warszawie. Ta mapa pokazuje Warszawę jako miejskie centrum sieci dróg;</text>
+<text x="54" y="741" font-family="Arial,sans-serif" font-size="17" fill="#2f241a">dokładnych lokalizacji instytucji nie nanoszę bezpośrednio na mapę Perthéesa.</text>
+<text x="870" y="868" font-family="Arial,sans-serif" font-size="13" fill="#786b5c">Źródło: Karol de Perthées, mapa ok. 1786</text></svg>
