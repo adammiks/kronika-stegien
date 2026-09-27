@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-<defs><filter id="map-contrast" x="-5%" y="-5%" width="110%" height="110%"><feComponentTransfer><feFuncR type="linear" slope="1.45" intercept="-0.12"/><feFuncG type="linear" slope="1.45" intercept="-0.12"/><feFuncB type="linear" slope="1.45" intercept="-0.12"/></feComponentTransfer></filter></defs> width="1200" height="900" viewBox="0 0 1200 900">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<defs><filter id="map-contrast" x="-5%" y="-5%" width="110%" height="110%"><feComponentTransfer><feFuncR type="linear" slope="1.45" intercept="-0.12"/><feFuncG type="linear" slope="1.45" intercept="-0.12"/><feFuncB type="linear" slope="1.45" intercept="-0.12"/></feComponentTransfer></filter></defs>
 <rect width="1200" height="900" fill="#f4eee2"/>
 <image href="mapa-perthees-baza.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none" filter="url(#map-contrast)"/>
 <circle cx="646" cy="213" r="16" fill="#8f3f27" fill-opacity=".28" stroke="#8f3f27" stroke-width="3"/><text x="669" y="208" font-family="Georgia,serif" font-size="22" font-weight="bold" fill="#2f241a" stroke="#f4eee2" stroke-width="5" paint-order="stroke">Siekierki</text>
