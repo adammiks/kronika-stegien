@@ -10,7 +10,7 @@
 </defs>
 <rect width="1200" height="900" fill="#f4eee2"/>
 <!-- Wzmocniony kontrast podkładu, aby rysunek Perthéesa był czytelny pod warstwą opisową. -->
-<image href="mapa-perthees-warszawa.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none" filter="url(#map-contrast)"/>
+<image href="/kronika-stegien/images/mapy-xviii/mapa-perthees-warszawa.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none" filter="url(#map-contrast)"/>
 
 <!-- Warszawa jako centrum zaplecza; pozycje instytucji są pokazane schematycznie, bez udawania dokładnej georeferencji. -->
 <ellipse cx="600" cy="270" rx="150" ry="105" fill="#8f3f27" fill-opacity=".08" stroke="#8f3f27" stroke-width="4" stroke-dasharray="10 8"/>
