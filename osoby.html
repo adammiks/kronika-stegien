@@ -26,6 +26,13 @@
     .portrait-probable{border-style:dashed}
     .portrait-related{opacity:.96}
     .portrait-placeholder{aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#e8dfcf,#cdbfa9);border-bottom:1px solid var(--line);color:#5e3b20;font:600 44px Georgia,serif;letter-spacing:.06em}\n    .portrait-placeholder-empty{background:#eee9df;border:1px dashed #b9ad9a;color:#a79b89}\n    .portrait-placeholder-empty span{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border:1px solid #b9ad9a;border-radius:50%;font:32px Georgia,serif}\n    .portrait-empty{opacity:.9}
+    .portrait-empty-row{grid-column:1/-1;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:16px;margin-top:4px;}
+    .portrait-empty-row .portrait-card{min-width:0}
+    .portrait-empty-row .portrait-placeholder-empty{aspect-ratio:4/5}
+    .portrait-empty-row figcaption strong{font-size:15px}
+    .portrait-empty-row figcaption span{font-size:12px;line-height:1.45}
+    @media(max-width:1100px){.portrait-empty-row{grid-template-columns:repeat(4,minmax(0,1fr))}}
+    @media(max-width:700px){.portrait-empty-row{grid-template-columns:repeat(2,minmax(0,1fr))}}
     .portrait-note{
       grid-column:1/-1;
       margin-top:4px;
@@ -161,19 +168,29 @@
 
         </div>
 
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        <div class="portrait-empty-row">
           <figure class="portrait-card portrait-empty"><div class="portrait-placeholder portrait-placeholder-empty" role="img" aria-label="Brak odnalezionej podobizny — Gotard"><span>?</span></div><figcaption><strong>Gotard</strong><span>Nie odnaleziono dotąd wiarygodnie przypisanej podobizny.</span></figcaption></figure>
-
           <figure class="portrait-card portrait-empty"><div class="portrait-placeholder portrait-placeholder-empty" role="img" aria-label="Brak odnalezionej podobizny — Antoni Kondratowicz"><span>?</span></div><figcaption><strong>Antoni Kondratowicz</strong><span>Nie odnaleziono dotąd wiarygodnie przypisanej podobizny.</span></figcaption></figure>
-
           <figure class="portrait-card portrait-empty"><div class="portrait-placeholder portrait-placeholder-empty" role="img" aria-label="Brak odnalezionej podobizny — Antoni Łapiński"><span>?</span></div><figcaption><strong>Antoni Łapiński</strong><span>Nie odnaleziono dotąd wiarygodnie przypisanej podobizny.</span></figcaption></figure>
-
           <figure class="portrait-card portrait-empty"><div class="portrait-placeholder portrait-placeholder-empty" role="img" aria-label="Brak odnalezionej podobizny — Jan Margueritte"><span>?</span></div><figcaption><strong>Jan Margueritte</strong><span>Nie odnaleziono dotąd wiarygodnie przypisanej podobizny.</span></figcaption></figure>
-
           <figure class="portrait-card portrait-empty"><div class="portrait-placeholder portrait-placeholder-empty" role="img" aria-label="Brak odnalezionej podobizny — Piotr Sarnowski"><span>?</span></div><figcaption><strong>Piotr Sarnowski</strong><span>Nie odnaleziono dotąd wiarygodnie przypisanej podobizny.</span></figcaption></figure>
-
           <figure class="portrait-card portrait-empty"><div class="portrait-placeholder portrait-placeholder-empty" role="img" aria-label="Brak odnalezionej podobizny — Karol Scholtze"><span>?</span></div><figcaption><strong>Karol Scholtze</strong><span>Nie odnaleziono dotąd wiarygodnie przypisanej podobizny.</span></figcaption></figure>
-
           <figure class="portrait-card portrait-empty"><div class="portrait-placeholder portrait-placeholder-empty" role="img" aria-label="Brak odnalezionej podobizny — Romuald Welder"><span>?</span></div><figcaption><strong>Romuald Welder</strong><span>Nie odnaleziono dotąd wiarygodnie przypisanej podobizny.</span></figcaption></figure>
+        </div>
 
         <div class="portrait-note">
           <strong>Poszukiwanie podobizn</strong>
