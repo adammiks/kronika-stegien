@@ -1,14 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
-<defs>
-  <filter id="basemap-darken" x="-10%" y="-10%" width="120%" height="120%">
-    <feComponentTransfer>
-      <feFuncR type="linear" slope="0.78" intercept="0"/>
-      <feFuncG type="linear" slope="0.78" intercept="0"/>
-      <feFuncB type="linear" slope="0.78" intercept="0"/>
-    </feComponentTransfer>
-  </filter>
-</defs>
-<rect width="1200" height="900" fill="#f4eee2"/><image href="https://nsh2-d83f2208fd11c8ca-endpoint.azureedge.net/blobnsh2bb81823bde/wp-content/uploads/2023/06/image-5.png" x="0" y="0" width="1200" height="600" preserveAspectRatio="none" filter="url(#basemap-darken)"/>
+<rect width="1200" height="900" fill="#f4eee2"/><image href="https://nsh2-d83f2208fd11c8ca-endpoint.azureedge.net/blobnsh2bb81823bde/wp-content/uploads/2023/06/image-5.png" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 <circle cx="553" cy="371" r="16" fill="#8f3f27" fill-opacity=".28" stroke="#8f3f27" stroke-width="3"/><text x="576" y="366" font-family="Georgia,serif" font-size="22" font-weight="bold" fill="#2f241a" stroke="#f4eee2" stroke-width="5" paint-order="stroke">Służewo</text>
 <circle cx="544" cy="322" r="16" fill="#8f3f27" fill-opacity=".28" stroke="#8f3f27" stroke-width="3"/><text x="567" y="317" font-family="Georgia,serif" font-size="22" font-weight="bold" fill="#2f241a" stroke="#f4eee2" stroke-width="5" paint-order="stroke">Szopy</text>
 <rect x="0" y="600" width="1200" height="300" fill="#f4eee2"/><text x="32" y="646" font-family="Georgia,serif" font-size="32" font-weight="bold" fill="#2f241a">06 • Koniec XVIII wieku</text>
