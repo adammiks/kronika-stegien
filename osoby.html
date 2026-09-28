@@ -22,6 +22,9 @@
     .person-content .read a{color:var(--ink)}
     @media(max-width:800px){.person summary{padding:16px 15px;font-size:20px}.person-content{padding:0 15px 18px 64px}}
   
+    .portrait-card figcaption a + a{margin-top:4px}
+    .portrait-probable{border-style:dashed}
+    .portrait-related{opacity:.96}
     .portrait-note{
       grid-column:1/-1;
       margin-top:4px;
@@ -81,6 +84,34 @@
       <section class="portraits">
         <h2>Podobizny osób</h2>
         <div class="portrait-grid">
+          <figure class="portrait-card portrait-verified">
+            <img src="https://images-genealogia.abengo.pl/47/f3/47f3c87e28b89b6f6df0282adb69b9dd6edd63dc54ed3284794e4739159213ed.jpg" alt="Jadwiga Rytel, późniejsza Grębecka, fotografia z 1937 roku">
+            <figcaption>
+              <strong>Jadwiga Grębecka</strong>
+              <span>Jadwiga Rytel, późniejsza Grębecka. Fotografia z 1937 r., ze spisu maturzystek szkoły Cecylii Plater-Zyberkówny w Warszawie.</span>
+              <a href="https://genealogia.okiem.pl/zdjecie/25103/rytel-jadwiga-zam-grebecka" target="_blank" rel="noopener">Źródło archiwalne →</a>
+            </figcaption>
+          </figure>
+
+          <figure class="portrait-card portrait-probable">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bellotto_View_of_Ujazd%C3%B3w_(detail)_05.jpg" alt="Fragment obrazu Widok Ujazdowa i Łazienek z prawdopodobnym wizerunkiem Karola Perthéesa">
+            <figcaption>
+              <strong>Karol de Perthées</strong>
+              <span>Prawdopodobny wizerunek Karola Perthéesa na obrazie Bernarda Bellotta „Widok Ujazdowa i Łazienek” (1776). Identyfikacja nie jest bezsporna.</span>
+              <a href="https://perthees.ihpan.edu.pl/?page_id=91" target="_blank" rel="noopener">Instytut Historii PAN →</a>
+              <a href="https://commons.wikimedia.org/wiki/File:Bellotto_View_of_Ujazd%C3%B3w_(detail)_05.jpg" target="_blank" rel="noopener">Obraz / licencja →</a>
+            </figcaption>
+          </figure>
+
+          <figure class="portrait-card portrait-related">
+            <img src="https://ma.wroc.pl/workspace/images/posts/jan-szpakowicz-zalesie-dom-wlasny2-1965-70-fot-renata-pajchel.jpg" alt="Dom własny Jana Szpakowicza w Zalesiu Dolnym, fotografia Renaty Pajchel">
+            <figcaption>
+              <strong>Jan Szpakowicz</strong>
+              <span>Fotografia jego domu własnego w Zalesiu Dolnym (1965–70), autorstwa Renaty Pajchel. To materiał archiwalny związany z architektem, nie portret jego osoby.</span>
+              <a href="https://www.ma.wroc.pl/pl/wystawy/archiwum-wystaw/jan-szpakowicz-przestrzen-elementarna/" target="_blank" rel="noopener">Muzeum Architektury we Wrocławiu →</a>
+            </figcaption>
+          </figure>
+
 
           <figure class="portrait-card">
             <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/August_Aleksander_Czartoryski.jpg" alt="Portret Augusta Aleksandra Czartoryskiego">
