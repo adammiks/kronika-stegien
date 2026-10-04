@@ -35,6 +35,10 @@
       .historical-map{padding:12px}
     }
 
+    .historical-map-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 18px;}
+    .historical-map-grid .historical-map{margin:0 0 28px;}
+    .historical-map-grid .historical-map img{aspect-ratio:auto;}
+    @media(max-width:800px){.historical-map-grid{grid-template-columns:1fr;gap:0;}}
     .xviii-map-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 18px;}
     .xviii-map-grid .historical-map{margin:0 0 28px;}
     @media(max-width:800px){.xviii-map-grid{grid-template-columns:1fr;gap:0;}}
