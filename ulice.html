@@ -1,62 +1,885 @@
+```html
 <!doctype html>
 <html lang="pl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+
   <title>Indeks ulic — Kronika Stegien</title>
+
   <link rel="stylesheet" href="style.css?v=9">
+
   <style>
-    .street-index{display:grid;gap:10px}
-    .street{border:1px solid var(--line);background:#f8f5ed;border-radius:3px;overflow:hidden}
-    .street summary{cursor:pointer;list-style:none;padding:18px 22px;display:flex;align-items:center;gap:18px;font:23px Georgia,serif;color:var(--ink)}
-    .street summary::-webkit-details-marker{display:none}
-    .street summary:after{content:"+";margin-left:auto;color:var(--accent);font:25px Georgia,serif}
-    .street[open] summary{border-bottom:1px solid var(--line)}
-    .street[open] summary:after{content:"−"}
-    .street-content{padding:0 22px 20px 74px;color:var(--muted);font:16px/1.7 Georgia,serif}
-    .street-content p{margin:0 0 10px}
-    .street-content p:last-child{margin-bottom:0}
-    @media(max-width:800px){.street summary{padding:16px 15px;font-size:20px}.street-content{padding:0 15px 18px 64px}}
+    .street-groups {
+      display: grid;
+      gap: 48px;
+    }
+
+    .street-group {
+      display: grid;
+      gap: 0;
+    }
+
+    .street-group h2 {
+      margin: 0 0 10px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+      color: var(--ink);
+      font: 30px Georgia, serif;
+    }
+
+    .street-group-intro {
+      max-width: 780px;
+      margin: 0 0 20px;
+      color: var(--muted);
+      font: 16px/1.7 Georgia, serif;
+    }
+
+    .street-index {
+      display: grid;
+      gap: 10px;
+    }
+
+    .street {
+      border: 1px solid var(--line);
+      background: #f8f5ed;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .street summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font: 23px Georgia, serif;
+      color: var(--ink);
+    }
+
+    .street summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .street summary:after {
+      content: "+";
+      margin-left: auto;
+      color: var(--accent);
+      font: 25px Georgia, serif;
+    }
+
+    .street[open] summary {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .street[open] summary:after {
+      content: "−";
+    }
+
+    .street-content {
+      padding: 0 22px 20px 74px;
+      color: var(--muted);
+      font: 16px/1.7 Georgia, serif;
+    }
+
+    .street-content p {
+      margin: 0 0 10px;
+    }
+
+    .street-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .street-content a {
+      color: var(--accent);
+    }
+
+    .street-content strong {
+      color: var(--ink);
+    }
+
+    @media(max-width:800px) {
+      .street-groups {
+        gap: 34px;
+      }
+
+      .street-group h2 {
+        font-size: 25px;
+      }
+
+      .street summary {
+        padding: 16px 15px;
+        font-size: 20px;
+      }
+
+      .street-content {
+        padding: 0 15px 18px 64px;
+      }
+    }
   </style>
 </head>
+
 <body>
+
   <header class="site-head">
-    <a class="brand" href="index.html">Kronika Stegien<small>historia osiedla mieszkaniowego w Warszawie</small></a>
-    <details class="menu"><summary>Menu</summary>
+
+    <a class="brand" href="index.html">
+      Kronika Stegien
+      <small>historia osiedla mieszkaniowego w Warszawie</small>
+    </a>
+
+    <details class="menu">
+      <summary>Menu</summary>
+
       <nav class="nav">
-        <a href="kronika.html">Kronika</a><a href="mapy.html">Mapy</a><a href="budynki.html">Budynki</a><a href="zdjecia.html">Ilustracje</a><a href="dokumenty.html">Dokumenty</a><a href="ludzie.html">Ludzie</a><a href="osoby.html">Indeks osób</a><a href="literatura.html">Stegny w kulturze</a><a href="ulice.html">Indeks ulic</a><a href="geografia.html">Indeks nazw geograficznych</a><a href="os-czasu.html">Oś czasu</a><a href="slownik.html">Słownik</a><a href="o-stegnach.html">O Stegnach</a>
+        <a href="kronika.html">Kronika</a>
+        <a href="mapy.html">Mapy</a>
+        <a href="budynki.html">Budynki</a>
+        <a href="zdjecia.html">Ilustracje</a>
+        <a href="dokumenty.html">Dokumenty</a>
+        <a href="ludzie.html">Ludzie</a>
+        <a href="osoby.html">Indeks osób</a>
+        <a href="literatura.html">Stegny w kulturze</a>
+        <a href="ulice.html">Indeks ulic</a>
+        <a href="geografia.html">Indeks nazw geograficznych</a>
+        <a href="os-czasu.html">Oś czasu</a>
+        <a href="slownik.html">Słownik</a>
+        <a href="o-stegnach.html">O Stegnach</a>
       </nav>
     </details>
+
   </header>
-  <main class="page"><div class="page-grid">
-    <a class="back" href="index.html">← Osiedle</a>
-    <h1>Indeks ulic</h1>
-    <p class="people-intro">Indeks ulic związanych z historią Stegien. Nazwa ulicy może prowadzić do jej wystąpień w Kronice, a jeśli ulica ma patrona — także do odpowiedniej osoby w indeksie „Osoby”.</p>
-    <div class="street-index">
-      <details class="street" id="ulica-bochenska"><summary>ul. Bocheńska</summary><div class="street-content"><p>W Kronice pojawia się przy przybliżaniu położenia dawnej osady Szopy Polskie. Wraz z Jaśminową i Bukowińską wskazuje współczesny rejon dawnej osady.</p><p><a href="kronika.html#ulica-bochenska">Przejdź do wystąpienia w Kronice →</a></p></div></details>
-      <details class="street" id="ulica-jasminowa"><summary>ul. Jaśminowa</summary><div class="street-content"><p>W Kronice pojawia się przy przybliżaniu położenia dawnej osady Szopy Polskie.</p><p><a href="kronika.html#ulica-jasminowa">Przejdź do wystąpienia w Kronice →</a></p></div></details>
-      <details class="street" id="ulica-bukowinska"><summary>ul. Bukowińska</summary><div class="street-content"><p>W Kronice pojawia się przy przybliżaniu położenia dawnej osady Szopy Polskie.</p><p><a href="kronika.html#ulica-bukowinska">Przejdź do wystąpienia w Kronice →</a></p></div></details>
-      <details class="street" id="ulica-pulawska"><summary>ul. Puławska</summary><div class="street-content"><p>W Kronice stanowi punkt odniesienia przy opisie położenia Szop Polskich i Szop Niemieckich po obu stronach dawnej osi komunikacyjnej.</p><p><a href="kronika.html#ulica-pulawska">Przejdź do wystąpienia w Kronice →</a></p></div></details>
-      <details class="street" id="ulica-woloska"><summary>ul. Wołoska</summary><div class="street-content"><p>W Kronice pojawia się przy przybliżaniu położenia dawnej osady Szopy Niemieckie.</p><p><a href="kronika.html#ulica-woloska">Przejdź do wystąpienia w Kronice →</a></p></div></details>
-      <details class="street" id="ulica-woronicza"><summary>ul. Woronicza</summary><div class="street-content"><p>W Kronice pojawia się przy przybliżaniu położenia dawnej osady Szopy Niemieckie.</p><p><a href="kronika.html#ulica-woronicza">Przejdź do wystąpienia w Kronice →</a></p></div></details>
-      <details class="street" id="ulica-fosa"><summary>ul. Fosa</summary><div class="street-content"><p>W Kronice pojawia się jako punkt orientacyjny dla dawnego Służewa, w rejonie kościoła św. Katarzyny i Potoku Służewieckiego.</p><p><a href="kronika.html#ulica-fosa">Przejdź do wystąpienia w Kronice →</a></p></div></details>
-      <details class="street" id="ulica-czerniakowska"><summary>ul. Czerniakowska</summary><div class="street-content"><p>W Kronice pojawia się przy przybliżaniu położenia dawnego Czerniakowa.</p><p><a href="kronika.html#ulica-czerniakowska">Przejdź do wystąpienia w Kronice →</a></p></div></details>
-      <details class="street" id="ulica-bernardynska"><summary>ul. Bernardyńska</summary><div class="street-content"><p>W Kronice pojawia się przy przybliżaniu położenia dawnego Czerniakowa, wokół kościoła św. Antoniego.</p><p><a href="kronika.html#ulica-bernardynska">Przejdź do wystąpienia w Kronice →</a></p></div></details>
-      <details class="street" id="ulica-powsinska"><summary>ul. Powsińska</summary><div class="street-content"><p>W Kronice pojawia się przy przybliżaniu położenia dawnego Czerniakowa.</p><p><a href="kronika.html#ulica-powsinska">Przejdź do wystąpienia w Kronice →</a></p></div></details>
-      <details class="street" id="ulica-potoki"><summary>ul. Potoki</summary><div class="street-content"><p>W Kronice pojawia się w końcowym fragmencie felietonu jako współczesna nazwa ulicy, przy której warto wyobrazić sobie dawny krajobraz pól, wody i dróg.</p><p><a href="kronika.html#ulica-potoki">Przejdź do wystąpienia w Kronice →</a></p></div></details>
-      <details class="street" id="ulica-nowy-swiat"><summary>ul. Nowy Świat</summary><div class="street-content"><p>W Kronice pojawia się w tabeli dotyczącej warszawskiej poczty na początku XVIII wieku — przy opisie dawnej lokalizacji poczty.</p><p><a href="kronika.html#ulica-nowy-swiat">Przejdź do wystąpienia w Kronice →</a></p></div></details>
-      <details class="street" id="ulica-krakowskie-przedmiescie"><summary>ul. Krakowskie Przedmieście</summary><div class="street-content"><p>W Kronice pojawia się w tabeli dotyczącej poczty w latach 1780–1795, przy Pałacu Wesslów.</p><p><a href="kronika.html#ulica-krakowskie-przedmiescie">Przejdź do wystąpienia w Kronice →</a></p></div></details>
-      <details class="street" id="ulica-sikorskiego">
-        <summary>al. gen. Władysława Sikorskiego</summary>
-        <div class="street-content">
-          <p><strong>Patron:</strong> <a href="osoby.html#osoba-wladyslaw-sikorski">Władysław Sikorski</a> (1881–1943).</p>
-          <p>W Kronice aleja jest wymieniana jako jedna z głównych arterii związanych z położeniem i komunikacją Stegien.</p>
-          <p><a href="kronika.html#osoba-wladyslaw-sikorski">Przejdź do pierwszego wystąpienia w Kronice →</a></p>
+
+
+  <main class="page">
+
+    <div class="page-grid">
+
+      <a class="back" href="index.html">← Osiedle</a>
+
+      <h1>Indeks ulic</h1>
+
+      <p class="people-intro">
+        Indeks ulic związanych z historią Stegien. Nazwy zostały
+        podzielone na trzy grupy: współczesne ulice osiedla Stegny,
+        nieistniejące ulice i drogi sprzed jego budowy oraz ulice
+        znajdujące się poza osiedlem, ale ważne dla jego historii
+        i położenia.
+      </p>
+
+
+      <!-- ===================================================== -->
+      <!-- 1. ULICE OSIEDLA STEGNY                              -->
+      <!-- ===================================================== -->
+
+      <section class="street-group" id="ulice-osiedla-stegny">
+
+        <h2>Ulice osiedla Stegny</h2>
+
+        <p class="street-group-intro">
+          Ulice i aleje należące do współczesnego układu
+          komunikacyjnego osiedla Stegny.
+        </p>
+
+        <div class="street-index">
+
+
+          <details class="street" id="ulica-sikorskiego">
+
+            <summary>
+              al. gen. Władysława Sikorskiego
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                <strong>Patron:</strong>
+                <a href="osoby.html#osoba-wladyslaw-sikorski">
+                  Władysław Sikorski
+                </a>
+                (1881–1943).
+              </p>
+
+              <p>
+                Jedna z głównych arterii związanych z położeniem
+                i komunikacją Stegien.
+              </p>
+
+              <p>
+                <a href="kronika.html#osoba-wladyslaw-sikorski">
+                  Przejdź do pierwszego wystąpienia w Kronice →
+                </a>
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-witosa">
+
+            <summary>
+              al. Wincentego Witosa
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                <strong>Patron:</strong>
+                <a href="osoby.html#osoba-wincenty-witos">
+                  Wincenty Witos
+                </a>
+                (1874–1945).
+              </p>
+
+              <p>
+                Wincenty Witos był działaczem ruchu ludowego
+                i trzykrotnym premierem Rzeczypospolitej Polskiej.
+              </p>
+
+            </div>
+
+          </details>
+
+
         </div>
-      </details>
-      <details class="street" id="ulica-witosa"><summary>al. Wincentego Witosa</summary><div class="street-content"><p><strong>Patron:</strong> <a href="osoby.html#osoba-wincenty-witos">Wincenty Witos</a> (1874–1945).</p><p>Wincenty Witos był działaczem ruchu ludowego i trzykrotnym premierem Rzeczypospolitej Polskiej. citeturn1search6</p></div></details>
+
+      </section>
+
+
+
+      <!-- ===================================================== -->
+      <!-- 2. NIEISTNIEJĄCE ULICE I DROGI                      -->
+      <!-- ===================================================== -->
+
+      <section
+        class="street-group"
+        id="ulice-sprzed-budowy-stegien"
+      >
+
+        <h2>
+          Nieistniejące ulice i drogi przed budową osiedla Stegny
+        </h2>
+
+        <p class="street-group-intro">
+          Dawne drogi i ulice przebiegające przez tereny,
+          na których powstało osiedle Stegny. Część z nich
+          zniknęła w związku z budową osiedla i przebudową
+          całego układu komunikacyjnego.
+        </p>
+
+        <div class="street-index">
+
+
+          <details class="street" id="ulica-buraczana">
+
+            <summary>
+              ul. Buraczana
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                Dawna ulica związana z rolniczym charakterem
+                terenów Stegien przed budową osiedla.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-cebulowa">
+
+            <summary>
+              ul. Cebulowa
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                Dawna ulica położona na terenach, które zostały
+                przekształcone podczas budowy osiedla Stegny.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-falowa">
+
+            <summary>
+              ul. Falowa
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                Dawna droga należąca do przedosiedlowego
+                układu komunikacyjnego Stegien.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-kalafiorowa">
+
+            <summary>
+              ul. Kalafiorowa
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                Dawna ulica związana z rolniczym krajobrazem
+                Stegien przed rozpoczęciem budowy osiedla.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-kukurydzy">
+
+            <summary>
+              ul. Kukurydzy
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                Dawna droga istniejąca w obrębie pól i terenów
+                rolniczych, które zostały później zabudowane
+                osiedlem Stegny.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-pietruszki">
+
+            <summary>
+              ul. Pietruszki
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                Dawna droga stanowiąca część przedosiedlowego
+                układu dróg na terenach dzisiejszych Stegien.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-rymanowska">
+
+            <summary>
+              ul. Rymanowska
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                Dawna ulica znajdująca się na terenach,
+                które zostały przekształcone podczas budowy
+                osiedla Stegny.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-selerowa">
+
+            <summary>
+              ul. Selerowa
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                Dawna ulica należąca do układu dróg istniejących
+                przed powstaniem współczesnego osiedla Stegny.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-szczypiorkowa">
+
+            <summary>
+              ul. Szczypiorkowa
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                Dawna droga związana z rolniczym krajobrazem
+                Stegien przed budową osiedla.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-szpinakowa">
+
+            <summary>
+              ul. Szpinakowa
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                Dawna droga istniejąca w obrębie pól
+                i gospodarstw znajdujących się na terenach
+                późniejszego osiedla.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-witaminowa">
+
+            <summary>
+              ul. Witaminowa
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                Dawna ulica związana z przedosiedlowym
+                układem komunikacyjnym Stegien.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-ziemniaczana">
+
+            <summary>
+              ul. Ziemniaczana
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                Dawna ulica związana z rolniczym charakterem
+                terenów Stegien przed budową osiedla.
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-zywiecka-stegny">
+
+            <summary>
+              ul. Żywiecka — dawny przebieg na Stegnach
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                Dawna droga należąca do historycznego układu
+                komunikacyjnego terenów Stegien.
+              </p>
+
+            </div>
+
+          </details>
+
+
+        </div>
+
+      </section>
+
+
+
+      <!-- ===================================================== -->
+      <!-- 3. ULICE POWIĄZANE ZE STEGNAMI                      -->
+      <!-- ===================================================== -->
+
+      <section
+        class="street-group"
+        id="ulice-powiazane-ze-stegnami"
+      >
+
+        <h2>
+          Ulice powiązane z osiedlem Stegny
+        </h2>
+
+        <p class="street-group-intro">
+          Ulice znajdujące się poza właściwym obszarem osiedla
+          Stegny, ale ważne dla jego historii, dawnego krajobrazu,
+          sąsiednich osad lub opisu położenia.
+        </p>
+
+        <div class="street-index">
+
+
+          <details class="street" id="ulica-bochenska">
+
+            <summary>
+              ul. Bocheńska
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                W Kronice pojawia się przy przybliżaniu
+                położenia dawnej osady Szopy Polskie.
+                Wraz z Jaśminową i Bukowińską wskazuje
+                współczesny rejon dawnej osady.
+              </p>
+
+              <p>
+                <a href="kronika.html#ulica-bochenska">
+                  Przejdź do wystąpienia w Kronice →
+                </a>
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-jasminowa">
+
+            <summary>
+              ul. Jaśminowa
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                W Kronice pojawia się przy przybliżaniu
+                położenia dawnej osady Szopy Polskie.
+              </p>
+
+              <p>
+                <a href="kronika.html#ulica-jasminowa">
+                  Przejdź do wystąpienia w Kronice →
+                </a>
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-bukowinska">
+
+            <summary>
+              ul. Bukowińska
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                W Kronice pojawia się przy przybliżaniu
+                położenia dawnej osady Szopy Polskie.
+              </p>
+
+              <p>
+                <a href="kronika.html#ulica-bukowinska">
+                  Przejdź do wystąpienia w Kronice →
+                </a>
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-pulawska">
+
+            <summary>
+              ul. Puławska
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                W Kronice stanowi punkt odniesienia przy opisie
+                położenia Szop Polskich i Szop Niemieckich
+                po obu stronach dawnej osi komunikacyjnej.
+              </p>
+
+              <p>
+                <a href="kronika.html#ulica-pulawska">
+                  Przejdź do wystąpienia w Kronice →
+                </a>
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-woloska">
+
+            <summary>
+              ul. Wołoska
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                W Kronice pojawia się przy przybliżaniu
+                położenia dawnej osady Szopy Niemieckie.
+              </p>
+
+              <p>
+                <a href="kronika.html#ulica-woloska">
+                  Przejdź do wystąpienia w Kronice →
+                </a>
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-woronicza">
+
+            <summary>
+              ul. Woronicza
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                W Kronice pojawia się przy przybliżaniu
+                położenia dawnej osady Szopy Niemieckie.
+              </p>
+
+              <p>
+                <a href="kronika.html#ulica-woronicza">
+                  Przejdź do wystąpienia w Kronice →
+                </a>
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-fosa">
+
+            <summary>
+              ul. Fosa
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                W Kronice pojawia się jako punkt orientacyjny
+                dla dawnego Służewa, w rejonie kościoła
+                św. Katarzyny i Potoku Służewieckiego.
+              </p>
+
+              <p>
+                <a href="kronika.html#ulica-fosa">
+                  Przejdź do wystąpienia w Kronice →
+                </a>
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-czerniakowska">
+
+            <summary>
+              ul. Czerniakowska
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                W Kronice pojawia się przy przybliżaniu
+                położenia dawnego Czerniakowa.
+              </p>
+
+              <p>
+                <a href="kronika.html#ulica-czerniakowska">
+                  Przejdź do wystąpienia w Kronice →
+                </a>
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-bernardynska">
+
+            <summary>
+              ul. Bernardyńska
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                W Kronice pojawia się przy przybliżaniu
+                położenia dawnego Czerniakowa,
+                wokół kościoła św. Antoniego.
+              </p>
+
+              <p>
+                <a href="kronika.html#ulica-bernardynska">
+                  Przejdź do wystąpienia w Kronice →
+                </a>
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-powsinska">
+
+            <summary>
+              ul. Powsińska
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                W Kronice pojawia się przy przybliżaniu
+                położenia dawnego Czerniakowa.
+              </p>
+
+              <p>
+                <a href="kronika.html#ulica-powsinska">
+                  Przejdź do wystąpienia w Kronice →
+                </a>
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-potoki">
+
+            <summary>
+              ul. Potoki
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                W Kronice pojawia się w końcowym fragmencie
+                felietonu jako współczesna nazwa ulicy,
+                przy której warto wyobrazić sobie dawny
+                krajobraz pól, wody i dróg.
+              </p>
+
+              <p>
+                <a href="kronika.html#ulica-potoki">
+                  Przejdź do wystąpienia w Kronice →
+                </a>
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details class="street" id="ulica-nowy-swiat">
+
+            <summary>
+              ul. Nowy Świat
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                Ulica pojawia się w Kronice w tabeli dotyczącej
+                warszawskiej poczty na początku XVIII wieku,
+                przy opisie dawnej lokalizacji poczty.
+              </p>
+
+              <p>
+                <a href="kronika.html#ulica-nowy-swiat">
+                  Przejdź do wystąpienia w Kronice →
+                </a>
+              </p>
+
+            </div>
+
+          </details>
+
+
+          <details
+            class="street"
+            id="ulica-krakowskie-przedmiescie"
+          >
+
+            <summary>
+              ul. Krakowskie Przedmieście
+            </summary>
+
+            <div class="street-content">
+
+              <p>
+                Ulica pojawia się w Kronice w tabeli dotyczącej
+                poczty w latach 1780–1795, przy Pałacu Wesslów.
+              </p>
+
+              <p>
+                <a href="kronika.html#ulica-krakowskie-przedmiescie">
+                  Przejdź do wystąpienia w Kronice →
+                </a>
+              </p>
+
+            </div>
+
+          </details>
+
+
+        </div>
+
+      </section>
+
+
     </div>
-  </div></main>
-  <footer class="footer"><span>Kronika Stegien</span><span>© Kronika Stegien • Warszawa • Mokotów</span></footer>
+
+  </main>
+
+
+  <footer class="footer">
+
+    <span>Kronika Stegien</span>
+
+    <span>
+      © Kronika Stegien • Warszawa • Mokotów
+    </span>
+
+  </footer>
+
 </body>
 </html>
+```
