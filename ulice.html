@@ -12,7 +12,12 @@
   <style>
     .street-groups {
       display: grid;
-      gap: 48px;
+      gap: 70px;
+    }
+
+    .street-group + .street-group {
+      padding-top: 45px;
+      border-top: 1px solid var(--line);
     }
 
     .street-group {
@@ -101,7 +106,11 @@
 
     @media(max-width:800px) {
       .street-groups {
-        gap: 34px;
+        gap: 40px;
+      }
+
+      .street-group + .street-group {
+        padding-top: 30px;
       }
 
       .street-group h2 {
