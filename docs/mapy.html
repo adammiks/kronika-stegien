@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mapy — Kronika Stegien</title>
+  <link rel="stylesheet" href="style.css?v=9">
+  <style>
+    .historical-map{
+      margin:32px 0 36px;
+      padding:20px;
+      background:#f8f5ed;
+      border:1px solid var(--line);
+      box-shadow:0 5px 14px rgba(48,34,19,.12);
+    }
+    .historical-map img{
+      display:block;
+      width:100%;
+      max-width:100%;
+      height:auto;
+      border:1px solid #c8b99f;
+      background:#eee7d9;
+    }
+    .historical-map figcaption{
+      margin-top:14px;
+      color:var(--muted);
+      font:14px/1.6 Georgia,serif;
+    }
+    .map-intro{
+      max-width:760px;
+      color:var(--muted);
+      font:17px/1.7 Georgia,serif;
+    }
+    @media(max-width:800px){
+      .historical-map{padding:12px}
+    }
+
+    .xviii-map-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 18px;}
+    .xviii-map-grid .historical-map{margin:0 0 28px;}
+    @media(max-width:800px){.xviii-map-grid{grid-template-columns:1fr;gap:0;}}
+  </style>
+</head>
+<body>
+  <header class="site-head">
+    <a class="brand" href="index.html">
+      Kronika Stegien
+      <small>historia osiedla mieszkaniowego w Warszawie</small>
+    </a>
+    <nav class="nav">
+      <a href="mapy.html">Mapy</a>
+      <a href="budynki.html">Budynki</a>
+      <a href="zdjecia.html">Ilustracje</a>
+      <a href="dokumenty.html">Dokumenty</a>
+      <a href="ludzie.html">Ludzie</a>
+        <a href="osoby.html">Indeks osób</a>
+        <a href="literatura.html">Stegny w kulturze</a>
+        <a href="ulice.html">Ulice</a>
+      <a href="os-czasu.html">Oś czasu</a>
+      <a href="o-stegnach.html">O Stegnach</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <div class="page-grid">
+      <a class="back" href="index.html">← Osiedle</a>
+
+
+      <div class="rule"></div>
+
+       <p class="map-intro">
+         MAPY 
+       </p>
+
+        <p class="map-intro">
+          Plan sytuacyjny pokazujący położenie Stegien na tle Warszawy. 
+        </p>
+
+        <figure class="historical-map">
+          <img
+            src="Po%C5%82o%C5%BCenie%20Stegien%20na%20mapie%20Warszawy.jpg"
+            alt="Położenie Stegien na mapie Warszawy"
+            loading="lazy"
+          >
+          <figcaption>
+            <strong>Położenie Stegien na mapie Warszawy.</strong>
+            Plan sytuacyjny znajdujący się w repozytorium „Kroniki Stegien”.
+          </figcaption>
+        </figure>
+      </section>
+
+      
+      <section id="mapa-wspolczesna-stegien" aria-labelledby="mapa-wspolczesna-stegien-title">
+        <h2 id="mapa-wspolczesna-stegien-title" style="font:28px Georgia,serif;margin:36px 0 12px;color:var(--ink);">
+          Współczesne Stegny 
+        </h2>
+        <p class="map-intro">
+          Współczesna mapa Stegien pokazująca układ ulic, zabudowę i położenie osiedla w południowej części Warszawy.
+          Służy jako punkt odniesienia dla rozdziału „Wstęp”.
+        </p>
+        <figure class="historical-map">
+          <div style="position:relative;width:100%;aspect-ratio:16/9;min-height:420px;">
+            <iframe
+              title="Współczesna mapa Stegien w Warszawie"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=21.008%2C52.165%2C21.075%2C52.205&amp;layer=mapnik&amp;marker=52.1858%2C21.0444"
+              style="position:absolute;inset:0;width:100%;height:100%;border:0;"
+              loading="lazy">
+            </iframe>
+          </div>
+          <figcaption>
+            <strong>Współczesne Stegny.</strong>
+            Mapa OpenStreetMap; dane mapowe © OpenStreetMap i autorzy.
+            <a class="map-link" href="https://www.openstreetmap.org/?mlat=52.1858&amp;mlon=21.0444#map=14/52.1858/21.0444" target="_blank" rel="noopener">Otwórz większą mapę →</a>
+          </figcaption>
+        </figure>
+      </section>
+
+      <div class="rule"></div>
+
+      <section id="stegny-na-zarysie-mokotowa" aria-labelledby="stegny-na-zarysie-title">
+        <h2 id="stegny-na-zarysie-title" style="font:28px Georgia,serif;margin:36px 0 12px;color:var(--ink);">
+          Stegny na zarysie mapy Mokotowa
+        </h2>
+        <p class="map-intro">
+          Schematyczny plan sytuacyjny pokazujący Stegny na tle sąsiednich obszarów Mokotowa.
+        </p>
+        <figure class="historical-map">
+          <a href="Stegny%20na%20zarysie%20mapy%20Mokotowa.svg" target="_blank" rel="noopener" title="Otwórz mapę w osobnym oknie">
+            <img src="Stegny%20na%20zarysie%20mapy%20Mokotowa.svg" alt="Stegny na zarysie mapy Mokotowa" loading="lazy">
+          </a>
+          <figcaption>
+            <strong>Stegny na zarysie mapy Mokotowa.</strong>
+            Kliknij mapę, aby otworzyć ją w osobnym oknie.
+          </figcaption>
+        </figure>
+      </section>
+
+      <div class="rule"></div>
+
+      <section id="drogi-xv-xvi-wiek" aria-labelledby="drogi-xv-xvi-title">
+        <h2 id="drogi-xv-xvi-title" style="font:28px Georgia,serif;margin:36px 0 12px;color:var(--ink);">
+          Okolica przyszłych Stegien, XV–XVI wiek — schemat dróg
+        </h2>
+        <p class="map-intro">
+          Schematyczna mapa kierunków komunikacyjnych odtworzona na podstawie informacji wykorzystanych w felietonie „Stegny przed Stegnami — wiek XVI i XVII”.
+          Nie jest mapą w skali i nie przedstawia dokładnego przebiegu dróg, którego źródła dla tego okresu nie pozwalają pewnie ustalić.
+        </p>
+        <figure class="historical-map">
+          <div style="position:relative;width:100%;height:430px;background:linear-gradient(165deg,#eef0df 0%,#f7f2e6 52%,#e9eee5 100%);border:1px solid #c8b99f;overflow:hidden;font:14px Georgia,serif;color:#33291f;">
+            <div style="position:absolute;right:-8%;top:-5%;width:31%;height:115%;background:#dce8e6;border-left:2px solid #9bb4b0;transform:rotate(-5deg);"></div>
+            <div style="position:absolute;right:7%;top:12%;color:#58736f;font-style:italic;">Wisła</div>
+            <div style="position:absolute;left:9%;top:38%;width:67%;height:0;border-top:4px solid #6f4f32;transform:rotate(-8deg);transform-origin:left center;"></div>
+            <div style="position:absolute;left:20%;top:58%;width:55%;height:0;border-top:3px dashed #8b6a48;transform:rotate(-18deg);transform-origin:left center;"></div>
+            <div style="position:absolute;left:27%;top:68%;width:50%;height:0;border-top:3px dashed #8b6a48;transform:rotate(8deg);transform-origin:left center;"></div>
+            <div style="position:absolute;left:31%;top:50%;width:40%;height:0;border-top:3px solid #6f4f32;transform:rotate(12deg);transform-origin:left center;"></div>
+            <div style="position:absolute;left:10%;top:34%;width:10px;height:10px;border-radius:50%;background:#6f4f32;"></div><span style="position:absolute;left:7%;top:27%;">Solec</span>
+            <div style="position:absolute;left:24%;top:35%;width:10px;height:10px;border-radius:50%;background:#6f4f32;"></div><span style="position:absolute;left:20%;top:28%;">Czerniaków</span>
+            <div style="position:absolute;left:42%;top:46%;width:10px;height:10px;border-radius:50%;background:#6f4f32;"></div><span style="position:absolute;left:40%;top:39%;">Służew</span>
+            <div style="position:absolute;left:55%;top:31%;width:10px;height:10px;border-radius:50%;background:#6f4f32;"></div><span style="position:absolute;left:53%;top:24%;">Milanowo</span>
+            <div style="position:absolute;left:54%;top:58%;width:10px;height:10px;border-radius:50%;background:#6f4f32;"></div><span style="position:absolute;left:51%;top:62%;">Mokotów</span>
+            <div style="position:absolute;left:39%;top:72%;width:10px;height:10px;border-radius:50%;background:#6f4f32;"></div><span style="position:absolute;left:33%;top:77%;">Wolica Służewska</span>
+            <div style="position:absolute;left:61%;top:72%;width:10px;height:10px;border-radius:50%;background:#6f4f32;"></div><span style="position:absolute;left:59%;top:77%;">Wyczółki</span>
+            <div style="position:absolute;left:70%;top:53%;width:10px;height:10px;border-radius:50%;background:#6f4f32;"></div><span style="position:absolute;left:68%;top:46%;">Służewiec</span>
+            <div style="position:absolute;left:74%;top:76%;width:10px;height:10px;border-radius:50%;background:#6f4f32;"></div><span style="position:absolute;left:71%;top:81%;">Jemielino</span>
+            <div style="position:absolute;left:44%;top:6%;font-size:18px;font-weight:bold;">Okolica przyszłych Stegien, XV–XVI wiek</div>
+            <div style="position:absolute;left:3%;bottom:10px;font-size:12px;">━━ kierunek poświadczony &nbsp;&nbsp; ╌╌ kierunek lokalny / ostrożna rekonstrukcja</div>
+          </div>
+          <figcaption>
+            <strong>Drogi i kierunki komunikacyjne w okolicy przyszłych Stegien, XV–XVI wiek.</strong>
+            Schemat oparty na kierunkach dróg, moście i połączeniach wymienionych w felietonie. Nie odtwarza dokładnego przebiegu dróg, którego źródła dla tego okresu nie pozwalają pewnie ustalić.
+          </figcaption>
+        </figure>
+      </section>
+
+      <div class="rule"></div>
+
+      <section id="kierunki-podrozy-xvii-wiek" aria-labelledby="kierunki-podrozy-xvii-title">
+        <h2 id="kierunki-podrozy-xvii-title" style="font:28px Georgia,serif;margin:36px 0 12px;color:var(--ink);">
+          Kierunki podróży w XVII wieku
+        </h2>
+        <p class="map-intro">
+          Schemat głównych kierunków komunikacyjnych w okolicy przyszłych Stegien. Nie jest to mapa wszystkich dróg ani próba odtworzenia ich dokładnego przebiegu.
+          Dzisiejsze ulice Sobieskiego, al. Wilanowska, Bonifacego i Idzikowskiego służą wyłącznie jako współczesne punkty orientacyjne.
+        </p>
+        <figure class="historical-map">
+          <img src="images/mapy-xvii/02-kierunki-podrozy.svg" alt="Kierunki podróży w XVII wieku: Służew, Wilanów, Zawady, Wisła, Czerniaków i Warszawa" loading="lazy">
+          <figcaption>
+            <strong>Kierunki podróży w XVII wieku.</strong>
+            Pokazane są główne, źródłowo uzasadnione kierunki: Służew–Wilanów, Wilanów–Zawady–Wisła oraz połączenia związane z Warszawą, Ujazdowem i Solcem. Przerywane linie oznaczają ostrożną rekonstrukcję lokalnych przejazdów. Nie należy utożsamiać współczesnych ulic z XVII-wieczną siecią dróg.
+            <a class="map-link" href="https://sztukakrajobrazu.pl/kaczynska.pdf" target="_blank" rel="noopener">Źródło do historycznych przebiegów dróg →</a>
+          </figcaption>
+        </figure>
+      </section>
+
+      <div class="rule"></div>
+
+      <section id="wsie-i-osady-poludniowej-warszawy" aria-labelledby="wsie-i-osady-title">
+        <h2 id="wsie-i-osady-title" style="font:28px Georgia,serif;margin:36px 0 12px;color:var(--ink);">Wsie i osady południowej Warszawy w XVIII wieku</h2>
+        <p class="map-intro">Mapa historyczna pokazująca dawne wsie i osady południowej Warszawy na tle współczesnej mapy. Lokalizacja oparta na mapie Pircha z 1747 r. oraz mapach z początku XIX wieku.</p>
+        <figure class="historical-map">
+          <img src="Mapa%20historycznych%20wsi%20Warszawy.png" alt="Wsie i osady południowej Warszawy na tle współczesnej mapy" loading="lazy">
+          <figcaption><strong>Wsie i osady południowej Warszawy na tle współczesnej mapy.</strong> Ta sama przestrzeń — inne czasy.</figcaption>
+        </figure>
+      </section>
+
+
+      <div class="rule"></div>
+
+      <section id="stegny-xviii-wiek" aria-labelledby="stegny-xviii-title">
+        <h2 id="stegny-xviii-title" style="font:28px Georgia,serif;margin:36px 0 12px;color:var(--ink);">
+          Stegny przed Stegnami — XVIII wiek
+        </h2>
+        <p class="map-intro">
+          Sześć map tematycznych opracowanych na podstawie mapy Karola de Perthéesa z końca XVIII wieku.
+          Każda pokazuje inny aspekt krajobrazu, dróg, religii, gospodarki i przemian tej części Warszawy.
+        </p>
+
+        <div class="xviii-map-grid">
+          <figure class="historical-map">
+            <img src="images/mapy-xviii/01-przyszle-stegny.svg" alt="Przyszłe Stegny — Szopy, Służew, Czerniaków, Siekierki i Wilanów" loading="lazy">
+            <figcaption><strong>1. Przyszłe Stegny.</strong> Najważniejsze osady i miejsca bezpośrednio związane z krajobrazem przyszłych Stegien.</figcaption>
+          </figure>
+
+          <figure class="historical-map">
+            <img src="images/mapy-xviii/02-drogi-i-polaczenia.svg" alt="Drogi i połączenia w okolicy przyszłych Stegien" loading="lazy">
+            <figcaption><strong>2. Drogi i połączenia.</strong> Główne kierunki ruchu oraz przeprawa przez Wisłę.</figcaption>
+          </figure>
+
+          <figure class="historical-map">
+            <img src="images/mapy-xviii/03-miejsca-religijne.svg" alt="Miejsca religijne w okolicy przyszłych Stegien" loading="lazy">
+            <figcaption><strong>3. Miejsca religijne.</strong> Służew, Czerniaków i Wilanów jako ważne punkty krajobrazu sakralnego.</figcaption>
+          </figure>
+
+          <figure class="historical-map">
+            <img src="images/mapy-xviii/04-gospodarka-i-codziennosc.svg" alt="Gospodarka i codzienność w okolicy przyszłych Stegien" loading="lazy">
+            <figcaption><strong>4. Gospodarka i codzienność.</strong> Osady rolnicze, dobra wilanowskie i miejsca wymiany.</figcaption>
+          </figure>
+
+          <figure class="historical-map">
+            <img src="images/mapy-xviii/05-warszawa-zaplecze.svg" alt="Warszawa jako zaplecze dla okolic przyszłych Stegien" loading="lazy">
+            <figcaption><strong>5. Warszawa jako zaplecze.</strong> Miejskie centrum dróg i instytucji opisanych w felietonie.</figcaption>
+          </figure>
+
+          <figure class="historical-map">
+            <img src="images/mapy-xviii/06-koniec-xviii-wieku.svg" alt="Koniec XVIII wieku — Służew i Szopy" loading="lazy">
+            <figcaption><strong>6. Koniec XVIII wieku.</strong> Służew i Szopy na tle przemian lat 1794–1795.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <div class="rule"></div>
+
+      <ul class="list">
+        <li>Mapa osiedla i układ ulic</li>
+        <li>Mapa historyczna — rozwój zabudowy</li>
+        <li>Ilustracje lotnicze i porównanie zmian</li>
+        <li>Mapa budynków i adresów</li>
+        <li>Mapa zieleni, usług i komunikacji</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    Kronika Stegien • <a href="index.html">strona główna</a>
+  </footer>
+</body>
+</html>
