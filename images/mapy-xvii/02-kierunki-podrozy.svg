@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" role="img" aria-labelledby="t d">
+<title id="t">Kierunki podróży w XVII wieku w okolicy przyszłych Stegien</title>
+<desc id="d">Schemat głównych kierunków komunikacyjnych. Dzisiejsze ulice pokazano wyłącznie jako punkty orientacyjne.</desc>
+<rect width="920" height="520" fill="#f4f0e6"/>
+<path d="M780,0 C735,90 815,145 770,230 C730,315 805,380 760,520 L920,520 L920,0 Z" fill="#b8c9cf"/>
+<text x="835" y="45" text-anchor="middle" font-family="Georgia,serif" font-size="19" fill="#42545a">Wisła</text>
+
+<!-- dzisiejsze osie tylko jako tło orientacyjne -->
+<path d="M500,55 L505,465" stroke="#aaa" stroke-width="2" opacity=".55"/>
+<path d="M245,240 C390,258 565,305 730,365" stroke="#aaa" stroke-width="2" opacity=".5"/>
+<path d="M240,345 C395,350 560,355 720,385" stroke="#aaa" stroke-width="2" opacity=".38"/>
+<path d="M270,415 C415,408 565,405 725,420" stroke="#aaa" stroke-width="2" opacity=".30"/>
+<text x="510" y="82" font-family="Arial,sans-serif" font-size="13" fill="#777">dzisiejsza Sobieskiego</text>
+<text x="330" y="247" font-family="Arial,sans-serif" font-size="13" fill="#777" transform="rotate(13 330 247)">dzisiejsza al. Wilanowska</text>
+<text x="410" y="348" font-family="Arial,sans-serif" font-size="12" fill="#888">Bonifacego — tylko orientacyjnie</text>
+<text x="500" y="432" font-family="Arial,sans-serif" font-size="12" fill="#999">Idzikowskiego — tylko orientacyjnie</text>
+
+<defs>
+<marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6b4d32"/></marker>
+<marker id="b" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#806c58"/></marker>
+</defs>
+
+<!-- główne kierunki -->
+<path d="M315,225 C400,270 470,315 565,350" stroke="#6b4d32" stroke-width="7" fill="none" marker-end="url(#a)"/>
+<path d="M565,350 C650,365 705,395 765,425" stroke="#6b4d32" stroke-width="7" fill="none" marker-end="url(#a)"/>
+<path d="M765,425 C792,447 805,469 815,500" stroke="#6b4d32" stroke-width="5" fill="none" marker-end="url(#a)"/>
+<path d="M315,225 C355,170 400,125 455,100" stroke="#6b4d32" stroke-width="6" fill="none" marker-end="url(#a)"/>
+<path d="M535,245 C610,205 665,185 735,195" stroke="#6b4d32" stroke-width="5" fill="none" marker-end="url(#a)"/>
+
+<!-- lokalne połączenia: ostrożna rekonstrukcja -->
+<path d="M315,225 C385,300 430,335 565,350" stroke="#806c58" stroke-width="3.5" stroke-dasharray="10 9" fill="none" marker-end="url(#b)"/>
+<path d="M415,295 C455,255 485,245 535,245" stroke="#806c58" stroke-width="3.5" stroke-dasharray="10 9" fill="none" marker-end="url(#b)"/>
+<path d="M415,295 C385,340 370,380 335,405" stroke="#806c58" stroke-width="3.5" stroke-dasharray="10 9" fill="none" marker-end="url(#b)"/>
+
+<!-- punkty -->
+<g fill="#5c4938" stroke="#f4f0e6" stroke-width="4">
+<circle cx="315" cy="225" r="9"/><circle cx="565" cy="350" r="9"/><circle cx="535" cy="245" r="8"/>
+<circle cx="765" cy="425" r="8"/><circle cx="735" cy="195" r="8"/><circle cx="455" cy="100" r="8"/>
+</g>
+<g font-family="Georgia,serif" fill="#352b22">
+<text x="330" y="215" font-size="18" font-weight="700">Służew</text>
+<text x="580" y="345" font-size="18" font-weight="700">Wilanów</text>
+<text x="548" y="230" font-size="17">Czerniaków</text>
+<text x="780" y="418" font-size="17">Zawady</text>
+<text x="748" y="190" font-size="17">Solec</text>
+<text x="468" y="95" font-size="17">Warszawa / Ujazdów</text>
+<text x="390" y="292" font-size="16" font-style="italic">obszar przyszłych Stegien</text>
+</g>
+<text x="690" y="455" font-family="Arial,sans-serif" font-size="13" fill="#4f5f64">kierunek ku przeprawom nad Wisłą</text>
+
+<rect x="28" y="395" width="315" height="95" rx="6" fill="#f8f4eb" stroke="#aaa"/>
+<line x1="45" y1="423" x2="105" y2="423" stroke="#6b4d32" stroke-width="6"/>
+<text x="118" y="428" font-family="Arial,sans-serif" font-size="13">główny kierunek poświadczony / dobrze uzasadniony</text>
+<line x1="45" y1="452" x2="105" y2="452" stroke="#806c58" stroke-width="4" stroke-dasharray="10 9"/>
+<text x="118" y="457" font-family="Arial,sans-serif" font-size="13">lokalne połączenie — ostrożna rekonstrukcja</text>
+<text x="45" y="478" font-family="Arial,sans-serif" font-size="12" fill="#777">szare linie: dzisiejsze ulice wyłącznie jako orientacja</text>
+<text x="24" y="28" font-family="Georgia,serif" font-size="18" font-weight="700">XVII wiek — schemat kierunków, nie mapa w skali</text>
+</svg>
