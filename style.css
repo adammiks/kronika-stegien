@@ -792,3 +792,217 @@ a{color:inherit}.site-head{position:relative;z-index:10;padding:18px 34px;displa
 @media(max-width:800px){
   .map-gallery{ grid-template-columns:1fr; gap:14px; }
 }
+
+
+/* =========================================================
+   RESPONSIVE — SMARTFONY
+   ========================================================= */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img, video, iframe, svg {
+  max-width: 100%;
+}
+
+table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+pre, code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .site-head {
+    padding: 12px 14px;
+    min-height: 64px;
+    gap: 10px;
+  }
+
+  .brand {
+    min-width: 0;
+    font-size: 22px;
+    line-height: 1.05;
+  }
+
+  .brand small {
+    max-width: 210px;
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: .06em;
+  }
+
+  .menu summary {
+    padding: 8px 10px;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  .menu .nav {
+    position: fixed;
+    top: 64px;
+    right: 10px;
+    left: 10px;
+    width: auto;
+    max-height: calc(100vh - 78px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .menu .nav a {
+    padding: 12px 11px;
+    font-size: 11px;
+  }
+
+  .home,
+  .home-inner {
+    min-height: calc(100svh - 64px);
+  }
+
+  .home-inner {
+    padding: 32px 18px 24px;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .hero h1 {
+    margin: 10px 0 18px;
+    font-size: clamp(38px, 12vw, 58px);
+    line-height: .98;
+  }
+
+  .eyebrow {
+    font-size: 10px;
+  }
+
+  .credit {
+    max-width: 100%;
+    font-size: 10px;
+    line-height: 1.45;
+  }
+
+  .page {
+    width: 100%;
+    padding: 30px 14px 48px;
+  }
+
+  .page-grid {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .page h1,
+  .page-grid > h1 {
+    max-width: 100%;
+    font-size: clamp(28px, 9vw, 40px);
+    line-height: 1.05;
+    overflow-wrap: anywhere;
+  }
+
+  .page-grid > h1[class^="section-"] {
+    margin-bottom: 16px;
+    padding: 16px 14px;
+  }
+
+  .cards {
+    width: 100%;
+    padding: 7px 5px 9px;
+    gap: 8px;
+  }
+
+  .card.drawer {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .card.drawer > summary {
+    min-height: 72px;
+    padding: 13px 48px 13px 48px;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .card.drawer > summary:after {
+    left: 12px;
+    width: 25px;
+    font-size: 19px;
+  }
+
+  .card.drawer > summary {
+    background-size: auto, auto, auto, auto;
+  }
+
+  .card.drawer > .drawer-content {
+    padding: 15px 13px 18px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .card.drawer > .drawer-content:before {
+    margin: -15px -13px 15px;
+  }
+
+  .chapter summary {
+    min-height: 48px;
+    padding: 10px;
+    gap: 8px;
+    font-size: 13px;
+    letter-spacing: .03em;
+  }
+
+  .chapter summary span:first-child {
+    min-width: 28px;
+    height: 25px;
+    flex: 0 0 28px;
+  }
+
+  .chapter summary .chapter-title {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .chapter-content {
+    padding: 15px 12px 18px;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .chapter-content p {
+    text-align: left;
+  }
+
+  .felieton-map {
+    margin: 20px 0 26px;
+    padding: 8px;
+  }
+
+  .map-gallery {
+    gap: 10px;
+  }
+
+  .map-gallery figure {
+    padding: 7px;
+  }
+
+  .portrait-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .portrait-card {
+    max-width: none;
+  }
+
+  .footer {
+    padding: 14px;
+    font-size: 10px;
+    line-height: 1.4;
+  }
+}
