@@ -44,7 +44,7 @@
       <a href="geografia.html">Indeks nazw geograficznych</a>
       <a href="os-czasu.html">Oś czasu</a>
       <a href="o-stegnach.html">O Stegnach</a>
-      <a href="#okecie-felieton">Felieton o Okęciu</a>
+      <a href="#obok-historii-stegien">Obok historii Stegien</a>
     </nav>
   </header>
 
@@ -515,9 +515,10 @@
           </div>
         </details>
 
-        <details id="okecie-felieton" class="card drawer">
-          <summary>Okęcie — lotnisko, które zmieniało życie Warszawy</summary>
+        <details id="obok-historii-stegien" class="card drawer">
+          <summary>Obok historii Stegien</summary>
           <div class="drawer-content">
+            <h3>Okęcie — lotnisko, które zmieniało życie Warszawy</h3>
             <article class="chapter-content">
               <p><em>O samolotach nad dachami, marzeniach o dalekim świecie, hałasie, pracy i południowej Warszawie, która dorastała w sąsiedztwie wielkiego lotniska.</em></p>
 
@@ -612,7 +613,7 @@
 (function(){
   function showGlossaryTarget(){
     var id=decodeURIComponent(window.location.hash.slice(1));
-    if(!id || (id.indexOf('slownik-')!==0 && id.indexOf('osoba-')!==0 && id.indexOf('geo-')!==0 && id!=='okecie-felieton')) return;
+    if(!id || (id.indexOf('slownik-')!==0 && id.indexOf('osoba-')!==0 && id.indexOf('geo-')!==0 && id!=='obok-historii-stegien')) return;
     var target=document.getElementById(id);
     if(!target) return;
     var details=target.closest('details');
