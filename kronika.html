@@ -44,7 +44,7 @@
       <a href="geografia.html">Indeks nazw geograficznych</a>
       <a href="os-czasu.html">Oś czasu</a>
       <a href="o-stegnach.html">O Stegnach</a>
-      <a href="#obok-historii-stegien">Obok historii Stegien</a>
+      <a href="#okecie-felieton">Felieton o Okęciu</a>
     </nav>
   </header>
 
@@ -612,7 +612,7 @@
 (function(){
   function showGlossaryTarget(){
     var id=decodeURIComponent(window.location.hash.slice(1));
-    if(!id || (id.indexOf('slownik-')!==0 && id.indexOf('osoba-')!==0 && id.indexOf('geo-')!==0 && id!=='obok-historii-stegien')) return;
+    if(!id || (id.indexOf('slownik-')!==0 && id.indexOf('osoba-')!==0 && id.indexOf('geo-')!==0 && id!=='okecie-felieton')) return;
     var target=document.getElementById(id);
     if(!target) return;
     var details=target.closest('details');
