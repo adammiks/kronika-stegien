@@ -1006,3 +1006,43 @@ pre, code {
     line-height: 1.4;
   }
 }
+
+/* Szuflada 07: czytelne tabele z pełną siatką ramek i wyjustowany tekst. */
+#stegny-przed-stegnami-1900-1971 .chapter-content {
+  text-align: justify;
+  text-justify: inter-word;
+}
+#stegny-przed-stegnami-1900-1971 .chapter-content p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+#stegny-przed-stegnami-1900-1971 .chapter-content table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--line, #b9aa96);
+  margin: 1.25rem 0 1.75rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+#stegny-przed-stegnami-1900-1971 .chapter-content th,
+#stegny-przed-stegnami-1900-1971 .chapter-content td {
+  border: 1px solid var(--line, #b9aa96);
+  padding: 0.6rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+#stegny-przed-stegnami-1900-1971 .chapter-content th {
+  background: var(--paper-dark, #eee7dc);
+  font-weight: 700;
+}
+@media (max-width: 700px) {
+  #stegny-przed-stegnami-1900-1971 .chapter-content table {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+  }
+  #stegny-przed-stegnami-1900-1971 .chapter-content th,
+  #stegny-przed-stegnami-1900-1971 .chapter-content td {
+    min-width: 8rem;
+  }
+}
