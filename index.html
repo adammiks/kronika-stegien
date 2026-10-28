@@ -132,14 +132,10 @@
     </div>
   </section>
 
-  <iframe
-    id="music-player"
-    title="W domach z betonu — Martyna Jakubowicz"
-    hidden
-    allow="autoplay; encrypted-media; picture-in-picture"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-  </iframe>
+  <audio id="music-player" preload="auto" loop>
+    <source src="muzyka.mp3" type="audio/mpeg">
+    Twoja przeglądarka nie obsługuje odtwarzania audio.
+  </audio>
 
   <script>
     const enterButton = document.getElementById("enter-button");
@@ -147,9 +143,10 @@
     const musicPlayer = document.getElementById("music-player");
 
     enterButton.addEventListener("click", function () {
-      musicPlayer.src =
-        "https://www.youtube.com/embed/MHU9KOESgxU?autoplay=1&playsinline=1";
-      musicPlayer.hidden = false;
+      musicPlayer.play().catch(function () {
+        const note = document.querySelector(".welcome-note");
+        note.textContent = "Nie udało się uruchomić muzyki. Sprawdź, czy plik muzyka.mp3 znajduje się na stronie.";
+      });
       welcomeScreen.remove();
     });
   </script>
