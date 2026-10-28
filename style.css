@@ -1063,7 +1063,7 @@ pre, code {
   background:
     repeating-linear-gradient(0deg, transparent 0 104px, rgba(58,61,58,.22) 104px 108px),
     repeating-linear-gradient(90deg, transparent 0 48%, rgba(70,72,68,.12) 48% 49%, transparent 49% 100%),
-    linear-gradient(135deg, #d0d0c8, #aead a5);
+    linear-gradient(135deg, #d0d0c8, #aeada5);
   background-color: #b9b9b1;
   box-shadow: inset 0 0 28px rgba(40,42,39,.16), 0 8px 18px rgba(0,0,0,.18);
 }
