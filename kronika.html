@@ -1036,5 +1036,32 @@
 })();
 </script>
 
+
+<script>
+(function(){
+  function addDrawerStateIndicators(){
+    document.querySelectorAll('details.card.drawer > summary').forEach(function(summary){
+      if(summary.querySelector('.drawer-state-indicator')) return;
+      var indicator=document.createElement('span');
+      indicator.className='drawer-state-indicator';
+      indicator.setAttribute('aria-hidden','true');
+      indicator.textContent=summary.parentElement.open ? '⌃' : '⌄';
+      summary.appendChild(indicator);
+    });
+    document.querySelectorAll('details.card.drawer').forEach(function(drawer){
+      drawer.addEventListener('toggle',function(){
+        var indicator=drawer.querySelector(':scope > summary .drawer-state-indicator');
+        if(indicator) indicator.textContent=drawer.open ? '⌃' : '⌄';
+      });
+    });
+  }
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded',addDrawerStateIndicators);
+  } else {
+    addDrawerStateIndicators();
+  }
+})();
+</script>
+
 </body>
 </html>
