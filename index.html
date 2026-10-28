@@ -5,7 +5,82 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Kronika Stegien</title>
   <link rel="stylesheet" href="style.css?v=3">
+
+  <style>
+    .welcome-screen {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      box-sizing: border-box;
+      background: rgba(0, 0, 0, 0.62);
+      text-align: center;
+    }
+
+    .welcome-panel {
+      width: min(100%, 520px);
+      padding: 36px 24px;
+      box-sizing: border-box;
+      color: #fff;
+      background: rgba(20, 20, 20, 0.88);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 8px;
+    }
+
+    .welcome-panel h2 {
+      margin: 0 0 12px;
+      font-size: clamp(26px, 5vw, 38px);
+    }
+
+    .welcome-panel p {
+      line-height: 1.6;
+      margin: 0 0 24px;
+    }
+
+    .welcome-button {
+      display: inline-block;
+      padding: 14px 24px;
+      border: 0;
+      border-radius: 4px;
+      background: #eee1c5;
+      color: #222;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .welcome-button:hover {
+      background: #fff;
+    }
+
+    .welcome-note {
+      margin-top: 16px !important;
+      margin-bottom: 0 !important;
+      font-size: 13px;
+      opacity: 0.8;
+    }
+
+    #music-player {
+      position: fixed;
+      z-index: 1000;
+      right: 16px;
+      bottom: 16px;
+      width: min(320px, calc(100vw - 32px));
+      aspect-ratio: 16 / 9;
+      border: 0;
+      border-radius: 6px;
+      box-shadow: 0 3px 18px rgba(0, 0, 0, 0.3);
+    }
+
+    #music-player[hidden] {
+      display: none;
+    }
+  </style>
 </head>
+
 <body>
   <header class="site-head">
     <a class="brand" href="index.html">
@@ -37,17 +112,46 @@
     <div class="home-inner">
       <section class="hero">
         <div class="eyebrow">Warszawa • Mokotów</div>
-        <h1> Kronika Stegien<br> Z historii  Osiedla  </h1>
+        <h1>Kronika Stegien<br>Z historii Osiedla</h1>
         <div class="credit">Fotografia tła: Osiedle Stegny w Warszawie w latach 70. • źródło: Wikimedia Commons</div>
       </section>
     </div>
-
-
   </main>
 
   <footer class="footer">
     <span>Kronika Stegien</span>
     <span>© Kronika Stegien • Warszawa • Mokotów</span>
   </footer>
+
+  <section class="welcome-screen" id="welcome-screen" aria-labelledby="welcome-title">
+    <div class="welcome-panel">
+      <h2 id="welcome-title">Witaj na Stegnach</h2>
+      <p>Zapraszam do kroniki naszego osiedla. Na początek posłuchajmy „W domach z betonu” Martyny Jakubowicz.</p>
+      <button class="welcome-button" id="enter-button" type="button">Włącz muzykę i wejdź</button>
+      <p class="welcome-note">Muzyka uruchomi się po kliknięciu przycisku.</p>
+    </div>
+  </section>
+
+  <iframe
+    id="music-player"
+    title="W domach z betonu — Martyna Jakubowicz"
+    hidden
+    allow="autoplay; encrypted-media; picture-in-picture"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+
+  <script>
+    const enterButton = document.getElementById("enter-button");
+    const welcomeScreen = document.getElementById("welcome-screen");
+    const musicPlayer = document.getElementById("music-player");
+
+    enterButton.addEventListener("click", function () {
+      musicPlayer.src =
+        "https://www.youtube.com/embed/MHU9KOESgxU?autoplay=1&playsinline=1";
+      musicPlayer.hidden = false;
+      welcomeScreen.remove();
+    });
+  </script>
 </body>
 </html>
