@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Kronika Stegien — Kronika osiedla</title>
-  <link rel="stylesheet" href="style.css?v=12">
+  <link rel="stylesheet" href="style.css?v=13">
 <style>
 .slownik-target:target,
 .ulica-target:target,
@@ -997,5 +997,44 @@
   window.addEventListener('load',showGlossaryTarget);
 })();
 </script>
+
+<script>
+(function(){
+  function makeAdjacentHistoryDrawers(){
+    var section = document.getElementById('obok-historii-stegien');
+    if (!section) return;
+    var content = section.querySelector(':scope > .drawer-content');
+    if (!content || content.dataset.drawersReady === 'true') return;
+    var children = Array.from(content.children);
+    for (var i = 0; i < children.length; i++) {
+      var heading = children[i];
+      var article = children[i + 1];
+      if (!heading || heading.tagName !== 'H3' || !article || article.tagName !== 'ARTICLE') continue;
+      var drawer = document.createElement('details');
+      drawer.className = 'card drawer obok-felieton-drawer';
+      var summary = document.createElement('summary');
+      summary.textContent = heading.textContent.trim();
+      if (heading.id) summary.id = heading.id;
+      var panel = document.createElement('div');
+      panel.className = 'drawer-content';
+      panel.appendChild(article);
+      drawer.appendChild(summary);
+      drawer.appendChild(panel);
+      heading.replaceWith(drawer);
+      article.remove();
+      children[i] = drawer;
+      children[i + 1] = null;
+      i++;
+    }
+    content.dataset.drawersReady = 'true';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', makeAdjacentHistoryDrawers);
+  } else {
+    makeAdjacentHistoryDrawers();
+  }
+})();
+</script>
+
 </body>
 </html>
