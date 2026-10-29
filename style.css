@@ -1470,3 +1470,57 @@ pre, code {
 @media (prefers-reduced-motion: reduce) {
   .drawer-state-indicator { transition: none; }
 }
+
+
+/* Dopracowanie szuflad: wyraźna hierarchia i spokojna, czytelna treść. */
+.cards:has(> .card.drawer) > .card.drawer > .drawer-content {
+  color: #29332f;
+  background-color: #f7f5ee;
+  font: 17px/1.78 Georgia, "Times New Roman", serif;
+}
+.cards:has(> .card.drawer) > .card.drawer > .drawer-content > p,
+.cards:has(> .card.drawer) > .card.drawer > .drawer-content > article {
+  max-width: 78ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cards:has(> .card.drawer) > .card.drawer > summary {
+  cursor: pointer;
+}
+.cards:has(> .card.drawer) > .card.drawer > summary:focus-visible,
+.chapter > summary:focus-visible {
+  outline: 3px solid #344e46;
+  outline-offset: 3px;
+}
+.chapter summary:after {
+  content: "+" !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  flex: 0 0 27px;
+  margin-left: auto;
+  border: 1px solid #858a83;
+  border-radius: 50%;
+  background: rgba(248,247,240,.72);
+  color: #303a36 !important;
+  font: 700 19px/1 Arial, Helvetica, sans-serif !important;
+}
+.chapter[open] > summary:after {
+  content: "−" !important;
+  color: #f4f2eb !important;
+  background: #59635c;
+  border-color: #4c554f;
+}
+@media (max-width: 800px) {
+  .cards:has(> .card.drawer) > .card.drawer > .drawer-content {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  .chapter summary:after {
+    width: 24px;
+    height: 24px;
+    flex-basis: 24px;
+  }
+}
