@@ -130,7 +130,18 @@
     ];
     points.forEach(function(p){p.eras.forEach(function(era){
       var marker=L.circleMarker([p.lat,p.lon],{radius:7,color:'#5e3b20',weight:2,fillColor:era==='today'?'#607b70':'#b98240',fillOpacity:.9});
-      marker.bindPopup('<strong>'+p.name+'</strong><p style="margin:8px 0 0;max-width:280px;line-height:1.5">'+p.text[era]+'</p>');
+      var eraDates={old:'przed XX wiekiem — datowanie szczegółowe do ustalenia',prewar:'do 1939 roku',postwar:'1945–lata 60. XX wieku',estate:'lata 70. XX wieku',today:'współczesność'};
+      var searchTerm=encodeURIComponent(p.name+' Stegny Warszawa');
+      var popup='<article style="max-width:300px;font:14px/1.55 Arial,sans-serif;color:#3f3428">'+
+        '<h3 style="font:700 19px Georgia,serif;margin:0 0 8px;color:#4b3926">'+p.name+'</h3>'+
+        '<p style="margin:0 0 8px"><strong>Okres:</strong> '+eraDates[era]+'</p>'+
+        '<p style="margin:0 0 10px">'+p.text[era]+'</p>'+
+        '<div style="padding:9px;background:#f4ecdf;border-left:3px solid #9b774e;margin:0 0 10px"><strong>Fotografia:</strong> brak przypisanego, zweryfikowanego zdjęcia dla tego punktu.</div>'+
+        '<p style="margin:0 0 5px"><strong>Źródła do sprawdzenia:</strong></p>'+
+        '<p style="margin:0"><a href="https://polona.pl/search/?query='+searchTerm+'" target="_blank" rel="noopener noreferrer">Szukaj materiałów w Polonie</a><br>'+
+        '<a href="https://www.szukajwarchiwach.gov.pl/" target="_blank" rel="noopener noreferrer">Szukaj w Archiwach Państwowych</a></p>'+
+        '<p style="font-size:12px;color:#675b4d;margin:9px 0 0">Położenie orientacyjne. Linki prowadzą do katalogów poszukiwawczych, nie do źródła potwierdzającego ten punkt.</p></article>';
+      marker.bindPopup(popup);
       marker.bindTooltip(p.name,{direction:'top'});marker.addTo(groups[era]);
     });});
     var buttons=Array.prototype.slice.call(document.querySelectorAll('.stegny-eras button'));
