@@ -1382,6 +1382,8 @@ pre, code {
   border-bottom-width: 3px;
 }
 #obok-historii-stegien .obok-felieton-drawer > summary:after {
+  content: counter(obokFelieton) !important;
+
   width: 32px;
   height: 24px;
   font-size: 11px;
