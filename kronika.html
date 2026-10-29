@@ -1096,6 +1096,13 @@
       var headings = Array.from(article.querySelectorAll('h2, h3, h4')).filter(function(h){
         return h.textContent.trim().length > 0;
       });
+      // Tytuł felietonu często znajduje się tuż przed elementem <article>,
+      // więc dodajemy go do spisu nawet wtedy, gdy tekst nie ma śródtytułów.
+      var articleTitle = article.previousElementSibling;
+      if(articleTitle && /^(H2|H3|H4)$/.test(articleTitle.tagName) &&
+         articleTitle.textContent.trim() && headings.indexOf(articleTitle) === -1){
+        headings.unshift(articleTitle);
+      }
       headings.forEach(function(heading, headingIndex){
         if(!heading.id){
           heading.id = prefix + '-czesc-' + (headingIndex + 1);
