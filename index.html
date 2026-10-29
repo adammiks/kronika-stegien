@@ -78,6 +78,25 @@
     #music-player[hidden] {
       display: none;
     }
+
+    .music-toggle {
+      position: fixed;
+      right: 16px;
+      bottom: 16px;
+      z-index: 10000;
+      padding: 12px 16px;
+      border: 1px solid #b8a783;
+      border-radius: 999px;
+      background: #eee1c5;
+      color: #222;
+      font: 700 14px Arial, sans-serif;
+      cursor: pointer;
+      box-shadow: 0 4px 18px #0004;
+    }
+
+    .music-toggle[hidden] {
+      display: none;
+    }
  
     .home-inner{display:block!important;padding:5vh 24px 7vh!important;max-width:1120px!important;margin:auto}
     .hero{max-width:850px;margin:0 auto 30px;text-align:center}
@@ -204,30 +223,62 @@
     <source src="muzyka.mp3" type="audio/mpeg">
     Twoja przeglądarka nie obsługuje odtwarzania audio.
   </audio>
+  <button class="music-toggle" id="music-toggle" type="button" hidden>▶ Włącz muzykę</button>
 
   <script>
     const enterButton = document.getElementById("enter-button");
     const welcomeScreen = document.getElementById("welcome-screen");
     const musicPlayer = document.getElementById("music-player");
     const welcomeNote = document.querySelector(".welcome-note");
+    const musicToggle = document.getElementById("music-toggle");
 
-    function enterSite() {
+    function showMusicToggle() {
+      musicToggle.hidden = false;
+    }
+
+    function hideWelcomeScreen() {
       welcomeScreen.remove();
     }
 
-    // Spróbuj uruchomić muzykę od razu. Przeglądarka może wymagać gestu użytkownika.
-    musicPlayer.play().then(function () {
-      enterSite();
-    }).catch(function () {
-      welcomeNote.textContent = "Jeśli muzyka nie włączyła się automatycznie, kliknij przycisk poniżej.";
-    });
+    function tryPlayMusic() {
+      musicPlayer.play().then(function () {
+        musicToggle.textContent = "Ⅱ Wycisz muzykę";
+        musicToggle.hidden = false;
+      }).catch(function () {
+        showMusicToggle();
+        if (welcomeNote) {
+          welcomeNote.textContent = "Przeglądarka zablokowała automatyczny dźwięk. Możesz włączyć go przyciskiem w rogu strony.";
+        }
+      });
+    }
+
+    // Nie blokuj wejścia na stronę ekranem powitalnym.
+    hideWelcomeScreen();
+    tryPlayMusic();
 
     enterButton.addEventListener("click", function () {
-      musicPlayer.play().then(function () {
-        enterSite();
-      }).catch(function () {
-        welcomeNote.textContent = "Nie udało się uruchomić muzyki. Sprawdź, czy plik muzyka.mp3 znajduje się na stronie.";
-      });
+      tryPlayMusic();
+      hideWelcomeScreen();
+    });
+
+    musicToggle.addEventListener("click", function () {
+      if (musicPlayer.paused) {
+        musicPlayer.play().then(function () {
+          musicToggle.textContent = "Ⅱ Wycisz muzykę";
+        }).catch(function () {
+          musicToggle.textContent = "▶ Spróbuj włączyć muzykę";
+        });
+      } else {
+        musicPlayer.pause();
+        musicToggle.textContent = "▶ Włącz muzykę";
+      }
+    });
+
+    musicPlayer.addEventListener("play", function () {
+      musicToggle.textContent = "Ⅱ Wycisz muzykę";
+    });
+    musicPlayer.addEventListener("pause", function () {
+      musicToggle.textContent = "▶ Włącz muzykę";
     });
   </script>
 </body>
