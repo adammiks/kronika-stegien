@@ -49,7 +49,7 @@
   .history-table th { font-weight: 700; }
 </style>
 </head>
-<body>
+<body id="top">
   <header class="site-head">
     <a class="brand" href="index.html">
       Kronika Stegien
@@ -1085,5 +1085,61 @@
     });
   </script>
 
-</body>
+
+<script id="felieton-toc-enhancement">
+(function(){
+  function enhanceFelietons(){
+    var articles = document.querySelectorAll('#obok-historii-stegien .obok-felieton-drawer article');
+    articles.forEach(function(article, articleIndex){
+      if(article.querySelector('.felieton-navigation')) return;
+      var prefix = 'felieton-' + (articleIndex + 1);
+      var headings = Array.from(article.querySelectorAll('h2, h3, h4')).filter(function(h){
+        return h.textContent.trim().length > 0;
+      });
+      headings.forEach(function(heading, headingIndex){
+        if(!heading.id){
+          heading.id = prefix + '-czesc-' + (headingIndex + 1);
+        }
+        if(/bibliograf|źródł|zrodł|dalsza lektura|dalsze tropy/i.test(heading.textContent)){
+          heading.classList.add('felieton-bibliography-heading');
+          var next = heading.nextElementSibling;
+          if(next && /^(OL|UL)$/.test(next.tagName)) next.classList.add('felieton-bibliography-list');
+        }
+      });
+      var nav = document.createElement('nav');
+      nav.className = 'felieton-navigation';
+      nav.setAttribute('aria-label', 'Nawigacja po felietonie');
+      var title = document.createElement('strong');
+      title.className = 'felieton-toc-title';
+      title.textContent = 'Spis treści';
+      nav.appendChild(title);
+      var list = document.createElement('ol');
+      list.className = 'felieton-toc';
+      headings.forEach(function(heading){
+        var item = document.createElement('li');
+        if(heading.tagName === 'H4') item.className = 'felieton-toc-subitem';
+        var link = document.createElement('a');
+        link.href = '#' + heading.id;
+        link.textContent = heading.textContent.trim();
+        item.appendChild(link);
+        list.appendChild(item);
+      });
+      if(headings.length){
+        nav.appendChild(list);
+        article.insertBefore(nav, article.firstChild);
+      }
+      var back = document.createElement('p');
+      back.className = 'felieton-back-top';
+      var backLink = document.createElement('a');
+      backLink.href = '#top';
+      backLink.textContent = '↑ Wróć na górę';
+      back.appendChild(backLink);
+      article.appendChild(back);
+    });
+  }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', enhanceFelietons);
+  else enhanceFelietons();
+})();
+</script>
+\n</body>
 </html>
