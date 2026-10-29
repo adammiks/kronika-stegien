@@ -196,7 +196,7 @@
       <h2 id="welcome-title">Witaj na Stegnach</h2>
       <p>Zapraszam do kroniki naszego osiedla. Na początek posłuchajmy „W domach z betonu” Martyny Jakubowicz.</p>
       <button class="welcome-button" id="enter-button" type="button">Włącz muzykę i wejdź</button>
-      <p class="welcome-note">Muzyka uruchomi się po kliknięciu przycisku.</p>
+      <p class="welcome-note">Strona spróbuje włączyć muzykę automatycznie. Jeśli przeglądarka ją zablokuje, kliknij przycisk.</p>
     </div>
   </section>
 
@@ -209,13 +209,25 @@
     const enterButton = document.getElementById("enter-button");
     const welcomeScreen = document.getElementById("welcome-screen");
     const musicPlayer = document.getElementById("music-player");
+    const welcomeNote = document.querySelector(".welcome-note");
+
+    function enterSite() {
+      welcomeScreen.remove();
+    }
+
+    // Spróbuj uruchomić muzykę od razu. Przeglądarka może wymagać gestu użytkownika.
+    musicPlayer.play().then(function () {
+      enterSite();
+    }).catch(function () {
+      welcomeNote.textContent = "Jeśli muzyka nie włączyła się automatycznie, kliknij przycisk poniżej.";
+    });
 
     enterButton.addEventListener("click", function () {
-      musicPlayer.play().catch(function () {
-        const note = document.querySelector(".welcome-note");
-        note.textContent = "Nie udało się uruchomić muzyki. Sprawdź, czy plik muzyka.mp3 znajduje się na stronie.";
+      musicPlayer.play().then(function () {
+        enterSite();
+      }).catch(function () {
+        welcomeNote.textContent = "Nie udało się uruchomić muzyki. Sprawdź, czy plik muzyka.mp3 znajduje się na stronie.";
       });
-      welcomeScreen.remove();
     });
   </script>
 </body>
