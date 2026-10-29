@@ -1064,5 +1064,26 @@
 })();
 </script>
 
+
+  <script>
+    // Widoczny stan każdej szuflady: plus oznacza zamkniętą, minus — otwartą.
+    document.querySelectorAll('details.card.drawer > summary').forEach(function (summary) {
+      const drawer = summary.parentElement;
+      let indicator = summary.querySelector('.drawer-state-indicator');
+      if (!indicator) {
+        indicator = document.createElement('span');
+        indicator.className = 'drawer-state-indicator';
+        indicator.setAttribute('aria-hidden', 'true');
+        summary.appendChild(indicator);
+      }
+      const updateIndicator = function () {
+        indicator.textContent = drawer.open ? '−' : '+';
+        indicator.title = drawer.open ? 'Zamknij szufladę' : 'Otwórz szufladę';
+      };
+      updateIndicator();
+      drawer.addEventListener('toggle', updateIndicator);
+    });
+  </script>
+
 </body>
 </html>
