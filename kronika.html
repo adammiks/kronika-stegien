@@ -1091,28 +1091,22 @@
   function enhanceFelietons(){
     var articles = document.querySelectorAll('article');
     articles.forEach(function(article, articleIndex){
-      if(article.querySelector('.felieton-navigation')) return;
+      if(article.querySelector(':scope > .felieton-navigation')) return;
       var prefix = 'felieton-' + (articleIndex + 1);
       var headings = Array.from(article.querySelectorAll('h2, h3, h4')).filter(function(h){
         return h.textContent.trim().length > 0;
       });
-      // Tytuł felietonu często znajduje się tuż przed elementem <article>,
-      // więc dodajemy go do spisu nawet wtedy, gdy tekst nie ma śródtytułów.
-      var articleTitle = article.previousElementSibling;
-      // W rozdziałach głównych tytuł jest w <summary>, a w szufladach
-      // tematycznych zwykle w nagłówku stojącym bezpośrednio przed artykułem.
-      if(!(articleTitle && /^(H2|H3|H4)$/.test(articleTitle.tagName) && articleTitle.textContent.trim())){
+      var titleHeading = article.previousElementSibling;
+      if(!(titleHeading && /^(H2|H3|H4)$/.test(titleHeading.tagName) && titleHeading.textContent.trim())){
         var chapter = article.closest('details.chapter');
-        if(chapter) articleTitle = chapter.querySelector(':scope > summary');
+        titleHeading = chapter ? chapter.querySelector('summary') : null;
       }
-      if(articleTitle && /^(H2|H3|H4|SUMMARY)$/.test(articleTitle.tagName) &&
-         articleTitle.textContent.trim() && headings.indexOf(articleTitle) === -1){
-        headings.unshift(articleTitle);
+      if(titleHeading && /^(H2|H3|H4|SUMMARY)$/.test(titleHeading.tagName) &&
+         titleHeading.textContent.trim() && headings.indexOf(titleHeading) === -1){
+        headings.unshift(titleHeading);
       }
       headings.forEach(function(heading, headingIndex){
-        if(!heading.id){
-          heading.id = prefix + '-czesc-' + (headingIndex + 1);
-        }
+        if(!heading.id) heading.id = prefix + '-czesc-' + (headingIndex + 1);
         if(/bibliograf|źródł|zrodł|dalsza lektura|dalsze tropy/i.test(heading.textContent)){
           heading.classList.add('felieton-bibliography-heading');
           var next = heading.nextElementSibling;
@@ -1128,39 +1122,44 @@
       nav.appendChild(title);
       var list = document.createElement('ol');
       list.className = 'felieton-toc';
-      headings.forEach(function(heading){
-        var item = document.createElement('li');
-        if(heading.tagName === 'H4') item.className = 'felieton-toc-subitem';
-        var link = document.createElement('a');
-        link.href = '#' + heading.id;
-        link.textContent = heading.textContent.trim();
-        item.appendChild(link);
-        list.appendChild(item);
-      });
       if(headings.length){
-        nav.appendChild(list);
+        headings.forEach(function(heading){
+          var item = document.createElement('li');
+          if(heading.tagName === 'H4') item.className = 'felieton-toc-subitem';
+          var link = document.createElement('a');
+          link.href = '#' + heading.id;
+          link.textContent = heading.textContent.trim();
+          item.appendChild(link);
+          list.appendChild(item);
+        });
       } else {
-        var articleAnchor = article.id || (article.id = prefix + '-tekst');
+        if(!article.id) article.id = prefix + '-tekst';
         var item = document.createElement('li');
         var link = document.createElement('a');
-        link.href = '#' + articleAnchor;
+        link.href = '#' + article.id;
         link.textContent = 'Początek felietonu';
         item.appendChild(link);
         list.appendChild(item);
-        nav.appendChild(list);
       }
+      nav.appendChild(list);
       article.insertBefore(nav, article.firstChild);
-      var back = document.createElement('p');
-      back.className = 'felieton-back-top';
-      var backLink = document.createElement('a');
-      backLink.href = '#top';
-      backLink.textContent = '↑ Wróć na górę';
-      back.appendChild(backLink);
-      article.appendChild(back);
+      if(!article.querySelector(':scope > .felieton-back-top')){
+        var back = document.createElement('p');
+        back.className = 'felieton-back-top';
+        var backLink = document.createElement('a');
+        backLink.href = '#top';
+        backLink.textContent = '↑ Wróć na górę';
+        back.appendChild(backLink);
+        article.appendChild(back);
+      }
     });
   }
-  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', enhanceFelietons);
-  else enhanceFelietons();
+  function run(){ try { enhanceFelietons(); } catch(e) { console.error('Błąd spisu treści:', e); } }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run);
+  else run();
+  window.addEventListener('load', run);
+  var observer = new MutationObserver(function(){ run(); });
+  observer.observe(document.documentElement, {childList:true, subtree:true});
 })();
 </script>
 \n</body>
