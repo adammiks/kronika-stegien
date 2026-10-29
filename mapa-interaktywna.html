@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>15 — Mapa interaktywna | Kronika Stegien</title>
+  <link rel="stylesheet" href="style.css?v=17">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <style>
+    .interactive-page{max-width:1280px;margin:0 auto}
+    .interactive-kicker{margin:0 0 8px;color:var(--accent);font:700 12px Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+    .interactive-title{margin:0 0 12px;color:var(--ink);font:clamp(30px,4vw,46px) Georgia,serif}
+    .interactive-intro{max-width:850px;color:var(--muted);font:17px/1.75 Georgia,serif}
+    .stegny-explorer{margin:24px 0 42px;padding:clamp(14px,3vw,26px);background:#f8f5ed;border:1px solid #c8b99f;box-shadow:0 5px 14px rgba(48,34,19,.12)}
+    .stegny-explorer h2{margin:0 0 10px;color:var(--ink);font:clamp(25px,3vw,34px) Georgia,serif}
+    .stegny-explorer p{max-width:850px;color:var(--muted);font:16px/1.65 Georgia,serif}
+    .stegny-eras{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 12px}
+    .stegny-eras button{border:1px solid #765538;border-radius:3px;padding:10px 13px;background:#eee3d1;color:#4b3926;font:600 13px Arial,sans-serif;cursor:pointer}
+    .stegny-eras button[aria-pressed="true"]{background:#5e3b20;color:#fff4df;box-shadow:inset 0 1px 0 rgba(255,222,164,.2)}
+    .stegny-eras button:focus-visible{outline:3px solid #b98240;outline-offset:2px}
+    #stegny-history-map{width:100%;height:clamp(340px,55vw,620px);border:1px solid #c8b99f;background:#e9eee5;z-index:0}
+    .stegny-map-caption{font:13px/1.6 Arial,sans-serif!important;margin:10px 0 0}
+    .stegny-map-status{min-height:1.5em;font:14px/1.5 Arial,sans-serif!important;color:#4b3926!important}
+    .map-method{margin-top:20px;padding:14px 16px;border-left:3px solid #9b774e;background:#efe5d5;color:#4b3926;font:14px/1.6 Arial,sans-serif}
+    @media(max-width:600px){.stegny-eras button{flex:1 1 44%;padding:10px 8px}.stegny-explorer{padding:12px}}
+  </style>
+</head>
+<body>
+  <header class="site-head">
+    <a class="brand" href="index.html">Kronika Stegien<small>historia osiedla mieszkaniowego w Warszawie</small></a>
+    <nav class="nav">
+      <a href="kronika.html">Kronika</a>
+      <a href="mapy.html">Mapy</a>
+      <a href="mapa-interaktywna.html" aria-current="page">15 — Mapa interaktywna</a>
+      <a href="budynki.html">Budynki</a>
+      <a href="zdjecia.html">Ilustracje</a>
+      <a href="dokumenty.html">Dokumenty</a>
+      <a href="ludzie.html">Ludzie</a>
+      <a href="osoby.html">Indeks osób</a>
+      <a href="literatura.html">Stegny w kulturze</a>
+      <a href="ulice.html">Indeks ulic</a>
+      <a href="os-czasu.html">Oś czasu</a>
+      <a href="o-stegnach.html">O Stegnach</a>
+    </nav>
+  </header>
+  <main class="page interactive-page">
+    <div class="page-grid">
+      <a class="back" href="index.html">← Osiedle</a>
+      <p class="interactive-kicker">Dział 15 · Kronika Stegien</p>
+      <h1 class="interactive-title">Mapa interaktywna</h1>
+      <p class="interactive-intro">Odkrywaj krajobraz dawnych Stegien i okolic, przełączaj okresy i otwieraj punkty na mapie, by poznawać historię miejsca. To rozwijany atlas: kolejne lokalizacje będą dodawane wraz z weryfikacją map archiwalnych, dokumentów i fotografii.</p>
+      <section class="stegny-explorer" aria-labelledby="stegny-explorer-title">
+          <h2 id="stegny-explorer-title">Odkryj dawne Stegny</h2>
+          <p>Przesuwaj mapę, przybliżaj ją i wybieraj epoki, aby poznawać krajobraz oraz miejscowości związane z historią okolicy. Punkty poza współczesnym centrum Stegien pokazują orientacyjne położenie obszarów, a nie dokładne lokalizacje dawnych obiektów.</p>
+          <div class="stegny-eras" role="group" aria-label="Wybierz okres historyczny">
+            <button type="button" data-era="old" aria-pressed="false">Dawny krajobraz</button>
+            <button type="button" data-era="early" aria-pressed="true">XV–XVII wiek</button>
+            <button type="button" data-era="estate" aria-pressed="false">Budowa osiedla</button>
+            <button type="button" data-era="today" aria-pressed="false">Współczesność</button>
+          </div>
+          <div id="stegny-history-map" role="region" aria-label="Interaktywna mapa Stegien i okolic"></div>
+          <p id="stegny-map-status" class="stegny-map-status" aria-live="polite">Wybrano okres XV–XVII wieku. Kliknij znacznik, aby przeczytać opis.</p>
+          <p class="stegny-map-caption">Podkład mapowy: © OpenStreetMap contributors. Opisy historyczne mają charakter orientacyjny; przed wskazaniem konkretnych dawnych obiektów należy potwierdzić ich położenie w źródłach.</p>
+        </section>
+      <div class="map-method"><strong>Jak czytać mapę?</strong> Znaczniki poza współczesnym centrum Stegien pokazują obszary orientacyjne, a nie dokładne położenie dawnych obiektów. Nie są odtworzeniem granic parcel ani przebiegu dróg. Każdy szczegół historyczny będzie doprecyzowywany na podstawie źródeł.</div>
+      <p><a href="mapy.html">Zobacz także mapy historyczne, plany i schematy w dziale „Mapy” →</a></p>
+    </div>
+  </main>
+  <footer class="footer">Kronika Stegien • <a href="index.html">strona główna</a></footer>
+  <script id="stegny-history-map-script">
+  (function(){
+    var el=document.getElementById('stegny-history-map');
+    if(!el) return;
+    if(!window.L){el.innerHTML='<p style="padding:20px">Nie udało się załadować biblioteki mapy. Sprawdź połączenie z internetem i odśwież stronę.</p>';return;}
+    var map=L.map(el,{scrollWheelZoom:false}).setView([52.1838,21.0444],13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+      maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+    }).addTo(map);
+    var groups={old:L.layerGroup(),early:L.layerGroup(),estate:L.layerGroup(),today:L.layerGroup()};
+    var points=[
+      {id:'stegny',lat:52.1858,lon:21.0444,name:'Stegny — obszar dzisiejszego osiedla',eras:['old','early','estate','today'],text:{old:'Przed rozbudową mieszkaniową krajobraz tej części Mokotowa miał w dużej mierze charakter podmiejski. Ten punkt wskazuje obszar orientacyjny, nie konkretną dawną parcelę.',early:'Stegny i sąsiednie tereny należy rozpatrywać w szerszym układzie dawnych osad, dróg i gruntów południowej Warszawy. Dokładne granice wymagają porównania map historycznych.',estate:'W latach 70. XX wieku rozpoczęła się budowa współczesnego osiedla Stegny. Punkt wskazuje przybliżone centrum obszaru osiedla.',today:'Współczesne osiedle Stegny na Mokotowie. Otwórz pozostałe mapy w tej sekcji, aby porównać plany i schematy historyczne.'}},
+      {id:'czerniakow',lat:52.1905,lon:21.0610,name:'Czerniaków — obszar orientacyjny',eras:['old','early'],text:{old:'Czerniaków jest jednym z historycznych punktów odniesienia dla południowego Mokotowa. Znacznik lokalizuje współczesny obszar, nie dawną granicę osady.',early:'Czerniaków należał do sieci osad i dróg w okolicy Warszawy. Przebieg dawnych połączeń należy traktować ostrożnie, dopóki nie zostanie potwierdzony na konkretnych mapach.'}},
+      {id:'sluzew',lat:52.1745,lon:21.0215,name:'Służew — obszar orientacyjny',eras:['old','early'],text:{old:'Służew to ważny historyczny punkt orientacyjny na południe od dawnej Warszawy. Znacznik wskazuje przybliżony obszar współczesny.',early:'Dawne powiązania komunikacyjne w kierunku Służewa pomagają opisywać szerszy krajobraz okolic przyszłych Stegien. Linia na mapie nie oznacza potwierdzonego przebiegu konkretnej drogi.'}},
+      {id:'wilanow',lat:52.1655,lon:21.0900,name:'Wilanów — obszar orientacyjny',eras:['old','early'],text:{old:'Wilanów stanowi historyczny punkt odniesienia w krajobrazie południowej Warszawy. Punkt oznacza ogólny obszar, a nie lokalizację konkretnego obiektu z danego okresu.',early:'Wilanów i okolice wiązały się z lokalnymi drogami i osadnictwem południowego Mazowsza. Dokładne trasy dawnych dróg wymagają źródłowego potwierdzenia.'}},
+      {id:'fields',lat:52.1930,lon:21.0390,name:'Dawne grunty na północ od Stegien — obszar poglądowy',eras:['old'],text:{old:'Poglądowe wskazanie krajobrazu gruntów i terenów otwartych przed rozbudową osiedla. Nie jest to odtworzenie granic działek ani potwierdzona lokalizacja konkretnego pola.'}},
+      {id:'construction',lat:52.1830,lon:21.0465,name:'Rozwój osiedla — obszar orientacyjny',eras:['estate'],text:{estate:'W latach 70. XX wieku okolica zmieniała się wraz z realizacją zabudowy mieszkaniowej i infrastruktury. Znacznik pokazuje obszar orientacyjny; kolejne punkty budynków można dodać po weryfikacji na planach i zdjęciach archiwalnych.'}}
+    ];
+    points.forEach(function(p){p.eras.forEach(function(era){
+      var marker=L.circleMarker([p.lat,p.lon],{radius:7,color:'#5e3b20',weight:2,fillColor:era==='today'?'#607b70':'#b98240',fillOpacity:.9});
+      marker.bindPopup('<strong>'+p.name+'</strong><p style="margin:8px 0 0;max-width:280px;line-height:1.5">'+p.text[era]+'</p>');
+      marker.bindTooltip(p.name,{direction:'top'});marker.addTo(groups[era]);
+    });});
+    var buttons=Array.prototype.slice.call(document.querySelectorAll('.stegny-eras button'));
+    var status=document.getElementById('stegny-map-status');
+    var labels={old:'Dawny krajobraz',early:'XV–XVII wiek',estate:'Budowa osiedla',today:'Współczesność'};
+    function showEra(era){Object.keys(groups).forEach(function(key){map.removeLayer(groups[key]);});groups[era].addTo(map);buttons.forEach(function(button){button.setAttribute('aria-pressed',button.dataset.era===era?'true':'false');});status.textContent='Wybrany okres: '+labels[era]+'. Kliknij znacznik, aby przeczytać opis. Punkty historyczne są orientacyjne.';}
+    buttons.forEach(function(button){button.addEventListener('click',function(){showEra(button.dataset.era);});});
+    showEra('early');
+    setTimeout(function(){map.invalidateSize();},150);
+  })();
+  </script>
+</body>
+</html>
