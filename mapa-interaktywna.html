@@ -27,7 +27,7 @@
     .stegny-panel h3{margin:0 0 8px;font:700 20px Georgia,serif;color:#4b3926}
     .stegny-panel p,.stegny-panel label{font:14px/1.6 Arial,sans-serif;color:#4b3926}
     .stegny-range{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-    .stegny-range input{flex:1;min-width:160px;accent-color:#765538}
+    .stegny-range input{flex:1;min-width:160px;accent-color:#765538;cursor:pointer;pointer-events:auto;touch-action:pan-y}
     .stegny-layers{display:flex;flex-wrap:wrap;gap:10px 18px}
     .stegny-layers label{display:flex;align-items:center;gap:7px}
     .stegny-story-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:14px}
@@ -139,7 +139,7 @@
     function showEra(era){Object.keys(groups).forEach(function(key){map.removeLayer(groups[key]);});groups[era].addTo(map);buttons.forEach(function(button){button.setAttribute('aria-pressed',button.dataset.era===era?'true':'false');});status.textContent='Wybrany okres: '+labels[era]+'. Kliknij znacznik, aby przeczytać opis. Punkty historyczne są orientacyjne.';}
     buttons.forEach(function(button){button.addEventListener('click',function(){showEra(button.dataset.era);});});
     // Schematyczna warstwa dawnego krajobrazu: celowo bez pozorowania dokładnych granic historycznych.
-    var illustrative=L.polygon([[52.191,21.030],[52.193,21.047],[52.187,21.055],[52.181,21.042],[52.184,21.030]],{color:'#9a774d',weight:1,dashArray:'5 5',fillColor:'#d8bd8a',fillOpacity:.25});
+    var illustrative=L.polygon([[52.191,21.030],[52.193,21.047],[52.187,21.055],[52.181,21.042],[52.184,21.030]],{color:'#9a774d',weight:2,dashArray:'5 5',fillColor:'#d8bd8a',fillOpacity:.247,opacity:.65,interactive:true});
     illustrative.bindPopup('<strong>Dawny krajobraz — schemat</strong><p>Warstwa poglądowa, nie odtworzenie historycznych granic pól ani własności.</p>');
     illustrative.addTo(historicShapes);
     function addTopicPoint(topic,lat,lon,title,description,color){
@@ -154,8 +154,15 @@
     addTopicPoint('memories',52.1858,21.0444,'Stegny — wspomnienia mieszkańców','Punkt zbiorczy. Można go uzupełnić o relacje z podaniem autora, daty i zgody na publikację.','#76558f');
     var opacityInput=document.getElementById('historic-opacity');
     var opacityValue=document.getElementById('historic-opacity-value');
-    function setHistoricOpacity(){var value=Number(opacityInput.value)/100;historicShapes.eachLayer(function(layer){if(layer.setStyle)layer.setStyle({fillOpacity:value*.38,opacity:Math.max(.15,value)});});opacityValue.textContent=opacityInput.value+'%';}
+    function setHistoricOpacity(){
+      var value=Number(opacityInput.value)/100;
+      illustrative.setStyle({fillOpacity:value*.38,opacity:value});
+      opacityValue.textContent=opacityInput.value+'%';
+      opacityValue.setAttribute('aria-label','Widoczność warstwy dawnej: '+opacityInput.value+' procent');
+    }
     opacityInput.addEventListener('input',setHistoricOpacity);
+    opacityInput.addEventListener('change',setHistoricOpacity);
+    opacityInput.addEventListener('pointermove',function(){if(opacityInput.matches(':active'))setHistoricOpacity();});
     document.querySelectorAll('[data-topic]').forEach(function(input){input.addEventListener('change',function(){var group=topics[input.dataset.topic];if(input.checked)group.addTo(map);else map.removeLayer(group);});});
     showEra('old');
     Object.keys(topics).forEach(function(key){if(document.querySelector('[data-topic="'+key+'"]').checked)topics[key].addTo(map);});
