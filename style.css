@@ -1526,3 +1526,6 @@ pre, code {
     flex-basis: 24px;
   }
 }
+
+#obok-historii-stegien > .drawer-content { counter-reset: obokFelieton; }
+#obok-historii-stegien .obok-felieton-drawer { counter-increment: obokFelieton; }
