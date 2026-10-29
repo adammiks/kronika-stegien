@@ -1529,3 +1529,87 @@ pre, code {
 
 #obok-historii-stegien > .drawer-content { counter-reset: obokFelieton; }
 #obok-historii-stegien .obok-felieton-drawer { counter-increment: obokFelieton; }
+
+
+/* Nawigacja po długich felietonach */
+.felieton-navigation{
+  margin: 0 0 2rem;
+  padding: 1.15rem 1.35rem;
+  border: 1px solid #b9b4a8;
+  border-left: 4px solid #9a7443;
+  border-radius: 8px;
+  background: rgba(154,116,67,.07);
+}
+.felieton-toc-title{
+  display:block;
+  margin-bottom:.65rem;
+  font-size:1.08rem;
+}
+.felieton-toc{
+  margin:0;
+  padding-left:1.35rem;
+  columns:2;
+  column-gap:2rem;
+}
+.felieton-toc li{
+  break-inside:avoid;
+  margin:.25rem 0;
+  line-height:1.45;
+}
+.felieton-toc .felieton-toc-subitem{
+  margin-left:.8rem;
+  font-size:.94em;
+}
+.felieton-toc a{
+  text-decoration:underline;
+  text-decoration-color:rgba(154,116,67,.45);
+  text-underline-offset:3px;
+}
+.felieton-navigation a:focus-visible,
+.felieton-back-top a:focus-visible{
+  outline:3px solid #9a7443;
+  outline-offset:3px;
+}
+#obok-historii-stegien article h2,
+#obok-historii-stegien article h3,
+#obok-historii-stegien article h4{
+  scroll-margin-top:1.5rem;
+}
+#obok-historii-stegien article .felieton-bibliography-heading{
+  margin-top:2.5rem;
+  padding:.85rem 1rem;
+  border-top:2px solid #9a7443;
+  border-bottom:1px solid #c9c2b5;
+  background:rgba(154,116,67,.08);
+  font-size:1.15rem;
+}
+#obok-historii-stegien article .felieton-bibliography-list{
+  margin:0 0 2rem;
+  padding:1rem 1rem 1rem 2.5rem;
+  border-left:3px solid #c4b49a;
+  background:rgba(154,116,67,.045);
+}
+#obok-historii-stegien article .felieton-bibliography-list li{
+  margin:.5rem 0;
+  padding-left:.2rem;
+  line-height:1.6;
+}
+.felieton-back-top{
+  margin:2.2rem 0 .5rem;
+  text-align:right;
+}
+.felieton-back-top a{
+  display:inline-block;
+  padding:.55rem .85rem;
+  border:1px solid #b9b4a8;
+  border-radius:999px;
+  text-decoration:none;
+  font-size:.92rem;
+}
+.felieton-back-top a:hover{
+  background:rgba(154,116,67,.12);
+}
+@media(max-width:700px){
+  .felieton-toc{columns:1;}
+  .felieton-navigation{padding:1rem;}
+}
