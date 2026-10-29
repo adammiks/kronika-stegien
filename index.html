@@ -86,11 +86,11 @@
     .block-building{max-width:1000px;margin:0 auto;padding:18px 18px 0;background:#414a43;border:1px solid #d9d0be66;box-shadow:0 20px 50px #0007;color:#f4eddf}
     .block-roof{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 20px;background:#d1c9b8;color:#343a34;font:700 12px Arial,sans-serif;letter-spacing:.18em}
     .block-roof small{font-size:9px;letter-spacing:.12em}
-    .block-facade{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding:18px;background:linear-gradient(90deg,#9c9b8f,#c4c1b3 18%,#aaa99e 50%,#d0cbbd 82%,#8b8e84);border-bottom:10px solid #77796f}
-    .flat{min-height:125px;display:flex;flex-direction:column;justify-content:space-between;gap:8px;padding:12px;text-decoration:none;color:#f4eddf;background:linear-gradient(145deg,#485b59,#293c3a);border:7px solid #d5d0c3;box-shadow:inset 0 0 0 1px #66716b;transition:filter .2s,transform .2s}
+    .block-facade{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:18px;background:linear-gradient(90deg,#9c9b8f,#c4c1b3 18%,#aaa99e 50%,#d0cbbd 82%,#8b8e84);border-bottom:10px solid #77796f}
+    .flat{min-height:112px;display:flex;flex-direction:column;justify-content:space-between;gap:8px;padding:12px;text-decoration:none;color:#f4eddf;background:linear-gradient(145deg,#485b59,#293c3a);border:7px solid #d5d0c3;box-shadow:inset 0 0 0 1px #66716b;transition:filter .2s,transform .2s}
     .flat:hover{filter:brightness(1.2);transform:translateY(-3px)}
     .flat .flat-number{font:20px Georgia,serif;color:#e5d2a9}
-    .flat strong{font:700 clamp(12px,1.6vw,17px)/1.2 Georgia,serif}
+    .flat strong{font:clamp(12px,1.6vw,17px)/1.2 Georgia,serif}
     .flat small{font:10px Arial,sans-serif;letter-spacing:.08em;color:#d3d9cf}
     .block-ground{display:grid;grid-template-columns:1fr minmax(150px,220px) 1fr;align-items:stretch;gap:14px;padding:0 18px 18px;background:linear-gradient(90deg,#9c9b8f,#c4c1b3 18%,#aaa99e 50%,#d0cbbd 82%,#8b8e84)}
     .ground-window{min-height:86px;margin-top:14px;border:7px solid #d5d0c3;background:linear-gradient(135deg,#8caaa8,#405a5b);box-shadow:inset 0 0 0 3px #4c5a56}
@@ -100,7 +100,7 @@
     .block-door small{font-size:9px;letter-spacing:.18em;border-top:1px solid #b8a783;padding-top:6px}
     .block-path{height:24px;background:repeating-linear-gradient(90deg,#65675f 0,#65675f 28px,#77796f 29px,#77796f 31px)}
     .building-caption{text-align:center;padding:14px 8px 17px;font:11px Arial,sans-serif;letter-spacing:.12em;color:#e0d8c7}
-    @media(max-width:650px){.block-roof{align-items:flex-start;flex-direction:column}.block-facade{gap:7px;padding:9px}.flat{min-height:112px;padding:7px;border-width:4px}.flat .flat-number{font-size:16px}.flat strong{font-size:12px}.flat small{font-size:9px}.block-ground{grid-template-columns:1fr minmax(105px,1.2fr) 1fr;gap:7px;padding:0 9px 9px}.ground-window{min-height:65px;border-width:4px}.block-door{min-height:130px;padding:5px}.block-door strong{font-size:10px}.home-inner{padding-left:14px!important;padding-right:14px!important}}
+    @media(max-width:650px){.block-roof{align-items:flex-start;flex-direction:column}.block-facade{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;padding:9px}.flat{min-height:108px;padding:8px;border-width:4px}.flat .flat-number{font-size:16px}.flat strong{font-size:12px}.flat small{font-size:9px}.block-ground{grid-template-columns:1fr minmax(105px,1.2fr) 1fr;gap:7px;padding:0 9px 9px}.ground-window{min-height:65px;border-width:4px}.block-door{min-height:130px;padding:5px}.block-door strong{font-size:10px}.home-inner{padding-left:14px!important;padding-right:14px!important}}
 
   </style>
 </head>
@@ -141,14 +141,22 @@
         <div class="credit">Stegny, Warszawa • historia miejsca i ludzi</div>
       </section>
       <section class="block-building" aria-label="Blok mieszkalny Kroniki Stegien">
-        <div class="block-roof"><span>OSIEDLE STEGNY · WARSZAWA</span><small>KLATKA A · HISTORIA MIEJSCA</small></div>
-        <div class="block-facade" aria-label="Mieszkania, czyli działy kroniki">
-          <a class="flat" href="o-stegnach.html"><span class="flat-number">01</span><strong>Dawne Stegny i okolice</strong><small>MIESZKANIE · POCZĄTKI</small></a>
-          <a class="flat" href="kronika.html"><span class="flat-number">02</span><strong>Historia osiedla</strong><small>MIESZKANIE · KRONIKA</small></a>
-          <a class="flat" href="ludzie.html"><span class="flat-number">03</span><strong>Wspomnienia mieszkańców</strong><small>MIESZKANIE · LUDZIE</small></a>
-          <a class="flat" href="budynki.html"><span class="flat-number">04</span><strong>Bloki i architektura</strong><small>MIESZKANIE · BUDYNKI</small></a>
-          <a class="flat" href="zdjecia.html"><span class="flat-number">05</span><strong>Zdjęcia i ilustracje</strong><small>MIESZKANIE · OBRAZY</small></a>
-          <a class="flat" href="dokumenty.html"><span class="flat-number">06</span><strong>Dokumenty i źródła</strong><small>MIESZKANIE · ARCHIWUM</small></a>
+        <div class="block-roof"><span>OSIEDLE STEGNY · WARSZAWA</span><small>KLATKA A · WSZYSTKIE DZIAŁY KRONIKI</small></div>
+        <div class="block-facade" aria-label="Wszystkie działy kroniki — mieszkania w bloku">
+          <a class="flat" href="kronika.html"><span class="flat-number">01</span><strong>Kronika</strong><small>MIESZKANIE · HISTORIA</small></a>
+          <a class="flat" href="mapy.html"><span class="flat-number">02</span><strong>Mapy</strong><small>MIESZKANIE · MAPY</small></a>
+          <a class="flat" href="budynki.html"><span class="flat-number">03</span><strong>Budynki</strong><small>MIESZKANIE · ARCHITEKTURA</small></a>
+          <a class="flat" href="zdjecia.html"><span class="flat-number">04</span><strong>Ilustracje</strong><small>MIESZKANIE · OBRAZY</small></a>
+          <a class="flat" href="dokumenty.html"><span class="flat-number">05</span><strong>Dokumenty</strong><small>MIESZKANIE · ŹRÓDŁA</small></a>
+          <a class="flat" href="ludzie.html"><span class="flat-number">06</span><strong>Ludzie</strong><small>MIESZKANIE · MIESZKAŃCY</small></a>
+          <a class="flat" href="osoby.html"><span class="flat-number">07</span><strong>Indeks osób</strong><small>MIESZKANIE · BIOGRAFIE</small></a>
+          <a class="flat" href="literatura.html"><span class="flat-number">08</span><strong>Stegny w kulturze</strong><small>MIESZKANIE · KULTURA</small></a>
+          <a class="flat" href="piosenki-stegien.html"><span class="flat-number">09</span><strong>Piosenki ulic Stegien</strong><small>MIESZKANIE · MUZYKA</small></a>
+          <a class="flat" href="ulice.html"><span class="flat-number">10</span><strong>Indeks ulic</strong><small>MIESZKANIE · ULICE</small></a>
+          <a class="flat" href="geografia.html"><span class="flat-number">11</span><strong>Indeks nazw geograficznych</strong><small>MIESZKANIE · GEOGRAFIA</small></a>
+          <a class="flat" href="os-czasu.html"><span class="flat-number">12</span><strong>Oś czasu</strong><small>MIESZKANIE · CHRONOLOGIA</small></a>
+          <a class="flat" href="slownik.html"><span class="flat-number">13</span><strong>Słownik</strong><small>MIESZKANIE · POJĘCIA</small></a>
+          <a class="flat" href="o-stegnach.html"><span class="flat-number">14</span><strong>O Stegnach</strong><small>MIESZKANIE · OKOLICA</small></a>
         </div>
         <div class="block-ground">
           <div class="ground-window" aria-hidden="true"></div>
@@ -156,7 +164,7 @@
           <div class="ground-window" aria-hidden="true"></div>
         </div>
         <div class="block-path"></div>
-        <div class="building-caption">WEJŚCIE DO KRONIKI · WYBIERZ MIESZKANIE, BY ODKRYĆ DZIAŁ</div>
+        <div class="building-caption">14 MIESZKAŃ · 14 DZIAŁÓW KRONIKI</div>
       </section>
     </div>
   </main>
