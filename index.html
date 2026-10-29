@@ -78,6 +78,32 @@
     #music-player[hidden] {
       display: none;
     }
+ 
+    .home-inner{display:block!important;padding-top:5vh!important;padding-bottom:7vh!important}
+    .hero{max-width:850px;margin-bottom:34px}
+    .hero h1 span{display:block;font:clamp(17px,2.5vw,25px)/1.4 Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;margin-top:20px}
+    .hero p{max-width:650px}
+    .block-entrance{max-width:1040px;margin:0 auto;padding:18px;background:rgba(28,39,34,.84);border:1px solid #d9d0be55;box-shadow:0 20px 50px #0006;color:#f4eddf}
+    .block-roof{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 18px;background:#d1c9b8;color:#343a34;font:700 12px Arial,sans-serif;letter-spacing:.18em}
+    .block-roof small{font-size:9px;letter-spacing:.12em}
+    .block-facade{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;align-items:end;padding:22px 18px 0;background:linear-gradient(90deg,#9c9b8f,#c4c1b3 18%,#aaa99e 50%,#d0cbbd 82%,#8b8e84);border-bottom:10px solid #77796f}
+    .facade-window{height:82px;background:#4d5a59;border:7px solid #d5d0c3;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:3px;box-shadow:inset 0 0 0 1px #555}
+    .facade-window i{background:linear-gradient(135deg,#8caaa8,#405a5b)}
+    .block-door{height:145px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;text-decoration:none;color:#f0e2c2;background:linear-gradient(90deg,#3a443f,#59645b 20%,#303b35 80%,#242e29);border:5px solid #d4cdbc;box-shadow:inset 0 0 0 2px #202a25,0 0 0 1px #59645b}
+    .block-door .door-number{font:22px Georgia,serif;border:1px solid #b8a783;border-radius:50%;width:34px;height:34px;display:grid;place-items:center}
+    .block-door strong{font:700 12px/1.3 Arial,sans-serif;letter-spacing:.12em}
+    .block-door small{font-size:9px;letter-spacing:.18em;border-top:1px solid #b8a783;padding-top:6px}
+    .block-door:hover{filter:brightness(1.25);transform:translateY(-3px)}
+    .block-path{height:22px;background:repeating-linear-gradient(90deg,#65675f 0,#65675f 28px,#77796f 29px,#77796f 31px)}
+    .block-sections{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding-top:16px}
+    .block-sections a{position:relative;min-height:95px;padding:17px 15px 14px 58px;text-decoration:none;background:#e6dfcf;color:#27332e;border:1px solid #c3b9a5;transition:transform .2s,background .2s}
+    .block-sections a:hover{transform:translateY(-3px);background:#f6f0e3}
+    .block-sections a span{position:absolute;left:15px;top:17px;font:24px Georgia,serif;color:#8e7449}
+    .block-sections strong,.block-sections small{display:block}
+    .block-sections strong{font:18px Georgia,serif;line-height:1.2}
+    .block-sections small{margin-top:7px;font-size:11px;color:#62695f}
+    @media(max-width:650px){.block-roof{align-items:flex-start;flex-direction:column}.block-facade{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:14px 8px 0}.facade-window{height:56px;border-width:5px}.block-door{height:120px}.block-sections{grid-template-columns:1fr}.block-sections a{min-height:78px}.home-inner{padding-left:18px!important;padding-right:18px!important}}
+
   </style>
 </head>
 
@@ -112,8 +138,25 @@
     <div class="home-inner">
       <section class="hero">
         <div class="eyebrow">Warszawa • Mokotów</div>
-        <h1>Kronika Stegien<br>Z historii Osiedla</h1>
-        <div class="credit">Fotografia tła: Osiedle Stegny w Warszawie w latach 70. • źródło: Wikimedia Commons</div>
+        <h1>Kronika Stegien<br><span>Osiedle · Ludzie · Pamięć</span></h1>
+        <p>Wejdź do opowieści o miejscu, jego mieszkańcach i historii zapisanej między blokami.</p>
+        <div class="credit">Stegny, Warszawa • historia miejsca i ludzi</div>
+      </section>
+      <section class="block-entrance" aria-label="Wejście do Kroniki Stegien">
+        <div class="block-roof"><span>KRONIKA STEGIEN</span><small>WEJŚCIE DO HISTORII OSIEDLA</small></div>
+        <div class="block-facade">
+          <div class="facade-window"><i></i><i></i><i></i><i></i></div>
+          <div class="facade-window"><i></i><i></i><i></i><i></i></div>
+          <a class="block-door" href="kronika.html"><span class="door-number">K</span><strong>KRONIKA<br>STEGIEN</strong><small>WEJDŹ</small></a>
+          <div class="facade-window"><i></i><i></i><i></i><i></i></div>
+          <div class="facade-window"><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="block-path"></div>
+        <div class="block-sections">
+          <a href="o-stegnach.html"><span>01</span><strong>Dawne Stegny i okolice</strong><small>Początki i krajobraz miejsca</small></a>
+          <a href="kronika.html"><span>02</span><strong>Historia osiedla</strong><small>Jak powstawały Stegny</small></a>
+          <a href="ludzie.html"><span>03</span><strong>Wspomnienia mieszkańców</strong><small>Ludzie i codzienne życie</small></a>
+        </div>
       </section>
     </div>
   </main>
