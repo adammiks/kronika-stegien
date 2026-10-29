@@ -1089,7 +1089,7 @@
 <script id="felieton-toc-enhancement">
 (function(){
   function enhanceFelietons(){
-    var articles = document.querySelectorAll('#obok-historii-stegien .obok-felieton-drawer article');
+    var articles = document.querySelectorAll('article');
     articles.forEach(function(article, articleIndex){
       if(article.querySelector('.felieton-navigation')) return;
       var prefix = 'felieton-' + (articleIndex + 1);
