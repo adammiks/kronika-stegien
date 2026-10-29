@@ -22,6 +22,20 @@
     #stegny-history-map{width:100%;height:clamp(340px,55vw,620px);border:1px solid #c8b99f;background:#e9eee5;z-index:0}
     .stegny-map-caption{font:13px/1.6 Arial,sans-serif!important;margin:10px 0 0}
     .stegny-map-status{min-height:1.5em;font:14px/1.5 Arial,sans-serif!important;color:#4b3926!important}
+    .stegny-controls{display:grid;grid-template-columns:1fr;gap:18px;margin:20px 0}
+    .stegny-panel{padding:16px;border:1px solid #c8b99f;background:#fffaf1}
+    .stegny-panel h3{margin:0 0 8px;font:700 20px Georgia,serif;color:#4b3926}
+    .stegny-panel p,.stegny-panel label{font:14px/1.6 Arial,sans-serif;color:#4b3926}
+    .stegny-range{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+    .stegny-range input{flex:1;min-width:160px;accent-color:#765538}
+    .stegny-layers{display:flex;flex-wrap:wrap;gap:10px 18px}
+    .stegny-layers label{display:flex;align-items:center;gap:7px}
+    .stegny-story-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:14px}
+    .stegny-story{padding:14px;background:#fffaf1;border:1px solid #d8c9b3}
+    .stegny-story h4{margin:0 0 7px;font:700 17px Georgia,serif;color:#4b3926}
+    .stegny-story p{font:14px/1.6 Arial,sans-serif;color:#514536}
+    .stegny-story a{color:#70451f}
+    .stegny-source-note{font:13px/1.6 Arial,sans-serif;color:#514536}
     .map-method{margin-top:20px;padding:14px 16px;border-left:3px solid #9b774e;background:#efe5d5;color:#4b3926;font:14px/1.6 Arial,sans-serif}
     @media(max-width:600px){.stegny-eras button{flex:1 1 44%;padding:10px 8px}.stegny-explorer{padding:12px}}
   </style>
@@ -54,14 +68,40 @@
           <h2 id="stegny-explorer-title">Odkryj dawne Stegny</h2>
           <p>Przesuwaj mapę, przybliżaj ją i wybieraj epoki, aby poznawać krajobraz oraz miejscowości związane z historią okolicy. Punkty poza współczesnym centrum Stegien pokazują orientacyjne położenie obszarów, a nie dokładne lokalizacje dawnych obiektów.</p>
           <div class="stegny-eras" role="group" aria-label="Wybierz okres historyczny">
-            <button type="button" data-era="old" aria-pressed="false">Dawny krajobraz</button>
-            <button type="button" data-era="early" aria-pressed="true">XV–XVII wiek</button>
-            <button type="button" data-era="estate" aria-pressed="false">Budowa osiedla</button>
+            <button type="button" data-era="old" aria-pressed="false">Dawne wsie i pola</button>
+            <button type="button" data-era="prewar" aria-pressed="false">Okres przedwojenny</button>
+            <button type="button" data-era="postwar" aria-pressed="false">Lata powojenne</button>
+            <button type="button" data-era="estate" aria-pressed="false">Budowa osiedla — lata 70.</button>
             <button type="button" data-era="today" aria-pressed="false">Współczesność</button>
           </div>
           <div id="stegny-history-map" role="region" aria-label="Interaktywna mapa Stegien i okolic"></div>
           <p id="stegny-map-status" class="stegny-map-status" aria-live="polite">Wybrano okres XV–XVII wieku. Kliknij znacznik, aby przeczytać opis.</p>
-          <p class="stegny-map-caption">Podkład mapowy: © OpenStreetMap contributors. Opisy historyczne mają charakter orientacyjny; przed wskazaniem konkretnych dawnych obiektów należy potwierdzić ich położenie w źródłach.</p>
+          <div class="stegny-controls">
+          <section class="stegny-panel" aria-labelledby="compare-title">
+            <h3 id="compare-title">Dawniej i dziś</h3>
+            <p>Suwak reguluje widoczność poglądowej warstwy dawnego krajobrazu na współczesnym podkładzie. To schemat orientacyjny, nie skalibrowana mapa archiwalna ani odtworzenie granic działek.</p>
+            <div class="stegny-range"><label for="historic-opacity">Widoczność warstwy „dawniej”</label><input id="historic-opacity" type="range" min="0" max="100" value="65"><output id="historic-opacity-value" for="historic-opacity">65%</output></div>
+          </section>
+          <section class="stegny-panel" aria-labelledby="layers-title">
+            <h3 id="layers-title">Warstwy tematyczne</h3>
+            <div class="stegny-layers">
+              <label><input type="checkbox" data-topic="nature" checked> Przyroda i cieki wodne</label>
+              <label><input type="checkbox" data-topic="names" checked> Dawne nazwy i sąsiednie osady</label>
+              <label><input type="checkbox" data-topic="ownership"> Historia własności</label>
+              <label><input type="checkbox" data-topic="estate" checked> Rozwój osiedla</label>
+              <label><input type="checkbox" data-topic="memories" checked> Miejsca wspomnień</label>
+            </div>
+            <p>Warstwy są poglądowe. Własność, granice i przebieg dawnych cieków wymagają przypisania do konkretnych źródeł kartograficznych.</p>
+          </section>
+        </div>
+        <h3 style="font:700 24px Georgia,serif;color:#4b3926;margin:26px 0 8px">Miejsca z historią</h3>
+        <p class="stegny-source-note">Kliknij znacznik na mapie. Opisy wskazują obszary orientacyjne; nie przypisujemy im niepotwierdzonych fotografii ani dokładnych lokalizacji.</p>
+        <div class="stegny-story-grid">
+          <article class="stegny-story"><h4>Dawne wsie i pola</h4><p>Krajobraz przed rozbudową mieszkaniową. Granice gruntów i przebieg dróg można nanieść po odnalezieniu i georeferencji map archiwalnych.</p><a href="mapy.html">Zobacz mapy i plany w kronice →</a></article>
+          <article class="stegny-story"><h4>Osiedle w budowie</h4><p>Lata 70. XX wieku przyniosły przekształcenie terenu pod zabudowę mieszkaniową. Konkretne etapy należy powiązać z planami i fotografiami z datą.</p><a href="zdjecia.html">Przejdź do ilustracji i fotografii →</a></article>
+          <article class="stegny-story"><h4>Archiwalia do weryfikacji</h4><p>Poszukując zdjęć i planów, sprawdzaj opisy, daty oraz prawa do reprodukcji. Poniższe katalogi są punktami wyjścia, a nie źródłami już przypisanymi do konkretnych punktów.</p><a href="https://polona.pl/search/?query=Stegny%20Warszawa" target="_blank" rel="noopener noreferrer">Szukaj w Polonie →</a><br><a href="https://www.szukajwarchiwach.gov.pl/" target="_blank" rel="noopener noreferrer">Szukaj w Archiwach Państwowych →</a></article>
+        </div>
+        <p class="stegny-map-caption">Podkład mapowy: © OpenStreetMap contributors. Opisy historyczne mają charakter orientacyjny; przed wskazaniem konkretnych dawnych obiektów należy potwierdzić ich położenie w źródłach.</p>
         </section>
       <div class="map-method"><strong>Jak czytać mapę?</strong> Znaczniki poza współczesnym centrum Stegien pokazują obszary orientacyjne, a nie dokładne położenie dawnych obiektów. Nie są odtworzeniem granic parcel ani przebiegu dróg. Każdy szczegół historyczny będzie doprecyzowywany na podstawie źródeł.</div>
       <p><a href="mapy.html">Zobacz także mapy historyczne, plany i schematy w dziale „Mapy” →</a></p>
@@ -77,12 +117,14 @@
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
       maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
     }).addTo(map);
-    var groups={old:L.layerGroup(),early:L.layerGroup(),estate:L.layerGroup(),today:L.layerGroup()};
+    var groups={old:L.layerGroup(),prewar:L.layerGroup(),postwar:L.layerGroup(),estate:L.layerGroup(),today:L.layerGroup()};
+    var topics={nature:L.layerGroup(),names:L.layerGroup(),ownership:L.layerGroup(),estate:L.layerGroup(),memories:L.layerGroup()};
+    var historicShapes=L.layerGroup();
     var points=[
-      {id:'stegny',lat:52.1858,lon:21.0444,name:'Stegny — obszar dzisiejszego osiedla',eras:['old','early','estate','today'],text:{old:'Przed rozbudową mieszkaniową krajobraz tej części Mokotowa miał w dużej mierze charakter podmiejski. Ten punkt wskazuje obszar orientacyjny, nie konkretną dawną parcelę.',early:'Stegny i sąsiednie tereny należy rozpatrywać w szerszym układzie dawnych osad, dróg i gruntów południowej Warszawy. Dokładne granice wymagają porównania map historycznych.',estate:'W latach 70. XX wieku rozpoczęła się budowa współczesnego osiedla Stegny. Punkt wskazuje przybliżone centrum obszaru osiedla.',today:'Współczesne osiedle Stegny na Mokotowie. Otwórz pozostałe mapy w tej sekcji, aby porównać plany i schematy historyczne.'}},
-      {id:'czerniakow',lat:52.1905,lon:21.0610,name:'Czerniaków — obszar orientacyjny',eras:['old','early'],text:{old:'Czerniaków jest jednym z historycznych punktów odniesienia dla południowego Mokotowa. Znacznik lokalizuje współczesny obszar, nie dawną granicę osady.',early:'Czerniaków należał do sieci osad i dróg w okolicy Warszawy. Przebieg dawnych połączeń należy traktować ostrożnie, dopóki nie zostanie potwierdzony na konkretnych mapach.'}},
-      {id:'sluzew',lat:52.1745,lon:21.0215,name:'Służew — obszar orientacyjny',eras:['old','early'],text:{old:'Służew to ważny historyczny punkt orientacyjny na południe od dawnej Warszawy. Znacznik wskazuje przybliżony obszar współczesny.',early:'Dawne powiązania komunikacyjne w kierunku Służewa pomagają opisywać szerszy krajobraz okolic przyszłych Stegien. Linia na mapie nie oznacza potwierdzonego przebiegu konkretnej drogi.'}},
-      {id:'wilanow',lat:52.1655,lon:21.0900,name:'Wilanów — obszar orientacyjny',eras:['old','early'],text:{old:'Wilanów stanowi historyczny punkt odniesienia w krajobrazie południowej Warszawy. Punkt oznacza ogólny obszar, a nie lokalizację konkretnego obiektu z danego okresu.',early:'Wilanów i okolice wiązały się z lokalnymi drogami i osadnictwem południowego Mazowsza. Dokładne trasy dawnych dróg wymagają źródłowego potwierdzenia.'}},
+      {id:'stegny',lat:52.1858,lon:21.0444,name:'Stegny — obszar dzisiejszego osiedla',eras:['old','prewar','postwar','estate','today'],text:{old:'Przed rozbudową mieszkaniową krajobraz tej części Mokotowa miał w dużej mierze charakter podmiejski. Ten punkt wskazuje obszar orientacyjny, nie konkretną dawną parcelę.',prewar:'W okresie przedwojennym okolica wymaga analizy na podstawie map topograficznych i katastralnych. Ten punkt oznacza obszar dzisiejszego osiedla, nie potwierdzoną parcelę.',postwar:'Po II wojnie światowej południowe obrzeża Warszawy stopniowo się zmieniały. Dokładny stan zabudowy i gruntów należy odtworzyć z map i dokumentów z poszczególnych lat.',estate:'W latach 70. XX wieku rozpoczęła się budowa współczesnego osiedla Stegny. Punkt wskazuje przybliżone centrum obszaru osiedla.',today:'Współczesne osiedle Stegny na Mokotowie. Otwórz pozostałe mapy w tej sekcji, aby porównać plany i schematy historyczne.'}},
+      {id:'czerniakow',lat:52.1905,lon:21.0610,name:'Czerniaków — obszar orientacyjny',eras:['old','prewar','postwar'],text:{old:'Czerniaków jest jednym z historycznych punktów odniesienia dla południowego Mokotowa. Znacznik lokalizuje współczesny obszar, nie dawną granicę osady.',prewar:'Czerniaków jest punktem odniesienia dla przedwojennego krajobrazu południowego Mokotowa. Szczegóły wymagają porównania map z epoki.',postwar:'Zmiany powojenne w okolicy powinny być weryfikowane na planach z datą; znacznik nie wyznacza granicy historycznej osady.'}},
+      {id:'sluzew',lat:52.1745,lon:21.0215,name:'Służew — obszar orientacyjny',eras:['old','prewar','postwar'],text:{old:'Służew to ważny historyczny punkt orientacyjny na południe od dawnej Warszawy. Znacznik wskazuje przybliżony obszar współczesny.',prewar:'Służew to punkt odniesienia do badania przedwojennych połączeń i osadnictwa w południowej Warszawie.',postwar:'Powojenne przekształcenia południowych dzielnic można śledzić przez porównanie kolejnych planów Warszawy.'}},
+      {id:'wilanow',lat:52.1655,lon:21.0900,name:'Wilanów — obszar orientacyjny',eras:['old','prewar','postwar'],text:{old:'Wilanów stanowi historyczny punkt odniesienia w krajobrazie południowej Warszawy. Punkt oznacza ogólny obszar, a nie lokalizację konkretnego obiektu z danego okresu.',prewar:'Wilanów i okolice stanowią kontekst dla przedwojennego krajobrazu południa Warszawy.',postwar:'Dla okresu powojennego należy zestawić mapy i dokumenty z konkretnymi datami.'}},
       {id:'fields',lat:52.1930,lon:21.0390,name:'Dawne grunty na północ od Stegien — obszar poglądowy',eras:['old'],text:{old:'Poglądowe wskazanie krajobrazu gruntów i terenów otwartych przed rozbudową osiedla. Nie jest to odtworzenie granic działek ani potwierdzona lokalizacja konkretnego pola.'}},
       {id:'construction',lat:52.1830,lon:21.0465,name:'Rozwój osiedla — obszar orientacyjny',eras:['estate'],text:{estate:'W latach 70. XX wieku okolica zmieniała się wraz z realizacją zabudowy mieszkaniowej i infrastruktury. Znacznik pokazuje obszar orientacyjny; kolejne punkty budynków można dodać po weryfikacji na planach i zdjęciach archiwalnych.'}}
     ];
@@ -93,10 +135,32 @@
     });});
     var buttons=Array.prototype.slice.call(document.querySelectorAll('.stegny-eras button'));
     var status=document.getElementById('stegny-map-status');
-    var labels={old:'Dawny krajobraz',early:'XV–XVII wiek',estate:'Budowa osiedla',today:'Współczesność'};
+    var labels={old:'Dawne wsie i pola',prewar:'Okres przedwojenny',postwar:'Lata powojenne',estate:'Budowa osiedla — lata 70.',today:'Współczesność'};
     function showEra(era){Object.keys(groups).forEach(function(key){map.removeLayer(groups[key]);});groups[era].addTo(map);buttons.forEach(function(button){button.setAttribute('aria-pressed',button.dataset.era===era?'true':'false');});status.textContent='Wybrany okres: '+labels[era]+'. Kliknij znacznik, aby przeczytać opis. Punkty historyczne są orientacyjne.';}
     buttons.forEach(function(button){button.addEventListener('click',function(){showEra(button.dataset.era);});});
-    showEra('early');
+    // Schematyczna warstwa dawnego krajobrazu: celowo bez pozorowania dokładnych granic historycznych.
+    var illustrative=L.polygon([[52.191,21.030],[52.193,21.047],[52.187,21.055],[52.181,21.042],[52.184,21.030]],{color:'#9a774d',weight:1,dashArray:'5 5',fillColor:'#d8bd8a',fillOpacity:.25});
+    illustrative.bindPopup('<strong>Dawny krajobraz — schemat</strong><p>Warstwa poglądowa, nie odtworzenie historycznych granic pól ani własności.</p>');
+    illustrative.addTo(historicShapes);
+    function addTopicPoint(topic,lat,lon,title,description,color){
+      var marker=L.circleMarker([lat,lon],{radius:6,color:color,fillColor:color,fillOpacity:.8});
+      marker.bindPopup('<strong>'+title+'</strong><p>'+description+'</p>');
+      marker.addTo(topics[topic]);
+    }
+    addTopicPoint('nature',52.191,21.055,'Zieleń i krajobraz','Warstwa orientacyjna. Nie przedstawia historycznego przebiegu cieków wodnych.','#47775b');
+    addTopicPoint('names',52.1905,21.061,'Czerniaków','Historyczna miejscowość w sąsiedztwie Stegien; punkt orientacyjny.','#886b43');
+    addTopicPoint('ownership',52.193,21.039,'Grunty — materiał do badań','Granice własności nie zostały tu odtworzone. Warstwa czeka na potwierdzone mapy katastralne.','#9b5948');
+    addTopicPoint('estate',52.183,21.0465,'Rozwój osiedla','Przybliżony obszar rozbudowy mieszkaniowej w latach 70. XX wieku.','#426e91');
+    addTopicPoint('memories',52.1858,21.0444,'Stegny — wspomnienia mieszkańców','Punkt zbiorczy. Można go uzupełnić o relacje z podaniem autora, daty i zgody na publikację.','#76558f');
+    var opacityInput=document.getElementById('historic-opacity');
+    var opacityValue=document.getElementById('historic-opacity-value');
+    function setHistoricOpacity(){var value=Number(opacityInput.value)/100;historicShapes.eachLayer(function(layer){if(layer.setStyle)layer.setStyle({fillOpacity:value*.38,opacity:Math.max(.15,value)});});opacityValue.textContent=opacityInput.value+'%';}
+    opacityInput.addEventListener('input',setHistoricOpacity);
+    document.querySelectorAll('[data-topic]').forEach(function(input){input.addEventListener('change',function(){var group=topics[input.dataset.topic];if(input.checked)group.addTo(map);else map.removeLayer(group);});});
+    showEra('old');
+    Object.keys(topics).forEach(function(key){if(document.querySelector('[data-topic="'+key+'"]').checked)topics[key].addTo(map);});
+    historicShapes.addTo(map);
+    setHistoricOpacity();
     setTimeout(function(){map.invalidateSize();},150);
   })();
   </script>
