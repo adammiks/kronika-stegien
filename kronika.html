@@ -1089,7 +1089,9 @@
 <script id="felieton-toc-enhancement">
 (function(){
   function enhanceFelietons(){
-    var articles = document.querySelectorAll('article');
+    var articles = Array.from(document.querySelectorAll('.chapter-content, article')).filter(function(el){
+      return el.classList.contains('chapter-content') || !el.closest('.chapter-content');
+    });
     articles.forEach(function(article, articleIndex){
       if(article.querySelector(':scope > .felieton-navigation')) return;
       var prefix = 'felieton-' + (articleIndex + 1);
