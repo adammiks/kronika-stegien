@@ -139,9 +139,9 @@
     function showEra(era){Object.keys(groups).forEach(function(key){map.removeLayer(groups[key]);});groups[era].addTo(map);buttons.forEach(function(button){button.setAttribute('aria-pressed',button.dataset.era===era?'true':'false');});status.textContent='Wybrany okres: '+labels[era]+'. Kliknij znacznik, aby przeczytać opis. Punkty historyczne są orientacyjne.';}
     buttons.forEach(function(button){button.addEventListener('click',function(){showEra(button.dataset.era);});});
     // Schematyczna warstwa dawnego krajobrazu: celowo bez pozorowania dokładnych granic historycznych.
-    var illustrative=L.polygon([[52.191,21.030],[52.193,21.047],[52.187,21.055],[52.181,21.042],[52.184,21.030]],{color:'#9a774d',weight:2,dashArray:'5 5',fillColor:'#d8bd8a',fillOpacity:.247,opacity:.65,interactive:true});
+    var illustrative=L.polygon([[52.191,21.030],[52.193,21.047],[52.187,21.055],[52.181,21.042],[52.184,21.030]],{color:'#6b3518',weight:3,dashArray:'7 4',fillColor:'#d39a43',fillOpacity:.4225,opacity:.65,interactive:true});
     illustrative.bindPopup('<strong>Dawny krajobraz — schemat</strong><p>Warstwa poglądowa, nie odtworzenie historycznych granic pól ani własności.</p>');
-    illustrative.addTo(historicShapes);
+    illustrative.addTo(map);
     function addTopicPoint(topic,lat,lon,title,description,color){
       var marker=L.circleMarker([lat,lon],{radius:6,color:color,fillColor:color,fillOpacity:.8});
       marker.bindPopup('<strong>'+title+'</strong><p>'+description+'</p>');
@@ -156,9 +156,11 @@
     var opacityValue=document.getElementById('historic-opacity-value');
     function setHistoricOpacity(){
       var value=Number(opacityInput.value)/100;
-      illustrative.setStyle({fillOpacity:value*.38,opacity:value});
+      // Bezpośrednia aktualizacja widocznego poligonu; kontrast pozwala zauważyć zmianę.
+      illustrative.setStyle({fillOpacity:value*.65,opacity:value,weight:3+value*2});
       opacityValue.textContent=opacityInput.value+'%';
       opacityValue.setAttribute('aria-label','Widoczność warstwy dawnej: '+opacityInput.value+' procent');
+      status.textContent='Widoczność warstwy „dawniej”: '+opacityInput.value+'%. Przy 0% schemat znika, przy 100% jest najbardziej widoczny.';
     }
     opacityInput.addEventListener('input',setHistoricOpacity);
     opacityInput.addEventListener('change',setHistoricOpacity);
