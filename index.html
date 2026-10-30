@@ -128,10 +128,13 @@
     .flat small{font:10px Arial,sans-serif;letter-spacing:.08em;color:#d3d9cf}
     .block-ground{display:grid;grid-template-columns:1fr minmax(150px,220px) 1fr;align-items:stretch;gap:14px;padding:0 18px 18px;background:linear-gradient(90deg,#9c9b8f,#c4c1b3 18%,#aaa99e 50%,#d0cbbd 82%,#8b8e84)}
     .ground-window{min-height:86px;margin-top:14px;border:7px solid #d5d0c3;background:linear-gradient(135deg,#8caaa8,#405a5b);box-shadow:inset 0 0 0 3px #4c5a56}
-    .block-door{min-height:150px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;text-decoration:none;color:#f0e2c2;background:linear-gradient(90deg,#3a443f,#59645b 20%,#303b35 80%,#242e29);border:5px solid #d4cdbc;box-shadow:inset 0 0 0 2px #202a25,0 0 0 1px #59645b}
+    .block-door{position:relative;min-height:150px;display:block;perspective:800px;text-align:center;text-decoration:none;color:#f0e2c2;background:#17211c;border:5px solid #d4cdbc;box-shadow:inset 0 0 0 2px #202a25,0 0 0 1px #59645b;overflow:visible}
+    .door-leaf{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:linear-gradient(90deg,#3a443f,#59645b 20%,#303b35 80%,#242e29);border:1px solid #202a25;box-shadow:inset 0 0 0 2px #202a25,3px 0 8px #0008;transform-origin:left center;transform:rotateY(0);transition:transform .85s cubic-bezier(.2,.75,.25,1);backface-visibility:hidden}
+    .block-door.is-opening .door-leaf{transform:rotateY(-105deg)}
     .block-door .door-number{font:22px Georgia,serif;border:1px solid #b8a783;border-radius:50%;width:34px;height:34px;display:grid;place-items:center}
     .block-door strong{font:700 12px/1.3 Arial,sans-serif;letter-spacing:.12em}
     .block-door small{font-size:9px;letter-spacing:.18em;border-top:1px solid #b8a783;padding-top:6px}
+    @media(prefers-reduced-motion:reduce){.door-leaf{transition-duration:.01ms}}
     .block-path{height:24px;background:repeating-linear-gradient(90deg,#65675f 0,#65675f 28px,#77796f 29px,#77796f 31px)}
     .building-caption{text-align:center;padding:14px 8px 17px;font:11px Arial,sans-serif;letter-spacing:.12em;color:#e0d8c7}
     @media(max-width:650px){.block-roof{align-items:flex-start;flex-direction:column}.block-facade{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:minmax(108px,auto);gap:7px;padding:9px}.flat{min-height:108px;padding:8px;border-width:4px}.flat .flat-number{font-size:16px}.flat strong{font-size:12px}.flat small{font-size:9px}.flat:nth-child(-n+2){grid-row:7}.flat:nth-child(n+3):nth-child(-n+4){grid-row:6}.flat:nth-child(n+5):nth-child(-n+6){grid-row:5}.flat:nth-child(n+7):nth-child(-n+8){grid-row:4}.flat:nth-child(n+9):nth-child(-n+10){grid-row:3}.flat:nth-child(n+11):nth-child(-n+12){grid-row:2}.flat:nth-child(n+13){grid-row:1}.flat:nth-child(odd){grid-column:1}.flat:nth-child(even){grid-column:2}.block-ground{grid-template-columns:1fr minmax(105px,1.2fr) 1fr;gap:7px;padding:0 9px 9px}.ground-window{min-height:65px;border-width:4px}.block-door{min-height:130px;padding:5px}.block-door strong{font-size:10px}.home-inner{padding-left:14px!important;padding-right:14px!important}}
@@ -196,7 +199,7 @@
         </div>
         <div class="block-ground">
           <div class="ground-window" aria-hidden="true"></div>
-          <a class="block-door" href="kronika.html"><span class="door-number">K</span><strong>KRONIKA<br>STEGIEN</strong><small>WEJDŹ DO BLOKU</small></a>
+          <a class="block-door" id="chronicle-door" href="kronika.html" aria-label="Otwórz drzwi i przejdź do Kroniki Stegien"><span class="door-leaf"><span class="door-number">K</span><strong>KRONIKA<br>STEGIEN</strong><small>WEJDŹ DO BLOKU</small></span></a>
           <div class="ground-window" aria-hidden="true"></div>
         </div>
         <div class="block-path"></div>
@@ -231,6 +234,17 @@
     const musicPlayer = document.getElementById("music-player");
     const welcomeNote = document.querySelector(".welcome-note");
     const musicToggle = document.getElementById("music-toggle");
+    const chronicleDoor = document.getElementById("chronicle-door");
+
+    // Otwórz drzwi z animacją, a następnie przejdź do kroniki.
+    chronicleDoor.addEventListener("click", function (event) {
+      event.preventDefault();
+      if (chronicleDoor.classList.contains("is-opening")) return;
+      chronicleDoor.classList.add("is-opening");
+      window.setTimeout(function () {
+        window.location.href = chronicleDoor.href;
+      }, 900);
+    });
 
     function showMusicToggle() {
       musicToggle.hidden = false;
