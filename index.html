@@ -199,7 +199,7 @@
         </div>
         <div class="block-ground">
           <div class="ground-window" aria-hidden="true"></div>
-          <a class="block-door" id="chronicle-door" href="kronika.html" aria-label="Otwórz drzwi i przejdź do Kroniki Stegien"><span class="door-leaf"><span class="door-number">K</span><strong>KRONIKA<br>STEGIEN</strong><small>WEJDŹ DO BLOKU</small></span></a>
+          <a class="block-door" id="chronicle-door" href="mapy.html#plan-sytuacyjny-stegien" aria-label="Otwórz drzwi i przejdź do planu sytuacyjnego Stegien na tle Warszawy"><span class="door-leaf"><span class="door-number">K</span><strong>KRONIKA<br>STEGIEN</strong><small>WEJŚCIE</small></span></a>
           <div class="ground-window" aria-hidden="true"></div>
         </div>
         <div class="block-path"></div>
@@ -236,11 +236,45 @@
     const musicToggle = document.getElementById("music-toggle");
     const chronicleDoor = document.getElementById("chronicle-door");
 
-    // Otwórz drzwi z animacją, a następnie przejdź do kroniki.
+    // Krótkie, syntetyczne skrzypnięcie drzwi — bez zewnętrznego pliku audio.
+    function playDoorCreak() {
+      const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+      if (!AudioContextClass) return;
+      const audioContext = new AudioContextClass();
+      const now = audioContext.currentTime;
+      const oscillator = audioContext.createOscillator();
+      const filter = audioContext.createBiquadFilter();
+      const volume = audioContext.createGain();
+
+      oscillator.type = "sawtooth";
+      oscillator.frequency.setValueAtTime(190, now);
+      oscillator.frequency.exponentialRampToValueAtTime(82, now + 0.72);
+      filter.type = "lowpass";
+      filter.frequency.setValueAtTime(950, now);
+      filter.frequency.exponentialRampToValueAtTime(380, now + 0.72);
+      volume.gain.setValueAtTime(0.0001, now);
+      volume.gain.exponentialRampToValueAtTime(0.10, now + 0.08);
+      volume.gain.setValueAtTime(0.065, now + 0.38);
+      volume.gain.exponentialRampToValueAtTime(0.0001, now + 0.78);
+
+      oscillator.connect(filter);
+      filter.connect(volume);
+      volume.connect(audioContext.destination);
+      oscillator.start(now);
+      oscillator.stop(now + 0.8);
+      oscillator.addEventListener("ended", function () { audioContext.close(); }, { once: true });
+    }
+
+    // Otwórz drzwi z animacją, skrzypnięciem i przejściem do planu sytuacyjnego.
     chronicleDoor.addEventListener("click", function (event) {
       event.preventDefault();
       if (chronicleDoor.classList.contains("is-opening")) return;
       chronicleDoor.classList.add("is-opening");
+      try {
+        playDoorCreak();
+      } catch (error) {
+        // Brak obsługi dźwięku nie blokuje przejścia do mapy.
+      }
       window.setTimeout(function () {
         window.location.href = chronicleDoor.href;
       }, 900);
