@@ -1676,3 +1676,9 @@ pre, code {
     text-justify: inter-word;
   }
 }
+
+/* Oś czasu: justowanie treści poszczególnych wpisów. */
+.page-grid:has(> h1.section-timeline) > .list > li {
+  text-align: justify;
+  text-justify: inter-word;
+}
