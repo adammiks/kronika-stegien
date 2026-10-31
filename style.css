@@ -1634,3 +1634,38 @@ pre, code {
   border-radius:2px;
   box-shadow:inset 0 1px 0 rgba(255,222,164,.18),0 1px 2px rgba(0,0,0,.18);
 }
+
+
+/* DZIAŁ 01 — O STEGNACH: spójna, cienka rama pod belką tytułową. */
+.page-grid:has(> h1.section-about) > .cards {
+  margin-top: -24px;
+  padding: 10px;
+  border: 1px solid #4b382b;
+  border-radius: 0 0 3px 3px;
+  background: #4b382b;
+  box-shadow: 0 5px 12px rgba(0,0,0,.16);
+}
+.page-grid:has(> h1.section-about) > .cards > .card {
+  border: 0;
+  border-radius: 1px;
+  background: #f8f5ed;
+}
+.page-grid:has(> h1.section-about) > .cards > .card > p {
+  max-width: 78ch;
+  margin: 0 auto 1.15em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.page-grid:has(> h1.section-about) > .cards > .card > p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 800px) {
+  .page-grid:has(> h1.section-about) > .cards {
+    margin-top: -24px;
+    padding: 8px;
+  }
+  .page-grid:has(> h1.section-about) > .cards > .card > p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
