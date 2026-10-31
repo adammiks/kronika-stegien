@@ -1640,7 +1640,7 @@ pre, code {
 .page-grid:has(> h1.section-about) > .cards {
   margin-top: -24px;
   padding: 10px;
-  border: 1px solid #2c211a;
+  border: 2px solid #4b382b;
   border-radius: 0 0 3px 3px;
   background-color: #4b382b;
   background-image:
