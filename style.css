@@ -1640,9 +1640,13 @@ pre, code {
 .page-grid:has(> h1.section-about) > .cards {
   margin-top: -24px;
   padding: 10px;
-  border: 1px solid #4b382b;
+  border: 1px solid #2c211a;
   border-radius: 0 0 3px 3px;
-  background: #4b382b;
+  background-color: #4b382b;
+  background-image:
+    repeating-linear-gradient(0deg,rgba(255,255,255,.045) 0 1px,transparent 1px 6px),
+    repeating-linear-gradient(90deg,rgba(0,0,0,.10) 0 1px,transparent 1px 8px),
+    linear-gradient(90deg,#34261e,#624936 48%,#38291f);
   box-shadow: 0 5px 12px rgba(0,0,0,.16);
 }
 .page-grid:has(> h1.section-about) > .cards > .card {
