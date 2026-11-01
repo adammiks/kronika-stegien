@@ -332,7 +332,7 @@
         return;
       }
 
-      intercomMessage.textContent = "Zgadza się. Drzwi się otwierają…";
+      intercomMessage.textContent = "Zgadza się. Drzwi się otwierają… Posłuchajmy piosenki.";
       intercomCode.disabled = true;
       intercomForm.querySelectorAll("button").forEach(function (button) { button.disabled = true; });
       chronicleDoor.classList.add("is-opening");
@@ -341,9 +341,28 @@
       } catch (error) {
         // Brak obsługi dźwięku nie blokuje przejścia do mapy.
       }
-      window.setTimeout(function () {
-        window.location.href = chronicleDoor.href;
-      }, 900);
+
+      // Poprawny kod jest gestem użytkownika, więc właśnie teraz próbujemy
+      // uruchomić utwór — przeglądarki często blokują automatyczne odtwarzanie.
+      const musicStarted = musicPlayer.paused
+        ? musicPlayer.play().then(function () {
+            musicToggle.textContent = "Ⅱ Wycisz muzykę";
+            musicToggle.hidden = false;
+            return true;
+          }).catch(function () {
+            intercomMessage.textContent = "Drzwi są otwarte. Jeśli muzyka nie ruszyła, użyj przycisku „Włącz muzykę” w rogu strony.";
+            musicToggle.hidden = false;
+            musicToggle.textContent = "▶ Włącz muzykę";
+            return false;
+          })
+        : Promise.resolve(true);
+
+      // Dajemy piosence chwilę wybrzmieć przed przejściem do planu.
+      musicStarted.finally(function () {
+        window.setTimeout(function () {
+          window.location.href = chronicleDoor.href;
+        }, 4000);
+      });
     });
 
     function showMusicToggle() {
