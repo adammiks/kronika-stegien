@@ -1152,7 +1152,10 @@
         var chapter = article.closest('details.chapter');
         titleHeading = chapter ? chapter.querySelector('summary') : null;
       }
-      if(titleHeading && /^(H2|H3|H4|SUMMARY)$/.test(titleHeading.tagName) &&
+      // Tytuł belki rozdziału nie jest dodatkową pozycją spisu treści:
+      // w treści rozdziału znajduje się już właściwy nagłówek WSTĘP.
+      if(titleHeading && !article.closest('details.chapter') &&
+         /^(H2|H3|H4|SUMMARY)$/.test(titleHeading.tagName) &&
          titleHeading.textContent.trim() && headings.indexOf(titleHeading) === -1){
         headings.unshift(titleHeading);
       }
@@ -1179,7 +1182,10 @@
           if(heading.tagName === 'H4') item.className = 'felieton-toc-subitem';
           var link = document.createElement('a');
           link.href = '#' + heading.id;
-          link.textContent = heading.textContent.trim();
+          // Numerację zapewnia lista <ol>; usuń numer z samego tytułu,
+          // aby nie wyświetlać np. „3. 2. Położenie geograficzne”.
+          link.textContent = heading.textContent.trim()
+            .replace(/^\\s*\\d{1,2}(?:\\.\\d+)*\\s*[.)—–-]?\\s*/, '');
           item.appendChild(link);
           list.appendChild(item);
         });
