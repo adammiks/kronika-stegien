@@ -1320,6 +1320,12 @@ pre, code {
 
 
 /* „Obok historii Stegien” — osobna szuflada dla każdego felietonu */
+/* Numerujemy felietony lokalnie i tylko raz: numer dostarcza pseudo-element summary. */
+#obok-historii-stegien > .drawer-content{ counter-reset: obok-felieton; }
+#obok-historii-stegien > .drawer-content > .obok-felieton-drawer{ counter-increment: obok-felieton; }
+#obok-historii-stegien > .drawer-content > .obok-felieton-drawer > summary:after{
+  content: counter(obok-felieton);
+}
 #obok-historii-stegien > .drawer-content > .obok-felieton-drawer{
   margin: 0 0 14px;
   transform: none;
