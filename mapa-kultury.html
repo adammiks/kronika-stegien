@@ -146,12 +146,6 @@
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
       }).addTo(map);
 
-      const church = L.marker([52.1745898, 21.0620089]).addTo(map);
-      church.bindPopup("<strong>Kościół św. Antoniego Marii Zaccarii</strong><br>al. Jana III Sobieskiego 15<br><em>Dziewczyny z Portofino</em>");
-
-      const zanussiChurch = L.marker([52.178710, 21.047740]).addTo(map);
-      zanussiChurch.bindPopup("<strong>Kościół Najświętszej Maryi Panny Matki Miłosierdzia</strong><br>ul. Świętego Bonifacego 9<br><em>Krzysztof Zanussi, „Słaba wiara” (1996)</em>");
-
       // Geokodujemy adres i orientacyjne lokalizacje ulic; ulice nie oznaczają dokładnych miejsc ujęć.
       const locations = [
         { q: "Portofino 6, Warszawa, Polska", title: "Ul. Portofino 6", detail: "Martyna Jakubowicz, „W domach z betonu nie ma wolnej miłości” — adres związany z genezą piosenki.", exact: true },
