@@ -1186,7 +1186,7 @@
           // „15.1. Szkoły…”), zachowaj go i wyłącz automatyczny marker <ol>
           // tylko dla tej pozycji. Nienumerowane nagłówki nadal dostają marker listy.
           var headingText = heading.textContent.trim();
-          var hasOwnNumber = /^\\s*\\d{1,2}(?:\\.\\d+)*\\s*[.)—–-]\\s*/.test(headingText);
+          var hasOwnNumber = /^\s*\d{1,2}(?:\.\d+)*\s*[.)—–-]\s*/.test(headingText);
           if (hasOwnNumber) item.style.listStyleType = 'none';
           link.textContent = headingText;
           item.appendChild(link);
