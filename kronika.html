@@ -1182,10 +1182,13 @@
           if(heading.tagName === 'H4') item.className = 'felieton-toc-subitem';
           var link = document.createElement('a');
           link.href = '#' + heading.id;
-          // Numerację zapewnia lista <ol>; usuń numer z samego tytułu,
-          // aby nie wyświetlać np. „3. 2. Położenie geograficzne”.
-          link.textContent = heading.textContent.trim()
-            .replace(/^\\s*\\d{1,2}(?:\\.\\d+)*\\s*[.)—–-]?\\s*/, '');
+          // Jeśli nagłówek ma już własny numer (np. „2. Skąd…” albo
+          // „15.1. Szkoły…”), zachowaj go i wyłącz automatyczny marker <ol>
+          // tylko dla tej pozycji. Nienumerowane nagłówki nadal dostają marker listy.
+          var headingText = heading.textContent.trim();
+          var hasOwnNumber = /^\\s*\\d{1,2}(?:\\.\\d+)*\\s*[.)—–-]\\s*/.test(headingText);
+          if (hasOwnNumber) item.style.listStyleType = 'none';
+          link.textContent = headingText;
           item.appendChild(link);
           list.appendChild(item);
         });
