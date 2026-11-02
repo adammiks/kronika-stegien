@@ -9,7 +9,6 @@
 .slownik-target:target,
 .ulica-target:target,
 .osoba-target:target,
-.osoba-target:target,
 .geo-target:target{
   text-decoration:underline;
   text-decoration-thickness:2px;
@@ -902,7 +901,7 @@
 
             <p>W międzywojennej Warszawie samochód był symbolem postępu. Pozwalał szybko dotrzeć na spotkanie biznesowe, do podmiejskiej rezydencji czy na poranną przejażdżkę po całonocnej zabawie. Ale rozwój techniki nie zawsze oznaczał, że przestrzeń, po której poruszały się samochody, była równie nowoczesna.</p>
 
-            <h3 id="skrzyzowanie-smierci">Skąd wzięło się „skrzyżowanie śmierci”?</h3>
+            <h3 id="skrzyzowanie-smierci-pytanie">Skąd wzięło się „skrzyżowanie śmierci”?</h3>
             <p>Dziś mieszkańcy znają skrzyżowanie Sobieskiego i Wilanowskiej jako miejsce o ponurej reputacji. Przedwojenne relacje o wypadkach na szosie wilanowskiej każą spojrzeć na tę okolicę nie tylko jak na fragment współczesnego miasta, lecz także jak na przestrzeń, w której od dawna spotykały się rozwój komunikacji, pośpiech i ryzyko.</p>
 
             <p>Nie mamy jednak dowodu, że nazwa „skrzyżowanie śmierci” narodziła się właśnie po katastrofie konsula Meksyku albo po wypadku Hanki Ordonówny. Nie wiadomo również, czy przedwojenne określenia „zakręt śmierci” i późniejsze „skrzyżowanie śmierci” zawsze odnosiły się do tego samego miejsca. Być może za złą sławą kryje się nie jedno zdarzenie, lecz pamięć o całym ciągu wypadków.</p>
@@ -1088,7 +1087,7 @@
       drawer.className = 'card drawer obok-felieton-drawer';
       var summary = document.createElement('summary');
       felietonNumber++;
-      summary.textContent = felietonNumber + '. ' + heading.textContent.trim();
+      summary.textContent = felietonNumber + '. ' + heading.textContent.trim().replace(/^\d+(?:\.\d+)*[.)]?\s+/, '');
       if (heading.id) summary.id = heading.id;
       var panel = document.createElement('div');
       panel.className = 'drawer-content';
@@ -1111,31 +1110,7 @@
 </script>
 
 
-<script>
-(function(){
-  function addDrawerStateIndicators(){
-    document.querySelectorAll('details.card.drawer > summary').forEach(function(summary){
-      if(summary.querySelector('.drawer-state-indicator')) return;
-      var indicator=document.createElement('span');
-      indicator.className='drawer-state-indicator';
-      indicator.setAttribute('aria-hidden','true');
-      indicator.textContent=summary.parentElement.open ? '⌃' : '⌄';
-      summary.appendChild(indicator);
-    });
-    document.querySelectorAll('details.card.drawer').forEach(function(drawer){
-      drawer.addEventListener('toggle',function(){
-        var indicator=drawer.querySelector(':scope > summary .drawer-state-indicator');
-        if(indicator) indicator.textContent=drawer.open ? '⌃' : '⌄';
-      });
-    });
-  }
-  if(document.readyState==='loading'){
-    document.addEventListener('DOMContentLoaded',addDrawerStateIndicators);
-  } else {
-    addDrawerStateIndicators();
-  }
-})();
-</script>
+
 
 
   <script>
@@ -1237,5 +1212,6 @@
   observer.observe(document.documentElement, {childList:true, subtree:true});
 })();
 </script>
-\n</body>
+
+</body>
 </html>
