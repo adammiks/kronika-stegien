@@ -1078,7 +1078,6 @@
     var content = section.querySelector(':scope > .drawer-content');
     if (!content || content.dataset.drawersReady === 'true') return;
     var children = Array.from(content.children);
-    var felietonNumber = 0;
     for (var i = 0; i < children.length; i++) {
       var heading = children[i];
       var article = children[i + 1];
@@ -1086,11 +1085,10 @@
       var drawer = document.createElement('details');
       drawer.className = 'card drawer obok-felieton-drawer';
       var summary = document.createElement('summary');
-      felietonNumber++;
       var headingTitle = heading.textContent.trim();
-      // Usuń wszystkie istniejące prefiksy numeracyjne, zanim dodamy numer porządkowy szuflady.
-      headingTitle = headingTitle.replace(/^(?:\d+(?:\.\d+)*[.)]?\s*)+/, '').trim();
-      summary.textContent = felietonNumber + '. ' + headingTitle;
+      // Zachowaj sam tytuł; numer wyświetla wyłącznie licznik CSS szuflady.
+      headingTitle = headingTitle.replace(/^\s*\d{1,2}(?:\.\d+)*\s*(?:[.)]|[—–-])\s*/, '').trim();
+      summary.textContent = headingTitle;
       if (heading.id) summary.id = heading.id;
       var panel = document.createElement('div');
       panel.className = 'drawer-content';
