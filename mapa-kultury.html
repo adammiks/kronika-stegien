@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Interaktywna mapa miejsc na Stegnach i w ich sąsiedztwie, przywoływanych w filmach, książkach i piosenkach.">
+  <title>Mapa kultury — Kronika Stegien</title>
+  <link rel="stylesheet" href="style.css?v=9">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <style>
+    .culture-map-intro{max-width:850px;color:var(--muted);font:17px/1.7 Georgia,serif;margin:0 0 20px}
+    .culture-map-layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(260px,.8fr);gap:22px;align-items:start}
+    #culture-map{width:100%;height:610px;min-height:420px;border:1px solid #b9b4a8;background:#e8e5dc;z-index:1}
+    .map-places{display:grid;gap:12px}
+    .map-place{padding:16px 18px;background:#f8f5ed;border:1px solid var(--line)}
+    .map-place h2{margin:0 0 7px;font:20px/1.35 Georgia,serif;color:var(--ink)}
+    .map-place p{margin:0 0 9px;color:var(--muted);font:14px/1.6 Georgia,serif}
+    .map-place a{font:13px/1.5 Arial,sans-serif}
+    .map-status{margin:10px 0 0;color:var(--muted);font:13px/1.5 Arial,sans-serif}
+    .map-legend{margin:20px 0;padding:14px 16px;background:#eee7d9;border-left:4px solid #9a7443;color:#443b30;font:14px/1.6 Arial,sans-serif}
+    .map-sources{margin-top:24px;color:var(--muted);font:13px/1.65 Arial,sans-serif}
+    .map-sources li{margin:.35rem 0}
+    @media(max-width:800px){.culture-map-layout{grid-template-columns:1fr}#culture-map{height:480px;min-height:360px}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Przejdź do treści</a>
+  <header class="site-head">
+    <a class="brand" href="index.html">Kronika Stegien<small>historia osiedla mieszkaniowego w Warszawie</small></a>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav class="nav">
+        <a href="kronika.html">Kronika</a>
+        <a href="mapy.html">Mapy</a>
+        <a href="mapa-interaktywna.html">15 — Mapa interaktywna</a>
+        <a href="prasa.html">16 — Prasa o Stegnach</a>
+        <a href="budynki.html">Budynki</a>
+        <a href="zdjecia.html">Ilustracje</a>
+        <a href="dokumenty.html">Dokumenty</a>
+        <a href="ludzie.html">Ludzie</a>
+        <a href="osoby.html">Indeks osób</a>
+        <a href="literatura.html">Stegny w kulturze</a>
+        <a href="mapa-kultury.html" aria-current="page">Mapa kultury</a>
+        <a href="piosenki-stegien.html">Piosenki ulic Stegien</a>
+        <a href="ulice.html">Indeks ulic</a>
+        <a href="geografia.html">Indeks nazw geograficznych</a>
+        <a href="os-czasu.html">Oś czasu</a>
+        <a href="slownik.html">Słownik</a>
+        <a href="o-stegnach.html">O Stegnach</a>
+      </nav>
+    </details>
+  </header>
+
+  <main class="page" id="main-content">
+    <div class="page-grid">
+      <a class="back" href="literatura.html">← Stegny w kulturze</a>
+      <h1>Mapa kultury</h1>
+      <p class="culture-map-intro">Mapa zbiera konkretne miejsca przywoływane w utworach związanych ze Stegnami. Zaznaczamy wyłącznie lokalizacje, które można wskazać na podstawie źródeł lub rozpoznania opisu. Punkt na mapie nie oznacza, że cały utwór rozgrywa się właśnie w tym miejscu.</p>
+
+      <div class="culture-map-layout">
+        <div>
+          <div id="culture-map" role="region" aria-label="Interaktywna mapa lokalizacji związanych z kulturą Stegien"></div>
+          <p class="map-status" id="map-status" aria-live="polite">Ładowanie mapy…</p>
+        </div>
+        <aside class="map-places" aria-label="Miejsca na mapie">
+          <article class="map-place">
+            <h2>Ul. Portofino 6</h2>
+            <p><strong>Martyna Jakubowicz, „W domach z betonu nie ma wolnej miłości”.</strong> Budynek wskazywany w relacjach prasowych jako miejsce, w którym powstała piosenka. Adres: ul. Portofino 6, Stegny.</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Portofino+6%2C+Warszawa" target="_blank" rel="noopener">Otwórz adres w mapach Google</a>
+            <p class="map-status" id="portofino-status">Ustalanie położenia adresu…</p>
+          </article>
+          <article class="map-place">
+            <h2>Kościół św. Antoniego Marii Zaccarii</h2>
+            <p><strong>Grażyna Plebanek, <em>Dziewczyny z Portofino</em>.</strong> Identyfikacja świątyni opisana w udostępnionym fragmencie wynika z rozpoznania czytelnika. Adres: al. Jana III Sobieskiego 15, Warszawa.</p>
+            <a href="https://archwwa.pl/parafie/warszawa-sw-antoniego-marii-zaccarii/" target="_blank" rel="noopener">Informacje Archidiecezji Warszawskiej</a>
+          </article>
+        </aside>
+      </div>
+
+      <div class="map-legend"><strong>Jak czytać mapę?</strong> Pinezki oznaczają konkretne adresy. Lokalizacje ogólne, niepewne lub opisane jedynie jako fragment ulicy czy osiedla nie są jeszcze nanoszone. Będziemy je dodawać po potwierdzeniu.</div>
+
+      <section class="map-sources">
+        <h2>Źródła i uwagi</h2>
+        <ul>
+          <li>Adres kościoła i jego położenie: <a href="https://archwwa.pl/parafie/warszawa-sw-antoniego-marii-zaccarii/" target="_blank" rel="noopener">Archidiecezja Warszawska</a>; współrzędne punktu: publiczny katalog parafii.</li>
+          <li>Ul. Portofino 6 jako adres budynku: <a href="https://sonarhome.pl/ceny-mieszkan/warszawa/mokotow/ul-portofino/6" target="_blank" rel="noopener">SonarHome</a>. Wskazanie budynku jako miejsca powstania piosenki: relacje prasowe przywołane w opisie na stronie <a href="literatura.html#kultura-martyna-jakubowicz">„Stegny w kulturze”</a>.</li>
+          <li>Podkład mapowy: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>, dane © autorzy OSM.</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <span>Kronika Stegien</span>
+    <span>© Kronika Stegien • Warszawa • Mokotów</span>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script>
+    (function () {
+      const mapElement = document.getElementById("culture-map");
+      const status = document.getElementById("map-status");
+      const portofinoStatus = document.getElementById("portofino-status");
+      if (!window.L) {
+        status.textContent = "Nie udało się załadować biblioteki mapy. Skorzystaj z odnośników do map zewnętrznych.";
+        return;
+      }
+
+      const map = L.map(mapElement).setView([52.1746, 21.0620], 15);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(map);
+
+      const church = L.marker([52.1745898, 21.0620089]).addTo(map);
+      church.bindPopup("<strong>Kościół św. Antoniego Marii Zaccarii</strong><br>al. Jana III Sobieskiego 15<br><em>Dziewczyny z Portofino</em>");
+
+      // Jedno zapytanie geokodujące przy wejściu na stronę; adres nie jest przybliżany ręcznie.
+      const query = "Portofino 6, Warszawa, Polska";
+      fetch("https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&q=" + encodeURIComponent(query), {
+        headers: { "Accept": "application/json" }
+      }).then(function (response) {
+        if (!response.ok) throw new Error("Geokoder niedostępny");
+        return response.json();
+      }).then(function (results) {
+        if (!results.length) throw new Error("Nie znaleziono adresu");
+        const place = results[0];
+        const point = [Number(place.lat), Number(place.lon)];
+        L.marker(point).addTo(map).bindPopup("<strong>Ul. Portofino 6</strong><br>Adres związany z genezą piosenki Martyny Jakubowicz.");
+        map.fitBounds([[52.1745898, 21.0620089], point], { padding: [35, 35] });
+        portofinoStatus.textContent = "Adres znaleziony w usłudze geokodowania OpenStreetMap.";
+        status.textContent = "Na mapie zaznaczono 2 lokalizacje.";
+      }).catch(function () {
+        portofinoStatus.textContent = "Nie udało się automatycznie ustalić punktu. Adres można otworzyć w mapach Google.";
+        status.textContent = "Na mapie zaznaczono 1 potwierdzoną lokalizację; drugi adres ma odnośnik do map zewnętrznych.";
+      });
+    })();
+  </script>
+</body>
+</html>
