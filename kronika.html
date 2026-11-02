@@ -1087,7 +1087,10 @@
       drawer.className = 'card drawer obok-felieton-drawer';
       var summary = document.createElement('summary');
       felietonNumber++;
-      summary.textContent = felietonNumber + '. ' + heading.textContent.trim().replace(/^\d+(?:\.\d+)*[.)]?\s+/, '');
+      var headingTitle = heading.textContent.trim();
+      // Usuń wszystkie istniejące prefiksy numeracyjne, zanim dodamy numer porządkowy szuflady.
+      headingTitle = headingTitle.replace(/^(?:\d+(?:\.\d+)*[.)]?\s*)+/, '').trim();
+      summary.textContent = felietonNumber + '. ' + headingTitle;
       if (heading.id) summary.id = heading.id;
       var panel = document.createElement('div');
       panel.className = 'drawer-content';
