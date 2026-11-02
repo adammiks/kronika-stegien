@@ -74,6 +74,11 @@
             <p><strong>Grażyna Plebanek, <em>Dziewczyny z Portofino</em>.</strong> Identyfikacja świątyni opisana w udostępnionym fragmencie wynika z rozpoznania czytelnika. Adres: al. Jana III Sobieskiego 15, Warszawa.</p>
             <a href="https://archwwa.pl/parafie/warszawa-sw-antoniego-marii-zaccarii/" target="_blank" rel="noopener">Informacje Archidiecezji Warszawskiej</a>
           </article>
+          <article class="map-place">
+            <h2>Kościół Najświętszej Maryi Panny Matki Miłosierdzia</h2>
+            <p><strong>Krzysztof Zanussi, „Słaba wiara”</strong> z cyklu <em>Opowieści weekendowe</em> (1996). Według opisu filmu scena została nakręcona w kościele na Stegnach. Adres: ul. Świętego Bonifacego 9, Warszawa.</p>
+            <a href="https://stegny.marianie.pl/kontakt/" target="_blank" rel="noopener">Strona parafii — adres i współrzędne</a>
+          </article>
         </aside>
       </div>
 
@@ -115,6 +120,9 @@
       const church = L.marker([52.1745898, 21.0620089]).addTo(map);
       church.bindPopup("<strong>Kościół św. Antoniego Marii Zaccarii</strong><br>al. Jana III Sobieskiego 15<br><em>Dziewczyny z Portofino</em>");
 
+      const zanussiChurch = L.marker([52.178710, 21.047740]).addTo(map);
+      zanussiChurch.bindPopup("<strong>Kościół Najświętszej Maryi Panny Matki Miłosierdzia</strong><br>ul. Świętego Bonifacego 9<br><em>Krzysztof Zanussi, „Słaba wiara” (1996)</em>");
+
       // Jedno zapytanie geokodujące przy wejściu na stronę; adres nie jest przybliżany ręcznie.
       const query = "Portofino 6, Warszawa, Polska";
       fetch("https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&q=" + encodeURIComponent(query), {
@@ -129,10 +137,10 @@
         L.marker(point).addTo(map).bindPopup("<strong>Ul. Portofino 6</strong><br>Adres związany z genezą piosenki Martyny Jakubowicz.");
         map.fitBounds([[52.1745898, 21.0620089], point], { padding: [35, 35] });
         portofinoStatus.textContent = "Adres znaleziony w usłudze geokodowania OpenStreetMap.";
-        status.textContent = "Na mapie zaznaczono 2 lokalizacje.";
+        status.textContent = "Na mapie zaznaczono 3 lokalizacje.";
       }).catch(function () {
         portofinoStatus.textContent = "Nie udało się automatycznie ustalić punktu. Adres można otworzyć w mapach Google.";
-        status.textContent = "Na mapie zaznaczono 1 potwierdzoną lokalizację; drugi adres ma odnośnik do map zewnętrznych.";
+        status.textContent = "Na mapie zaznaczono 2 lokalizacje; adres Portofino ma odnośnik do map zewnętrznych.";
       });
     })();
   </script>
