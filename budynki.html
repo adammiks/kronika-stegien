@@ -10,7 +10,15 @@
     .street-inventory h2{margin-bottom:10px}
     .street-inventory-intro{max-width:760px;line-height:1.7}
     .street-labels{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,310px),1fr));gap:16px;margin-top:22px}
-    .street-label{display:block;padding:20px;background:#fff;border:1px solid #dedbd2;box-shadow:0 5px 18px #2220000a;color:inherit;text-decoration:none;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease}\n    .street-label:hover,.street-label:focus-visible{transform:translateY(-2px);box-shadow:0 9px 24px #22200018;outline:2px solid #9a8d70;outline-offset:2px}
+    .street-label{display:block;padding:20px;background:#fff;border:1px solid #dedbd2;box-shadow:0 5px 18px #2220000a;color:inherit;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease}
+    .street-entry{border:1px solid #dedbd2;background:#f8f5ed;margin:0}
+    .street-entry>summary{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:17px 20px;cursor:pointer;list-style:none;font:normal 23px Georgia,serif;color:#263b35}
+    .street-entry>summary::-webkit-details-marker{display:none}
+    .street-entry>summary:after{content:'+';font:24px Arial,sans-serif;color:#718078}
+    .street-entry[open]>summary:after{content:'−'}
+    .street-entry>summary:hover,.street-entry>summary:focus-visible{background:#eee9dc;outline:2px solid #9a8d70;outline-offset:-2px}
+    .street-card{padding:0 14px 14px}
+    .street-open{margin:16px 0 0;padding-top:12px;border-top:1px solid #dedbd2;font-weight:700}\n    .street-label:hover,.street-label:focus-visible{transform:translateY(-2px);box-shadow:0 9px 24px #22200018;outline:2px solid #9a8d70;outline-offset:2px}
     .street-label h3{margin:0 0 10px;font:normal 25px Georgia,serif;color:#263b35}
     .street-label p{margin:8px 0;line-height:1.65}
     .street-label ul{margin:8px 0 0;padding-left:20px;line-height:1.65}
@@ -76,57 +84,87 @@
         <p class="street-inventory-intro">Pięć ulic opisanych w ramach inwentaryzacji współczesnego stanu Stegien Południe. Zestawienie obejmuje aktualny układ ulic, adresy oraz znajdujące się przy nich budynki i obiekty towarzyszące.</p>
 
         <div class="street-labels">
-          <a class="street-label" id="korsykanska" href="ulica-korsykanska.html" style="display:block;color:inherit;text-decoration:none;cursor:pointer;">
-            <div class="street-meta">Stegny Południe · ulica 1</div>
-            <h3>Korsykańska</h3>
-            <p>Ulica biegnie między Śródziemnomorską a ul. św. Bonifacego. Jest jednokierunkowa, a jej bieg kończy się na łuku pętli autobusowo-tramwajowej, tuż przy oznakowanym przejściu dla pieszych.</p>
+          <details class="street-entry" id="korsykanska">
+            <summary>Korsykańska</summary>
+            <div class="street-card">
+              <div class="street-label">
+                <div class="street-meta">Stegny Południe · inwentaryzacja ulicy</div>
+                <h3>Korsykańska</h3>
+                <p>Ulica biegnie między Śródziemnomorską a ul. św. Bonifacego. Jest jednokierunkowa, a jej bieg kończy się na łuku pętli autobusowo-tramwajowej, tuż przy oznakowanym przejściu dla pieszych.</p>
             <ul>
               <li>Budynki mieszkalne: 1, 3, 5 i 7 — cztery budynki jedenastopiętrowe, każdy z dwiema klatkami schodowymi.</li>
               <li>Korsykańska 4 — hydrofornia.</li>
             </ul>
-          </a>
+                <p class="street-open"><a href="ulica-korsykanska.html">Otwórz pełny opis ulicy →</a></p>
+              </div>
+            </div>
+          </details>
 
-          <a class="street-label" id="nicejska" href="ulica-nicejska.html" style="display:block;color:inherit;text-decoration:none;cursor:pointer;">
-            <div class="street-meta">Stegny Południe · ulica 2</div>
-            <h3>Nicejska</h3>
-            <p>Ulica równoległa do Korsykańskiej, ślepa i dwukierunkowa. Wjazd prowadzi od ul. Śródziemnomorskiej. Ulica kończy się przed oznakowanym małym parkingiem.</p>
+          <details class="street-entry" id="nicejska">
+            <summary>Nicejska</summary>
+            <div class="street-card">
+              <div class="street-label">
+                <div class="street-meta">Stegny Południe · inwentaryzacja ulicy</div>
+                <h3>Nicejska</h3>
+                <p>Ulica równoległa do Korsykańskiej, ślepa i dwukierunkowa. Wjazd prowadzi od ul. Śródziemnomorskiej. Ulica kończy się przed oznakowanym małym parkingiem.</p>
             <ul>
               <li>Nicejska 1 — blok dwunastopiętrowy z sześcioma klatkami schodowymi.</li>
               <li>Nicejska 2 — pawilon usługowy; Nicejska 2a — kiosk „Ruchu”.</li>
               <li>Przy pawilonie znajduje się mały parking. Za parkingiem, przy końcu ulicy, zaczyna się teren szkoły, który sięga dalej w stronę ul. Maltańskiej.</li>
             </ul>
-          </a>
+                <p class="street-open"><a href="ulica-nicejska.html">Otwórz pełny opis ulicy →</a></p>
+              </div>
+            </div>
+          </details>
 
-          <a class="street-label" id="karczocha" href="ulica-karczocha.html" style="display:block;color:inherit;text-decoration:none;cursor:pointer;">
-            <div class="street-meta">Stegny Południe · ulica 3</div>
-            <h3>Karczocha</h3>
-            <p>Ulica, a właściwie łącznik między ul. Nicejską a ul. Wilanowską. Nie ma przy niej budynków z przypisanym adresem Karczocha.</p>
+          <details class="street-entry" id="karczocha">
+            <summary>Karczocha</summary>
+            <div class="street-card">
+              <div class="street-label">
+                <div class="street-meta">Stegny Południe · inwentaryzacja ulicy</div>
+                <h3>Karczocha</h3>
+                <p>Ulica, a właściwie łącznik między ul. Nicejską a ul. Wilanowską. Nie ma przy niej budynków z przypisanym adresem Karczocha.</p>
             <p>Budynki znajdujące się w pobliżu mają adresy przy ul. Wilanowskiej, m.in. Wilanowska a, b, c i kolejne.</p>
-          </a>
+                <p class="street-open"><a href="ulica-karczocha.html">Otwórz pełny opis ulicy →</a></p>
+              </div>
+            </div>
+          </details>
 
-          <a class="street-label" id="marsylska" href="ulica-marsylska.html" style="display:block;color:inherit;text-decoration:none;cursor:pointer;">
-            <div class="street-meta">Stegny Południe · ulica 4</div>
-            <h3>Marsylska</h3>
-            <p>Ulica równoległa do Korsykańskiej i Nicejskiej, ślepa i jednokierunkowa. Wjazd prowadzi od ul. Śródziemnomorskiej. Ulica zaczyna się małym parkingiem.</p>
+          <details class="street-entry" id="marsylska">
+            <summary>Marsylska</summary>
+            <div class="street-card">
+              <div class="street-label">
+                <div class="street-meta">Stegny Południe · inwentaryzacja ulicy</div>
+                <h3>Marsylska</h3>
+                <p>Ulica równoległa do Korsykańskiej i Nicejskiej, ślepa i jednokierunkowa. Wjazd prowadzi od ul. Śródziemnomorskiej. Ulica zaczyna się małym parkingiem.</p>
             <ul>
               <li>Marsylska 1 — parking.</li>
               <li>Numery 3, 5 i 7 — trzy budynki dziesięciopiętrowe, każdy z dwiema klatkami schodowymi.</li>
               <li>Numer 9 — budynek dwunastopiętrowy, z dwiema klatkami schodowymi.</li>
               <li>Marsylska 6 — hydrofornia.</li>
             </ul>
-          </a>
+                <p class="street-open"><a href="ulica-marsylska.html">Otwórz pełny opis ulicy →</a></p>
+              </div>
+            </div>
+          </details>
 
-          <a class="street-label" id="katalonska" href="ulica-katalonska.html" style="display:block;color:inherit;text-decoration:none;cursor:pointer;">
-            <div class="street-meta">Stegny Południe · ulica 5</div>
-            <h3>Katalońska</h3>
-            <p>Ulica zaczyna się przy ul. Śródziemnomorskiej. Jest ślepa i jednokierunkowa. Leży mniej więcej w tym samym pasie co ul. Maltańska, odchodząca od ul. św. Bonifacego. Między ulicami znajduje się jednak pas zieleni, więc nie tworzą one ciągłej osi.</p>
+          <details class="street-entry" id="katalonska">
+            <summary>Katalońska</summary>
+            <div class="street-card">
+              <div class="street-label">
+                <div class="street-meta">Stegny Południe · inwentaryzacja ulicy</div>
+                <h3>Katalońska</h3>
+                <p>Ulica zaczyna się przy ul. Śródziemnomorskiej. Jest ślepa i jednokierunkowa. Leży mniej więcej w tym samym pasie co ul. Maltańska, odchodząca od ul. św. Bonifacego. Między ulicami znajduje się jednak pas zieleni, więc nie tworzą one ciągłej osi.</p>
             <ul>
               <li>Numery 3, 5 i 7 — trzy budynki jedenastopiętrowe, każdy z dwiema klatkami schodowymi.</li>
               <li>Numer 1 — budynek dwunastopiętrowy, z dwiema klatkami schodowymi.</li>
               <li>Przy ulicy znajduje się parking bez numeru porządkowego.</li>
               <li>Katalońska 2 — hydrofornia.</li>
             </ul>
-          </a>
+                <p class="street-open"><a href="ulica-katalonska.html">Otwórz pełny opis ulicy →</a></p>
+              </div>
+            </div>
+          </details>
         </div>
 
         <p class="inventory-note"><strong>Stan inwentaryzacji: 6 listopada 2026 r.</strong> Na opisanych pięciu ulicach znajduje się łącznie 13 budynków mieszkalnych: 7 jedenastopiętrowych, 3 dziesięciopiętrowe i 3 dwunastopiętrowe. Zestawienie odzwierciedla stan współczesny przekazany w opisie terenowym; nie uwzględnia zmian historycznych.</p>
