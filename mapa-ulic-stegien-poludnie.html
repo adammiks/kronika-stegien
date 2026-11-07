@@ -41,6 +41,8 @@
       <p class="street-map-intro">Wybierz nazwę ulicy, aby wyświetlić jej położenie na mapie. Odsyłacze w etykietach ulic otwierają tę mapę z odpowiednią ulicą wybraną automatycznie.</p>
       <section class="street-map-panel" aria-label="Mapa ulic Stegien Południe">
         <div class="street-map-tools" id="street-map-links">
+          <a href="?ulica=barcelonska" data-street="barcelonska">Barcelońska</a>
+          <a href="?ulica=kartaginy" data-street="kartaginy">Kartaginy</a>
           <a href="?ulica=korsykanska" data-street="korsykanska">Korsykańska</a>
           <a href="?ulica=nicejska" data-street="nicejska">Nicejska</a>
           <a href="?ulica=karczocha" data-street="karczocha">Karczocha</a>
@@ -73,6 +75,8 @@
     var layer=L.geoJSON(null,{style:{color:'#a34d2c',weight:7,opacity:.9}}).addTo(map);
     var selectedMarker=null;
     var streets={
+      barcelonska:{name:'Barcelońska',osm:'Barcelońska'},
+      kartaginy:{name:'Kartaginy',osm:'Kartaginy'},
       korsykanska:{name:'Korsykańska',osm:'Korsykańska'},
       nicejska:{name:'Nicejska',osm:'Nicejska'},
       karczocha:{name:'Karczocha',osm:'Karczocha'},
