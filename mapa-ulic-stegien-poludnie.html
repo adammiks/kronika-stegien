@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mapa ulic Stegien Południe — Kronika Stegien</title>
+  <link rel="stylesheet" href="style.css?v=9">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <style>
+    .street-map-page{max-width:1180px;margin:0 auto}
+    .street-map-intro{max-width:850px;color:var(--muted);font:17px/1.7 Georgia,serif}
+    .street-map-panel{margin:24px 0 36px;padding:clamp(12px,2.5vw,22px);background:#f8f5ed;border:1px solid #c8b99f;box-shadow:0 5px 14px rgba(48,34,19,.12)}
+    #street-map{width:100%;height:clamp(380px,58vw,650px);border:1px solid #c8b99f;background:#e9eee5;z-index:0}
+    .street-map-tools{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0}
+    .street-map-tools a{display:inline-block;padding:9px 12px;border:1px solid #b8aa91;background:#fffaf1;color:#4b3926;text-decoration:none;font:14px Arial,sans-serif}
+    .street-map-tools a[aria-current="true"]{background:#5e3b20;color:#fff4df;border-color:#5e3b20}
+    .street-map-status{min-height:1.6em;margin:12px 0;color:#4b3926;font:14px/1.6 Arial,sans-serif}
+    .street-map-note{margin-top:18px;padding:14px 16px;border-left:3px solid #9b774e;background:#efe5d5;color:#4b3926;font:14px/1.65 Arial,sans-serif}
+    .street-map-back{margin-top:18px}
+  </style>
+</head>
+<body>
+  <header class="site-head">
+    <a class="brand" href="index.html">Kronika Stegien<small>historia osiedla mieszkaniowego w Warszawie</small></a>
+    <nav class="nav">
+      <a href="mapy.html">Mapy</a>
+      <a href="mapa-ulic-stegien-poludnie.html" aria-current="page">Mapa ulic Stegien Południe</a>
+      <a href="mapa-interaktywna.html">Mapa interaktywna</a>
+      <a href="budynki.html">Obiekty</a>
+      <a href="zdjecia.html">Ilustracje</a>
+      <a href="dokumenty.html">Dokumenty</a>
+      <a href="ludzie.html">Ludzie</a>
+      <a href="ulice.html">Ulice</a>
+    </nav>
+  </header>
+  <main class="page street-map-page">
+    <div class="page-grid">
+      <a class="back" href="budynki.html#stegny-poludnie-ulice">← Obiekty · Ulice Stegien Południe</a>
+      <p class="interactive-kicker">Atlas ulic · Stegny Południe</p>
+      <h1>Mapa ulic Stegien Południe</h1>
+      <p class="street-map-intro">Wybierz nazwę ulicy, aby wyświetlić jej położenie na mapie. Odsyłacze w etykietach ulic otwierają tę mapę z odpowiednią ulicą wybraną automatycznie.</p>
+      <section class="street-map-panel" aria-label="Mapa ulic Stegien Południe">
+        <div class="street-map-tools" id="street-map-links">
+          <a href="?ulica=korsykanska" data-street="korsykanska">Korsykańska</a>
+          <a href="?ulica=nicejska" data-street="nicejska">Nicejska</a>
+          <a href="?ulica=karczocha" data-street="karczocha">Karczocha</a>
+          <a href="?ulica=marsylska" data-street="marsylska">Marsylska</a>
+          <a href="?ulica=katalonska" data-street="katalonska">Katalońska</a>
+          <a href="?ulica=srodziemnomorska" data-street="srodziemnomorska">Śródziemnomorska</a>
+          <a href="?ulica=egejska" data-street="egejska">Egejska</a>
+        </div>
+        <div id="street-map" role="region" aria-label="Interaktywna mapa ulic Stegien Południe"></div>
+        <p id="street-map-status" class="street-map-status" aria-live="polite">Wybierz ulicę z listy powyżej lub otwórz mapę z etykiety w atlasie obiektów.</p>
+        <div class="street-map-note"><strong>Źródło podkładu i geometrii:</strong> OpenStreetMap. Zaznaczenie przebiegu zależy od dostępności i kompletności danych mapowych. Jeżeli mapa nie zwróci geometrii konkretnej ulicy, nie zastępujemy jej linią orientacyjną — przebieg można wtedy nanieść po dodatkowej weryfikacji.</div>
+      </section>
+      <p class="street-map-back"><a href="budynki.html#stegny-poludnie-ulice">Wróć do etykiet ulic Stegien Południe →</a></p>
+    </div>
+  </main>
+  <footer class="footer">Kronika Stegien • <a href="index.html">strona główna</a></footer>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script>
+  (function(){
+    var el=document.getElementById('street-map');
+    var status=document.getElementById('street-map-status');
+    if(!el) return;
+    if(!window.L){status.textContent='Nie udało się załadować biblioteki mapy. Odśwież stronę, gdy będzie dostępne połączenie z internetem.';return;}
+    var map=L.map(el,{scrollWheelZoom:false}).setView([52.1838,21.0444],16);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+      maxZoom:20,
+      attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+    }).addTo(map);
+    var layer=L.geoJSON(null,{style:{color:'#a34d2c',weight:7,opacity:.9}}).addTo(map);
+    var selectedMarker=null;
+    var streets={
+      korsykanska:{name:'Korsykańska',osm:'Korsykańska'},
+      nicejska:{name:'Nicejska',osm:'Nicejska'},
+      karczocha:{name:'Karczocha',osm:'Karczocha'},
+      marsylska:{name:'Marsylska',osm:'Marsylska'},
+      katalonska:{name:'Katalońska',osm:'Katalońska'},
+      srodziemnomorska:{name:'Śródziemnomorska',osm:'Śródziemnomorska'},
+      egejska:{name:'Egejska',osm:'Egejska'}
+    };
+    function choose(id){
+      var street=streets[id];
+      if(!street){status.textContent='Nie rozpoznano wybranej ulicy. Wybierz nazwę z listy.';return;}
+      document.querySelectorAll('#street-map-links a').forEach(function(a){
+        if(a.dataset.street===id)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');
+      });
+      layer.clearLayers();
+      if(selectedMarker){map.removeLayer(selectedMarker);selectedMarker=null;}
+      status.textContent='Wyszukiwanie przebiegu ulicy '+street.name+' w danych OpenStreetMap…';
+      var url='https://nominatim.openstreetmap.org/search?format=geojson&street='+encodeURIComponent(street.osm)+'&city='+encodeURIComponent('Warszawa')+'&country='+encodeURIComponent('Polska')+'&polygon_geojson=1&limit=10';
+      fetch(url,{headers:{'Accept':'application/geo+json'}}).then(function(response){
+        if(!response.ok)throw new Error('Błąd odpowiedzi serwisu mapowego');
+        return response.json();
+      }).then(function(data){
+        var features=(data.features||[]).filter(function(feature){
+          var props=feature.properties||{};
+          var name=(props.name||props.display_name||'').toLocaleLowerCase('pl');
+          return name.indexOf(street.name.toLocaleLowerCase('pl'))!==-1;
+        });
+        var lineFeatures=features.filter(function(feature){
+          var type=feature.geometry&&feature.geometry.type;
+          return type==='LineString'||type==='MultiLineString';
+        });
+        if(lineFeatures.length){
+          layer.addData({type:'FeatureCollection',features:lineFeatures});
+          var bounds=layer.getBounds();
+          if(bounds.isValid())map.fitBounds(bounds.pad(0.18),{maxZoom:18});
+          status.textContent='Zaznaczono geometrię ulicy '+street.name+' na podstawie danych OpenStreetMap. Jeśli przebieg jest niepełny, wymaga dalszej weryfikacji.';
+        }else if(features.length){
+          var coords=features[0].geometry&&features[0].geometry.coordinates;
+          var point=coords&&features[0].geometry.type==='Point'?[coords[1],coords[0]]:[52.1838,21.0444];
+          selectedMarker=L.marker(point).addTo(map).bindPopup(street.name+' — punkt lokalizacji z OpenStreetMap').openPopup();
+          map.setView(point,17);
+          status.textContent='OpenStreetMap zwrócił lokalizację ulicy '+street.name+', ale nie jej geometrię liniową. Nie rysujemy zastępczego przebiegu.';
+        }else{
+          status.textContent='Nie znaleziono geometrii ulicy '+street.name+' w wynikach OpenStreetMap. Możemy nanieść jej przebieg po wskazaniu go na mapie lub na podstawie mapy źródłowej.';
+          map.setView([52.1838,21.0444],16);
+        }
+      }).catch(function(){
+        status.textContent='Nie udało się pobrać geometrii ulicy '+street.name+'. Podkład mapowy pozostaje dostępny; spróbuj ponownie później.';
+      });
+    }
+    document.querySelectorAll('#street-map-links a').forEach(function(a){
+      a.addEventListener('click',function(event){
+        event.preventDefault();
+        var id=a.dataset.street;
+        history.replaceState(null,'','?ulica='+encodeURIComponent(id));
+        choose(id);
+      });
+    });
+    var params=new URLSearchParams(window.location.search);
+    var requested=params.get('ulica');
+    if(requested&&streets[requested])choose(requested);
+    else status.textContent='Wybierz ulicę z listy powyżej lub otwórz mapę z etykiety w atlasie obiektów.';
+  })();
+  </script>
+</body>
+</html>
