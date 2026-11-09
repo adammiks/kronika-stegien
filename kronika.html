@@ -1337,6 +1337,14 @@ Szczegóły podróży Chopina opisuje Narodowy Instytut Fryderyka Chopina w mate
       var headings = Array.from(article.querySelectorAll('h2, h3, h4')).filter(function(h){
         return h.textContent.trim().length > 0;
       });
+      // Dodatki umieszczone poza głównym kontenerem treści rozdziału
+      // dołączamy do jego spisu treści, zamiast tworzyć osobny spis.
+      var parentChapter = article.closest('details.chapter');
+      if(parentChapter){
+        Array.from(parentChapter.querySelectorAll('.appendix-content h2, .appendix-content h3, .appendix-content h4')).forEach(function(h){
+          if(headings.indexOf(h) === -1 && h.textContent.trim().length > 0) headings.push(h);
+        });
+      }
       var titleHeading = article.previousElementSibling;
       if(!(titleHeading && /^(H2|H3|H4)$/.test(titleHeading.tagName) && titleHeading.textContent.trim())){
         var chapter = article.closest('details.chapter');
