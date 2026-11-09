@@ -34,15 +34,17 @@
       <a class="back" href="budynki.html#jaltanska">← Obiekty · Jałtańska</a>
       <p class="interactive-kicker">Atlas ulic · Stegny Północ</p>
       <h1>Mapa ulic Stegien Północ</h1>
-      <p class="north-map-intro">Mapa jest rozwijana wraz z inwentaryzacją kolejnych ulic. Obecnie uwzględnia Jałtańską, Krymską i Złotych Piasków. Przebieg ulic jest pobierany z danych OpenStreetMap; nieuzupełnione ani niepotwierdzone odcinki nie są dorysowywane.</p>
+      <p class="north-map-intro">Mapa jest rozwijana wraz z inwentaryzacją kolejnych ulic. Obecnie uwzględnia Jałtańską, Krymską, Złotych Piasków, Batumi i Soczi. Przebieg ulic jest pobierany z danych OpenStreetMap; nieuzupełnione ani niepotwierdzone odcinki nie są dorysowywane.</p>
       <section class="north-map-panel" aria-label="Mapa ulic Stegien Północ">
         <div class="north-map-tools" id="north-map-links">
           <a href="?ulica=jaltanska" data-street="jaltanska">Jałtańska</a>
           <a href="?ulica=krymska" data-street="krymska">Krymska</a>
           <a href="?ulica=zlotych-piaskow" data-street="zlotych-piaskow">Złotych Piasków</a>
+          <a href="?ulica=batumi" data-street="batumi">Batumi</a>
+          <a href="?ulica=soczi" data-street="soczi">Soczi</a>
         </div>
         <div id="north-street-map" role="region" aria-label="Interaktywna mapa ulic Stegien Północ"></div>
-        <p id="north-map-status" class="north-map-status" aria-live="polite">Wybierz Jałtańską, Krymską lub Złotych Piasków, aby wyszukać przebieg ulicy w danych OpenStreetMap.</p>
+        <p id="north-map-status" class="north-map-status" aria-live="polite">Wybierz ulicę, aby wyszukać jej przebieg w danych OpenStreetMap.</p>
         <div class="north-map-note"><strong>Źródło podkładu i geometrii:</strong> OpenStreetMap. Zaznaczamy wyłącznie geometrię zwróconą przez źródło mapowe. Jeśli nie ma wiarygodnego wyniku liniowego, mapa wyświetli informację o braku geometrii zamiast rysować przebieg orientacyjny.</div>
       </section>
       <p><a href="ulica-jaltanska.html">Pełny opis ulicy Jałtańskiej →</a> · <a href="ulica-krymska.html">Pełny opis ulicy Krymskiej →</a> · <a href="ulica-zlotych-piaskow.html">Pełny opis Złotych Piasków →</a></p>
@@ -62,7 +64,7 @@
       attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
     }).addTo(map);
     var layer=L.geoJSON(null,{style:{color:'#a34d2c',weight:7,opacity:.9}}).addTo(map);
-    var streets={jaltanska:{name:'Jałtańska',osm:'Jałtańska'},krymska:{name:'Krymska',osm:'Krymska'},'zlotych-piaskow':{name:'Złotych Piasków',osm:'Złotych Piasków'}};
+    var streets={jaltanska:{name:'Jałtańska',osm:'Jałtańska'},krymska:{name:'Krymska',osm:'Krymska'},'zlotych-piaskow':{name:'Złotych Piasków',osm:'Złotych Piasków'},batumi:{name:'Batumi',osm:'Batumi'},soczi:{name:'Soczi',osm:'Soczi'}};
     function choose(id){
       var street=streets[id];
       if(!street){status.textContent='Nie rozpoznano wybranej ulicy.';return;}
