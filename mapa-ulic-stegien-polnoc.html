@@ -34,16 +34,17 @@
       <a class="back" href="budynki.html#jaltanska">← Obiekty · Jałtańska</a>
       <p class="interactive-kicker">Atlas ulic · Stegny Północ</p>
       <h1>Mapa ulic Stegien Północ</h1>
-      <p class="north-map-intro">Mapa jest rozwijana wraz z inwentaryzacją kolejnych ulic. Na obecnym etapie uwzględnia Jałtańską. Przebieg ulicy jest pobierany z danych OpenStreetMap; nieuzupełnione ani niepotwierdzone odcinki nie są dorysowywane.</p>
+      <p class="north-map-intro">Mapa jest rozwijana wraz z inwentaryzacją kolejnych ulic. Obecnie uwzględnia Jałtańską i Krymską. Przebieg ulic jest pobierany z danych OpenStreetMap; nieuzupełnione ani niepotwierdzone odcinki nie są dorysowywane.</p>
       <section class="north-map-panel" aria-label="Mapa ulic Stegien Północ">
         <div class="north-map-tools" id="north-map-links">
           <a href="?ulica=jaltanska" data-street="jaltanska">Jałtańska</a>
+          <a href="?ulica=krymska" data-street="krymska">Krymska</a>
         </div>
         <div id="north-street-map" role="region" aria-label="Interaktywna mapa ulic Stegien Północ"></div>
-        <p id="north-map-status" class="north-map-status" aria-live="polite">Wybierz Jałtańską, aby wyszukać jej przebieg w danych OpenStreetMap.</p>
+        <p id="north-map-status" class="north-map-status" aria-live="polite">Wybierz Jałtańską lub Krymską, aby wyszukać przebieg ulicy w danych OpenStreetMap.</p>
         <div class="north-map-note"><strong>Źródło podkładu i geometrii:</strong> OpenStreetMap. Zaznaczamy wyłącznie geometrię zwróconą przez źródło mapowe. Jeśli nie ma wiarygodnego wyniku liniowego, mapa wyświetli informację o braku geometrii zamiast rysować przebieg orientacyjny.</div>
       </section>
-      <p><a href="ulica-jaltanska.html">Pełny opis ulicy Jałtańskiej →</a></p>
+      <p><a href="ulica-jaltanska.html">Pełny opis ulicy Jałtańskiej →</a> · <a href="ulica-krymska.html">Pełny opis ulicy Krymskiej →</a></p>
     </div>
   </main>
   <footer class="footer">Kronika Stegien • <a href="index.html">strona główna</a></footer>
@@ -60,7 +61,7 @@
       attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
     }).addTo(map);
     var layer=L.geoJSON(null,{style:{color:'#a34d2c',weight:7,opacity:.9}}).addTo(map);
-    var streets={jaltanska:{name:'Jałtańska',osm:'Jałtańska'}};
+    var streets={jaltanska:{name:'Jałtańska',osm:'Jałtańska'},krymska:{name:'Krymska',osm:'Krymska'}};
     function choose(id){
       var street=streets[id];
       if(!street){status.textContent='Nie rozpoznano wybranej ulicy.';return;}
@@ -87,9 +88,9 @@
           layer.addData({type:'FeatureCollection',features:lines});
           var bounds=layer.getBounds();
           if(bounds.isValid())map.fitBounds(bounds.pad(0.18),{maxZoom:18});
-          status.textContent='Wyświetlono geometrię Jałtańskiej z danych OpenStreetMap. Kompletność przebiegu zależy od danych źródłowych.';
+          status.textContent='Wyświetlono geometrię ulicy z danych OpenStreetMap. Kompletność przebiegu zależy od danych źródłowych.';
         }else{
-          status.textContent='OpenStreetMap nie zwrócił potwierdzonej geometrii liniowej Jałtańskiej. Nie dorysowujemy przebiegu zastępczego.';
+          status.textContent='OpenStreetMap nie zwrócił potwierdzonej geometrii liniowej wybranej ulicy. Nie dorysowujemy przebiegu zastępczego.';
         }
       }).catch(function(){
         status.textContent='Nie udało się pobrać geometrii Jałtańskiej. Spróbuj ponownie później.';
