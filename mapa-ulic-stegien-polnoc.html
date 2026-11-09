@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mapa ulic Stegien Północ — Kronika Stegien</title>
+  <link rel="stylesheet" href="style.css?v=9">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <style>
+    .north-map-page{max-width:1180px;margin:0 auto}
+    .north-map-intro{max-width:850px;color:var(--muted);font:17px/1.7 Georgia,serif}
+    .north-map-panel{margin:24px 0 36px;padding:clamp(12px,2.5vw,22px);background:#f8f5ed;border:1px solid #c8b99f;box-shadow:0 5px 14px rgba(48,34,19,.12)}
+    #north-street-map{width:100%;height:clamp(380px,58vw,650px);border:1px solid #c8b99f;background:#e9eee5;z-index:0}
+    .north-map-tools{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0}
+    .north-map-tools a{display:inline-block;padding:9px 12px;border:1px solid #b8aa91;background:#fffaf1;color:#4b3926;text-decoration:none;font:14px Arial,sans-serif}
+    .north-map-tools a[aria-current="true"]{background:#5e3b20;color:#fff4df;border-color:#5e3b20}
+    .north-map-status{min-height:1.6em;margin:12px 0;color:#4b3926;font:14px/1.6 Arial,sans-serif}
+    .north-map-note{margin-top:18px;padding:14px 16px;border-left:3px solid #9b774e;background:#efe5d5;color:#4b3926;font:14px/1.65 Arial,sans-serif}
+  </style>
+</head>
+<body>
+  <header class="site-head">
+    <a class="brand" href="index.html">Kronika Stegien<small>historia osiedla mieszkaniowego w Warszawie</small></a>
+    <nav class="nav">
+      <a href="mapy.html">Mapy</a>
+      <a href="mapa-ulic-stegien-polnoc.html" aria-current="page">Mapa ulic Stegien Północ</a>
+      <a href="mapa-ulic-stegien-poludnie.html">Mapa ulic Stegien Południe</a>
+      <a href="budynki.html">Obiekty</a>
+      <a href="ulice.html">Ulice</a>
+    </nav>
+  </header>
+  <main class="page north-map-page">
+    <div class="page-grid">
+      <a class="back" href="budynki.html#jaltanska">← Obiekty · Jałtańska</a>
+      <p class="interactive-kicker">Atlas ulic · Stegny Północ</p>
+      <h1>Mapa ulic Stegien Północ</h1>
+      <p class="north-map-intro">Mapa jest rozwijana wraz z inwentaryzacją kolejnych ulic. Na obecnym etapie uwzględnia Jałtańską. Przebieg ulicy jest pobierany z danych OpenStreetMap; nieuzupełnione ani niepotwierdzone odcinki nie są dorysowywane.</p>
+      <section class="north-map-panel" aria-label="Mapa ulic Stegien Północ">
+        <div class="north-map-tools" id="north-map-links">
+          <a href="?ulica=jaltanska" data-street="jaltanska">Jałtańska</a>
+        </div>
+        <div id="north-street-map" role="region" aria-label="Interaktywna mapa ulic Stegien Północ"></div>
+        <p id="north-map-status" class="north-map-status" aria-live="polite">Wybierz Jałtańską, aby wyszukać jej przebieg w danych OpenStreetMap.</p>
+        <div class="north-map-note"><strong>Źródło podkładu i geometrii:</strong> OpenStreetMap. Zaznaczamy wyłącznie geometrię zwróconą przez źródło mapowe. Jeśli nie ma wiarygodnego wyniku liniowego, mapa wyświetli informację o braku geometrii zamiast rysować przebieg orientacyjny.</div>
+      </section>
+      <p><a href="ulica-jaltanska.html">Pełny opis ulicy Jałtańskiej →</a></p>
+    </div>
+  </main>
+  <footer class="footer">Kronika Stegien • <a href="index.html">strona główna</a></footer>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script>
+  (function(){
+    var el=document.getElementById('north-street-map');
+    var status=document.getElementById('north-map-status');
+    if(!el)return;
+    if(!window.L){status.textContent='Nie udało się załadować biblioteki mapy. Odśwież stronę, gdy będzie dostępne połączenie z internetem.';return;}
+    var map=L.map(el,{scrollWheelZoom:false}).setView([52.1838,21.0444],16);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+      maxZoom:20,
+      attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+    }).addTo(map);
+    var layer=L.geoJSON(null,{style:{color:'#a34d2c',weight:7,opacity:.9}}).addTo(map);
+    var streets={jaltanska:{name:'Jałtańska',osm:'Jałtańska'}};
+    function choose(id){
+      var street=streets[id];
+      if(!street){status.textContent='Nie rozpoznano wybranej ulicy.';return;}
+      document.querySelectorAll('#north-map-links a').forEach(function(a){
+        if(a.dataset.street===id)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');
+      });
+      layer.clearLayers();
+      status.textContent='Wyszukiwanie przebiegu ulicy '+street.name+' w danych OpenStreetMap…';
+      var url='https://nominatim.openstreetmap.org/search?format=geojson&street='+encodeURIComponent(street.osm)+'&city='+encodeURIComponent('Warszawa')+'&country='+encodeURIComponent('Polska')+'&polygon_geojson=1&limit=10';
+      fetch(url,{headers:{'Accept':'application/geo+json'}}).then(function(response){
+        if(!response.ok)throw new Error('Błąd odpowiedzi serwisu mapowego');
+        return response.json();
+      }).then(function(data){
+        var features=(data.features||[]).filter(function(feature){
+          var props=feature.properties||{};
+          var name=(props.name||props.display_name||'').toLocaleLowerCase('pl');
+          return name.indexOf(street.name.toLocaleLowerCase('pl'))!==-1;
+        });
+        var lines=features.filter(function(feature){
+          var type=feature.geometry&&feature.geometry.type;
+          return type==='LineString'||type==='MultiLineString';
+        });
+        if(lines.length){
+          layer.addData({type:'FeatureCollection',features:lines});
+          var bounds=layer.getBounds();
+          if(bounds.isValid())map.fitBounds(bounds.pad(0.18),{maxZoom:18});
+          status.textContent='Wyświetlono geometrię Jałtańskiej z danych OpenStreetMap. Kompletność przebiegu zależy od danych źródłowych.';
+        }else{
+          status.textContent='OpenStreetMap nie zwrócił potwierdzonej geometrii liniowej Jałtańskiej. Nie dorysowujemy przebiegu zastępczego.';
+        }
+      }).catch(function(){
+        status.textContent='Nie udało się pobrać geometrii Jałtańskiej. Spróbuj ponownie później.';
+      });
+    }
+    document.querySelectorAll('#north-map-links a').forEach(function(a){
+      a.addEventListener('click',function(event){
+        event.preventDefault();
+        history.replaceState(null,'','?ulica='+encodeURIComponent(a.dataset.street));
+        choose(a.dataset.street);
+      });
+    });
+    var requested=new URLSearchParams(window.location.search).get('ulica');
+    if(requested)choose(requested);
+  })();
+  </script>
+</body>
+</html>
