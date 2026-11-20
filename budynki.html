@@ -6,6 +6,9 @@
   <title>Obiekty — Kronika Stegien</title>
   <link rel="stylesheet" href="style.css?v=9">
   <style>
+    .street-group-heading{margin:4px 0 18px}
+    .street-group-heading h2{font:28px Georgia,serif;margin:0}
+    .street-group .street-labels{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,310px),1fr));gap:16px}
     .street-inventory{margin-top:42px}
     .street-inventory h2{margin-bottom:10px}
     .street-inventory-intro{max-width:760px;line-height:1.7}
@@ -91,9 +94,11 @@
         Zbiornik wodny z fontannami – „Fontanny na Stegnach”
       </a>
 
-      <section class="street-inventory" id="ulice-stegien-polnoc">
+      <section class="street-inventory street-group" id="stegny-polnoc">
         <div class="rule"></div>
-        <span id="ulica-kaspijska"></span><span id="kaspijska"></span>
+        <div class="street-group-heading"><h2>Stegny Północ</h2></div>
+        <div class="street-labels">
+<span id="ulica-kaspijska"></span><span id="kaspijska"></span>
         <details class="street-entry" id="kaspijska">
           <summary>Kaspijska</summary>
           <div class="street-card">
@@ -236,7 +241,7 @@
             <summary>Kaukaska</summary>
             <div class="street-card">
               <div class="street-label">
-                <div class="street-meta">Stegny Południe · inwentaryzacja ulicy</div>
+                <div class="street-meta">Stegny Północ · inwentaryzacja ulicy</div>
                 <h3>Kaukaska</h3>
                 <p>Kaukaska i Akermańska są połączone jednym wjazdem. Wjazdy do obu ulic znajdują się na tej samej osi, podobnie jak w przypadku ulic Sycylijskiej i Sardyńskiej.</p>
                 <ul>
@@ -252,7 +257,7 @@
             <summary>Akermańska</summary>
             <div class="street-card">
               <div class="street-label">
-                <div class="street-meta">Stegny Południe · inwentaryzacja ulicy</div>
+                <div class="street-meta">Stegny Północ · inwentaryzacja ulicy</div>
                 <h3>Akermańska</h3>
                 <p>Akermańska ma wspólny wjazd z ul. Kaukaską. Jest od niej znacznie krótsza i kończy się na terenie parku.</p>
                 <ul>
@@ -296,13 +301,22 @@
               </div>
             </div>
           </details>
-</section>
 
-      
+      <details class="street-entry" id="czarnomorska">
+        <summary>Czarnomorska</summary>
+        <div class="street-card"><div class="street-label">
+          <div class="street-meta">Stegny Północ · inwentaryzacja ulicy</div><h3>Czarnomorska</h3>
+          <ul><li>Czarnomorska 17 — adres ujęty w wykazie; charakter obiektu wymaga uzupełnienia.</li></ul>
+        </div></div>
+      </details>
+        </div>
+      </section>
 
-      <section class="street-inventory" id="ulica-graniczna-bonifacego">
+      <section class="street-inventory street-group" id="stegny-poludnie">
         <div class="rule"></div>
+        <div class="street-group-heading"><h2>Stegny Południe</h2></div>
         <div class="street-labels">
+<div class="street-labels">
           <details class="street-entry" id="bonifacego">
             <summary>św. Bonifacego</summary>
             <div class="street-card">
@@ -343,10 +357,7 @@
             </div>
           </details>
         </div>
-      </section>
-
-
-
+      
       <details class="street-entry" id="czarnomorska">
         <summary>Czarnomorska</summary>
         <div class="street-card"><div class="street-label">
@@ -355,10 +366,8 @@
         </div></div>
       </details>
 
-      <section class="street-inventory" id="stegny-poludnie-ulice">
-        <div class="rule"></div>
 
-        <div class="street-labels">
+<div class="street-labels">
           <details class="street-entry" id="capri">
             <summary>Capri</summary>
             <div class="street-card">
@@ -598,8 +607,7 @@
           </details>
         </div>
 
-      </section>
-
+      
           <details class="street-entry" id="portofino">
             <summary>Portofino</summary><div class="street-card"><div class="street-label">
               <div class="street-meta">Stegny Południe · inwentaryzacja ulicy</div><h3>Portofino</h3>
@@ -611,26 +619,6 @@
             </div></div>
           </details>
 
-          <details class="street-entry" id="burgaska">
-            <summary>Burgaska</summary><div class="street-card"><div class="street-label">
-              <div class="street-meta">Stegny Rożek · inwentaryzacja ulicy</div><h3>Burgaska</h3>
-              <ul><li>Burgaska 1, 3, 5 i 6 — adresy ujęte w wykazie; charakter obiektów wymaga uzupełnienia.</li></ul>
-            </div></div>
-          </details>
-
-          <details class="street-entry" id="neseberska">
-            <summary>Neseberska</summary><div class="street-card"><div class="street-label">
-              <div class="street-meta">Stegny Rożek · inwentaryzacja ulicy</div><h3>Neseberska</h3>
-              <ul><li>Neseberska 1, 3 i 4 — adresy ujęte w wykazie; charakter obiektów wymaga uzupełnienia.</li></ul>
-            </div></div>
-          </details>
-
-          <details class="street-entry" id="sozopolska">
-            <summary>Sozopolska</summary><div class="street-card"><div class="street-label">
-              <div class="street-meta">Stegny Rożek · inwentaryzacja ulicy</div><h3>Sozopolska</h3>
-              <ul><li>Sozopolska 1 — adres ujęty w wykazie; charakter obiektu wymaga uzupełnienia.</li></ul>
-            </div></div>
-          </details>
 
       <section class="street-inventory" id="ulica-srodziemnomorska">
         <div class="rule"></div>
@@ -651,7 +639,35 @@
             </div>
           </details>
       </section>
+        </div>
+      </section>
 
+      <section class="street-inventory street-group" id="stegny-rozek">
+        <div class="rule"></div>
+        <div class="street-group-heading"><h2>Stegny Rożek</h2></div>
+        <div class="street-labels">
+<details class="street-entry" id="burgaska">
+            <summary>Burgaska</summary><div class="street-card"><div class="street-label">
+              <div class="street-meta">Stegny Rożek · inwentaryzacja ulicy</div><h3>Burgaska</h3>
+              <ul><li>Burgaska 1, 3, 5 i 6 — adresy ujęte w wykazie; charakter obiektów wymaga uzupełnienia.</li></ul>
+            </div></div>
+          </details>
+
+          <details class="street-entry" id="neseberska">
+            <summary>Neseberska</summary><div class="street-card"><div class="street-label">
+              <div class="street-meta">Stegny Rożek · inwentaryzacja ulicy</div><h3>Neseberska</h3>
+              <ul><li>Neseberska 1, 3 i 4 — adresy ujęte w wykazie; charakter obiektów wymaga uzupełnienia.</li></ul>
+            </div></div>
+          </details>
+
+          <details class="street-entry" id="sozopolska">
+            <summary>Sozopolska</summary><div class="street-card"><div class="street-label">
+              <div class="street-meta">Stegny Rożek · inwentaryzacja ulicy</div><h3>Sozopolska</h3>
+              <ul><li>Sozopolska 1 — adres ujęty w wykazie; charakter obiektu wymaga uzupełnienia.</li></ul>
+            </div></div>
+          </details>
+        </div>
+      </section>
 
     </div>
   </main>
