@@ -207,3 +207,53 @@ Janusz Grzelak, opowiadając o tym, jak znalazł się na pewnej liście i o swoi
 Jest to bezpośrednie świadectwo ustne, w którym konkretna osoba — Janusz Grzelak — wymienia Stegny-Rożek jako miejsce zamieszkania Ludwiki i Henryka Wujców. Materiał poszerza wiedzę o mieszkańcach osiedla i jego związkach z biografiami osób działających w życiu publicznym. Należy go wykorzystywać z zachowaniem powyższych ograniczeń, bez dopowiadania nieustalonych dat i adresu.
 
 *Status: odnaleziono nagranie i wskazano pojedynczą wzmiankę w transkrypcji; cytat zapisano jako trop źródłowy do dalszej weryfikacji. Notatka badawcza — nie tekst przeznaczony obecnie do publikacji na stronie.*
+
+
+## Lunapark „Europa” na Stegnach-Rożku (1995–1998) — trop z twórczości Ryszarda Woźniaka
+
+### Źródła
+
+- **Polskie Radio, Dwójka:** [„Od buntu do lunaparku. Ryszard Woźniak i nowe odczytanie Gruppy”](https://www.polskieradio.pl/8/410/artykul/3735092,od-buntu-do-lunaparku-ryszard-wozniak-i-nowe-odczytanie-gruppy), materiał zaktualizowany 24 września 2026 r.
+- **Pinacoteca:** opis wystawy [„Ryszard Woźniak. Lunapark Europa”](https://pinacoteca.pl/) — wystawa w Mazowieckim Centrum Sztuki Współczesnej „Elektrownia” w Radomiu, prezentowana od 25 września do 22 listopada 2026 r. (adres strony wystawy wymaga doprecyzowania; źródło zostało odnalezione w wynikach wyszukiwania).
+- **Magazyn SZUM:** materiał o wystawie i inspiracjach Ryszarda Woźniaka — [szum.art.pl](https://magazynszum.pl/).
+- **Polskie Radio, Dwójka:** audycja „Przeciwko głupocie i złu. Malarstwo Ryszarda Woźniaka na wystawie w Radomiu” — materiał poświęcony wystawie i twórczości artysty.
+- **CoZaDzień:** lokalny materiał o wystawie, zawierający wypowiedź koordynatora Mariusza Jończy — [cozadzien.pl](https://www.cozadzien.pl/).
+
+### Informacje wynikające z opisów wystawy
+
+Według opisów wystawy „Lunapark Europa” motywem przewodnim prezentowanych prac Ryszarda Woźniaka jest lunapark działający w warszawskiej dzielnicy Stegny-Rożek w latach **1995–1998**. Miał zostać zamknięty po poważnym wypadku. Opuszczone obiekty i atmosfera rozpadu tego miejsca stały się dla artysty inspiracją do refleksji i pracy malarskiej.
+
+Wystawa w MCSW „Elektrownia” w Radomiu była trzecią prezentacją indywidualnych, bieżących poszukiwań artystów związanych z Gruppą. Woźniak pokazał wybór ponad stu obrazów z około 25 lat. Wystawa była prezentowana od 25 września do 22 listopada 2026 r.
+
+### Co można obecnie uznać za ustalone
+
+1. W opisach wystawy i materiałach prasowych lunapark jest jednoznacznie lokalizowany na warszawskich Stegnach-Rożku.
+2. Podawany okres jego działalności to lata 1995–1998.
+3. Źródła wiążą zamknięcie lunaparku z poważnym wypadkiem.
+4. Miejsce to stało się ważnym motywem i inspiracją w twórczości Ryszarda Woźniaka, a jego opuszczone obiekty i stan po zamknięciu znalazły odzwierciedlenie w pracach artysty.
+
+### Ograniczenia — czego nie wiemy
+
+- Nie ustalono dokładnej lokalizacji lunaparku w obrębie Stegien-Rożka: nie znamy adresu, granic terenu ani relacji do konkretnych ulic i budynków.
+- Nie ustalono właściciela, operatora ani podmiotu, który organizował działalność lunaparku.
+- Nie znamy rodzaju urządzeń i atrakcji, skali przedsięwzięcia, sezonowości ani dokładnych dat rozpoczęcia i zakończenia działalności.
+- Nie znamy daty, przebiegu ani skutków wspomnianego w źródłach wypadku. Samo określenie „poważny wypadek” nie uprawnia do dopisywania szczegółów ani do przesądzania, że był jedyną przyczyną zamknięcia.
+- Nie odnaleziono dotąd niezależnej dokumentacji urzędowej ani prasowej z lat 1995–1998, która potwierdzałaby szczegóły działalności lunaparku i okoliczności jego zamknięcia.
+- Nie ustalono, czy zachowały się fotografie lunaparku, dokumentacja techniczna, reklamy, bilety, materiały operatora lub relacje mieszkańców.
+
+### Kierunki dalszej kwerendy
+
+1. **Ryszard Woźniak:** nawiązać kontakt z artystą i zapytać o dokładną lokalizację lunaparku, wygląd terenu, urządzenia, okres obserwacji, okoliczności zamknięcia oraz ewentualne fotografie, szkice lub notatki. Warto też zapytać, czy artysta pamięta osoby prowadzące lunapark.
+2. **MCSW „Elektrownia” w Radomiu:** poprosić o kontakt do kuratora lub koordynatora wystawy oraz zapytać, czy materiały wystawowe zawierają dokładniejsze informacje o lunaparku. W lokalnym materiale prasowym jako koordynator wystawy wskazany jest Mariusz Jońca.
+3. **Dokumentacja urzędowa:** poszukać decyzji dotyczących lokalizacji i prowadzenia działalności rozrywkowej, zezwoleń, dokumentacji bezpieczeństwa urządzeń, kontroli oraz ewentualnych postępowań powypadkowych z lat 1995–1998.
+4. **Prasa lokalna i warszawska:** sprawdzić doniesienia z lat 1995–1998, używając haseł „lunapark”, „wesołe miasteczko”, „Stegny”, „Rożek” i „wypadek”. Szczególnie istotne byłoby znalezienie współczesnych wydarzeniom relacji, a nie wyłącznie późniejszych opisów wystawy.
+5. **Mieszkańcy i archiwa prywatne:** szukać fotografii i wspomnień osób, które odwiedzały lunapark lub mieszkały w jego sąsiedztwie. Warto pytać o zdjęcia samego terenu zarówno z okresu działania, jak i po zamknięciu.
+6. **Materiały wystawy:** ustalić, czy w katalogu, tekście kuratorskim lub rozmowach z artystą opublikowanych przy okazji wystawy podano dodatkowe szczegóły topograficzne i chronologiczne.
+
+### Znaczenie dla historii Stegien-Rożka
+
+Lunapark „Europa” jest nowym, dotąd nieodnotowanym w tej dokumentacji wątkiem historii Rożka — dotyczącym okresu znacznie późniejszego niż budowa osiedla. Może być ważnym elementem historii lokalnej przestrzeni w latach 90., a zarazem przykładem tego, jak miejsce funkcjonujące na osiedlu zostało zapamiętane i przetworzone w sztuce.
+
+Na obecnym etapie najpewniejsze są informacje powtarzane w opisach wystawy: lokalizacja na Stegnach-Rożku, okres 1995–1998 oraz zamknięcie po poważnym wypadku. Szczegóły wymagają niezależnego potwierdzenia. Należy wyraźnie odróżniać informacje z materiałów promujących wystawę od ustaleń opartych na dokumentach z czasu działalności lunaparku.
+
+*Status: odnaleziono kilka współczesnych opisów wystawy, które wskazują lunapark „Europa” na Stegnach-Rożku i podają lata 1995–1998. Dokładna lokalizacja, operator, szczegóły działalności i okoliczności wypadku pozostają do ustalenia. Notatka badawcza — nie tekst przeznaczony obecnie do publikacji na stronie.*
