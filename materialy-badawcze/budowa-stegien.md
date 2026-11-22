@@ -257,3 +257,42 @@ Lunapark „Europa” jest nowym, dotąd nieodnotowanym w tej dokumentacji wątk
 Na obecnym etapie najpewniejsze są informacje powtarzane w opisach wystawy: lokalizacja na Stegnach-Rożku, okres 1995–1998 oraz zamknięcie po poważnym wypadku. Szczegóły wymagają niezależnego potwierdzenia. Należy wyraźnie odróżniać informacje z materiałów promujących wystawę od ustaleń opartych na dokumentach z czasu działalności lunaparku.
 
 *Status: odnaleziono kilka współczesnych opisów wystawy, które wskazują lunapark „Europa” na Stegnach-Rożku i podają lata 1995–1998. Dokładna lokalizacja, operator, szczegóły działalności i okoliczności wypadku pozostają do ustalenia. Notatka badawcza — nie tekst przeznaczony obecnie do publikacji na stronie.*
+
+
+## Edward Dwurnik — mieszkanie i pracownia na Stegnach-Rożku
+
+### Źródło
+
+- **Publikacja:** *Edward Dwurnik. Malarstwo: próba retrospektywy*.
+- **Rodzaj materiału:** fragment biograficznej chronologii / tekstu towarzyszącego publikacji.
+- **Fragment przekazany przez użytkownika:** „... Stegny - Rożek. Największy pokój w mieszkaniu został przeznaczony na pracownię. Dwurnikowie mieszkali tam do 1983. Patrz VI 1983. 1 poł. 1976 W styczniu otrzymał nagrodę – zakup CRZZ na VII Ogólnopolskiej Wystawie Grafiki za ...”
+- **Uwaga:** zapis jest fragmentaryczny i zawiera skróty oraz urwane zdania. Nie ustalono jeszcze numeru strony ani pełnego kontekstu wpisu.
+
+### Co wynika z przytoczonego fragmentu
+
+1. Edward Dwurnik i jego rodzina (określeni w źródle jako „Dwurnikowie”) mieszkali na Stegnach-Rożku do 1983 r.
+2. Największy pokój w ich mieszkaniu przeznaczono na pracownię artysty.
+3. Wzmianka „Patrz VI 1983” odsyła do innego miejsca w publikacji, prawdopodobnie do wpisu z czerwca 1983 r.; należy sprawdzić ten odsyłacz w pełnym egzemplarzu.
+4. W sąsiedztwie fragmentu pojawia się informacja o nagrodzie / zakupie CRZZ za pracę na VII Ogólnopolskiej Wystawie Grafiki w styczniu 1976 r. Nie należy jednak łączyć tej nagrody z pobytem na Rożku ani zakładać, że oba zdania opisują jedno zdarzenie — konieczny jest pełny kontekst chronologii.
+
+### Znaczenie dla historii Stegien-Rożka
+
+To istotny trop dotyczący mieszkańców osiedla i jego związków ze środowiskiem artystycznym. Informacja, że największy pokój mieszkania służył za pracownię, może być przydatna również w badaniu sposobu użytkowania mieszkań i codziennego życia na Rożku. Jest to jednak na razie informacja pochodząca z przytoczonego fragmentu publikacji, a nie niezależnie zweryfikowana dokumentami adresowymi.
+
+### Ograniczenia i kwestie do sprawdzenia
+
+- Nie ustalono dokładnego adresu ani numeru budynku, w którym mieszkali Dwurnikowie.
+- Fragment nie podaje daty wprowadzenia się; potwierdza jedynie, że według tekstu mieszkali tam do 1983 r.
+- Nie wiadomo, czy „pracownia” oznaczała wyłącznie pokój do pracy artystycznej w mieszkaniu, czy także formalnie zarejestrowaną pracownię.
+- Nie należy na podstawie tego fragmentu przypisywać mieszkania konkretnemu typowi lub metrażowi ani wyciągać wniosków o standardzie całego osiedla.
+- Trzeba odnaleźć pełną publikację, sprawdzić stronę, kontekst chronologiczny oraz odsyłacz „VI 1983”.
+
+### Dalsze kierunki kwerendy
+
+1. Odszukać pełny egzemplarz publikacji *Edward Dwurnik. Malarstwo: próba retrospektywy* i zanotować numer strony oraz pełne brzmienie wpisu.
+2. Sprawdzić wskazany odsyłacz „VI 1983” — może zawierać dokładniejszy opis przeprowadzki lub ostatniego okresu zamieszkania na Rożku.
+3. Poszukać innych biografii, katalogów wystaw, wywiadów i wspomnień Edwarda Dwurnika oraz jego rodziny, które mogą podać adres lub przybliżoną lokalizację mieszkania.
+4. Sprawdzić, czy zachowały się fotografie mieszkania lub pracowni, ewentualnie wspomnienia sąsiadów i mieszkańców budynku.
+5. Przy ewentualnym kontakcie z rodziną artysty pytać o zgodę na wykorzystanie wspomnień i materiałów w kronice.
+
+*Status: odnaleziony trop bibliograficzny i fragment przekazany przez użytkownika; okres zamieszkania do 1983 r. oraz urządzenie pracowni są informacjami zapisanymi w tym fragmencie. Adres, dokładne daty i pełny kontekst wymagają sprawdzenia. Notatka badawcza — nie tekst przeznaczony obecnie do publikacji na stronie.*
