@@ -170,3 +170,40 @@ Nie należy zatem zakładać, że gazetka ukazywała się regularnie ani że zaw
 
 *Status: odnaleziono i umieszczono w repozytorium skan zapowiedzi prasowej; faktyczne otwarcie, lokalizacja, organizator i dalsze losy placówki pozostają do ustalenia.*
 
+
+
+## Janusz Grzelak — wspomnienie o Ludwice i Henryku Wujcach mieszkających na Stegnach-Rożku
+
+### Źródło
+
+- **Rozmówca:** Janusz Grzelak.
+- **Rodzaj źródła:** nagrana rozmowa biograficzna / videorozmowa.
+- **Publikacja nagrania:** [Relacje Biograficzne — Janusz Grzelak](https://relacjebiograficzne.pl/video/490-janusz-grzelak).
+- **Wyszukiwanie w transkrypcji:** użytkownik sprawdził stronę skrótem Ctrl+F; wyszukiwanie wskazało jedno miejsce zawierające wzmiankę o Stegnach-Rożku.
+- **Osoby wspomniane:** „Ludka” i „Heniek” — według identyfikacji użytkownika chodzi o małżeństwo Ludwiki i Henryka Wujców.
+
+### Cytat
+
+Janusz Grzelak, opowiadając o tym, jak znalazł się na pewnej liście i o swoim ówczesnym zaangażowaniu, mówi:
+
+> „Wobec tego jakoś tam dałem się poznać jako człowiek w miarę, w miarę godny, jeśli chodzi o swoją postawę polityczną. I nie wiem, kto mnie tam wstawił na tą listę. Ale nie było to dla mnie bardzo dziwne. To była taka właśnie… To było dość zdumiewające, jak człowiek, który naraz się znajduje na fali i potem już tak nawet bezrefleksyjnie, bez podejmowania własnych decyzji, już ta fala go niesie. I po prostu ja się czułem niesiony w dużej mierze. Ja nie musiałem zabiegać o nic, ale też nie chciałem koniecznie zabiegać. Ale jak się zdarzała okazja, żeby być przydatnym w czymś, to bardzo chętnie. Tak że odpowiedzi na pytanie, kto mnie tam wsadził do tego, nie ma. Ale myślę, że to jest sprawka Ludki albo Heńka, albo dwojga naraz. Myśmy bardzo dużo czasu spędzali przez pewien czas, kiedy oni jeszcze byli na Stegnach, mieszkali. Na Rożku. Stegny Rożek”.
+
+### Co ta relacja potwierdza
+
+1. Janusz Grzelak wspomina, że Ludka i Heniek — zidentyfikowani przez użytkownika jako Ludwika i Henryk Wujcowie — mieszkali na Stegnach-Rożku.
+2. Grzelak mówi, że przez pewien czas spędzali razem dużo czasu, gdy Wujcowie jeszcze mieszkali na Rożku. Jest to świadectwo kontaktów towarzyskich i obecności Wujców na osiedlu.
+3. Wypowiedź łączy wspomnienie o Wujcach z opowieścią Grzelaka o jego postawie politycznej i znalezieniu się na pewnej liście. Bez szerszego kontekstu nie należy przesądzać, o jaką listę chodzi ani przypisywać Wujcom konkretnej roli w tym wydarzeniu.
+
+### Ograniczenia i pytania do dalszej kwerendy
+
+- Nie ustalono, pod jakim adresem ani w którym budynku Rożka mieszkali Wujcowie.
+- Wypowiedź nie podaje dat ich zamieszkania ani momentu wyprowadzki.
+- Sformułowanie „kiedy oni jeszcze byli na Stegnach” wskazuje jedynie, że w chwili opisywanej rozmowy Grzelak mówił o wcześniejszym okresie; nie pozwala samo w sobie ustalić jego dat.
+- Warto sprawdzić pełny kontekst nagrania, zwłaszcza pytanie poprzedzające cytowany fragment, aby dokładniej zrozumieć wzmiankę o „liście”.
+- Można szukać potwierdzenia adresu i okresu zamieszkania Wujców w biogramach, wspomnieniach, materiałach dotyczących ich działalności oraz w dokumentach i relacjach mieszkańców Rożka.
+
+### Znaczenie dla historii Stegien-Rożka
+
+Jest to bezpośrednie świadectwo ustne, w którym konkretna osoba — Janusz Grzelak — wymienia Stegny-Rożek jako miejsce zamieszkania Ludwiki i Henryka Wujców. Materiał poszerza wiedzę o mieszkańcach osiedla i jego związkach z biografiami osób działających w życiu publicznym. Należy go wykorzystywać z zachowaniem powyższych ograniczeń, bez dopowiadania nieustalonych dat i adresu.
+
+*Status: odnaleziono nagranie i wskazano pojedynczą wzmiankę w transkrypcji; cytat zapisano jako trop źródłowy do dalszej weryfikacji. Notatka badawcza — nie tekst przeznaczony obecnie do publikacji na stronie.*
