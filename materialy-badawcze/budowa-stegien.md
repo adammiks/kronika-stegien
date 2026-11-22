@@ -86,3 +86,51 @@ Gazetka może być źródłem do poznania późniejszej historii społecznej i a
 
 *Status: zidentyfikowany tytuł i opis bibliograficzny; zawartość numerów wymaga kwerendy.*
 
+## Kwerenda zachowanych egzemplarzy „Gazetki Rożka” — wyniki poszukiwań
+
+### 1. Potwierdzenie opisu w zasobie Biblioteki Publicznej m.st. Warszawy
+
+Odnaleziono skan informatora bibliograficznego Działu Varsavianów Biblioteki Publicznej m.st. Warszawy:
+
+- **Publikacja:** *Warszawska prasa lokalna i środowiskowa (Warszawa i okolice): ze zbioru Varsavianów. 2005 (25 II)*.
+- **Pozycja 25:** „Gazetka Rożka / Rada Osiedla. - 2004, nr kwieć. - Warszawa : Rada Osiedla Stegny-Rożek, 2004—”.
+- **Adnotacja:** „Brak adresu w nr [1], Wychodzi od kwietnia 2004 r.”
+- **Skan informatora:** [PDF z Cyfrowego Mazowsza](https://mcb.cyfrowemazowsze.pl/Content/113365/00122169_Dzial-Varsavianow-_Warszawska-Prasa-Lokalna-Varsavianow-2005-25-II-_Sygn-Vars-.pdf).
+
+Strona Biblioteki wyjaśnia, że opisy w informatorze sporządzane są na podstawie autopsji, czyli oglądu prasy znajdującej się w zbiorach Działu Varsavianów, i aktualizowane według ostatniego posiadanego numeru. To mocny trop, że właśnie tam należy rozpocząć poszukiwania fizycznych egzemplarzy. Nie ustalono jednak, ile numerów „Gazetki Rożka” biblioteka posiada obecnie ani czy zachował się komplet.
+
+Informacja o „braku adresu w nr [1]” jest uwagą katalogową dotyczącą pierwszego numeru; nie oznacza, że numer ten nie zachował się.
+
+- **Informacja o informatorze i zasadach opracowania:** [Biblioteka Publiczna m.st. Warszawy — Warszawska prasa lokalna i środowiskowa](https://pw.koszykowa.pl/varsaviana/informator-warszawska-prasa-lokalna-i-srodowiskowa).
+
+### 2. Rada Osiedla i MSM „Energetyka” — możliwe archiwum wydawcy
+
+Oficjalna strona Rady Osiedla Stegny-Rożek podaje kontakt:
+- **Rada Osiedla:** rada.osiedla.stg.rozek@msmenergetyka.pl
+- **Administracja osiedla:** adm.stegny.rozek@msmenergetyka.pl
+- **Adres administracji:** ul. Burgaska 2, 02-758 Warszawa
+- **Telefon:** 22 858 17 90
+
+Strona: [Rada Osiedla Stegny-Rożek](https://stegnyrozek.msmenergetyka.pl/rada-osiedla).
+
+Na stronie są wymienione materiały Rady z kadencji od 2012/2013, ale nie znaleziono publicznie dostępnych skanów „Gazetki Rożka” z 2004 r. Warto zapytać Radę i Administrację, czy zachowały się egzemplarze redakcyjne, archiwalne lub prywatne zbiory członków dawnej Rady.
+
+### 3. Czego nie udało się dotąd odnaleźć
+
+W przeprowadzonym wyszukiwaniu internetowym nie odnaleziono:
+- skanów numeru 1 z kwietnia 2004 r.;
+- pełnego archiwum kolejnych numerów;
+- numeru jubileuszowego zawierającego wspomnienia o budowie osiedla;
+- potwierdzonej informacji o częstotliwości ukazywania się i dacie zakończenia wydawania.
+
+Nie należy zatem zakładać, że gazetka ukazywała się regularnie ani że zawierała materiały historyczne. To wymaga przejrzenia egzemplarzy.
+
+### 4. Dalsze kroki kwerendy
+
+1. Zapytać Dział Varsavianów Biblioteki Publicznej m.st. Warszawy o aktualny stan zachowania „Gazetki Rożka”, dostępne numery i możliwość ich przejrzenia lub wykonania kopii.
+2. Zapytać Radę Osiedla oraz Administrację MSM „Energetyka” o archiwum wydawnictwa, byłych redaktorów i osoby, które mogły zachować egzemplarze.
+3. Po odnalezieniu numeru 1 z kwietnia 2004 r. sprawdzić stopkę redakcyjną, nazwiska redaktorów, numerację i zapowiedzi kolejnych wydań.
+4. Szukać wydań rocznicowych i numerów zawierających fotografie, wspomnienia pierwszych mieszkańców, informacje o oddawaniu budynków, infrastrukturze i początkach osiedla.
+
+*Status kwerendy: potwierdzony opis bibliograficzny i dwa konkretne miejsca dalszych poszukiwań; egzemplarze gazetki nie zostały jeszcze pozyskane ani przejrzane.*
+
