@@ -134,3 +134,39 @@ Nie należy zatem zakładać, że gazetka ukazywała się regularnie ani że zaw
 
 *Status kwerendy: potwierdzony opis bibliograficzny i dwa konkretne miejsca dalszych poszukiwań; egzemplarze gazetki nie zostały jeszcze pozyskane ani przejrzane.*
 
+## Materiały prasowe „Stolicy” — dojazd na Stegny i placówka handlowa na Rożku (1975–1977)
+
+### 1. „Dojazd aleją Sobieskiego na Stegny”
+
+- **Źródło:** *Stolica*, 1975, nr 31.
+- **Plik w repozytorium:** `Ilustracje/Dojazd aleją Sobieskiego na Stegny Stolica 1975 numer 31.jpg`.
+- **Charakter materiału:** ilustracja prasowa dotycząca dojazdu na Stegny aleją Sobieskiego.
+- **Możliwa wartość badawcza:** dokumentacja ówczesnego dojazdu i otoczenia rozwijającego się osiedla. Szczegóły widoczne na skanie wymagają osobnego odczytania i opisu.
+
+### 2. „Zapowiedź otwarcia na Rożku doświadczalnej placówki handlowej”
+
+- **Źródło:** *Stolica*, 1977, nr 33.
+- **Plik w repozytorium:** `Prasa o Stegnach/Zapowiedz otwarcia na Rożku doświadczalnej placówki handlowej Stolica 1977 numer 33.jpg`.
+- **Charakter materiału:** zapowiedź uruchomienia na Stegnach-Rożku placówki handlowej określonej jako doświadczalna.
+- **Znaczenie badawcze:** materiał może dokumentować rozwój infrastruktury handlowej Rożka i eksperymentalny charakter planowanego przedsięwzięcia.
+
+### Pytania do sprawdzenia
+
+1. Gdzie dokładnie miała znajdować się placówka — jaki był jej adres lub lokalizacja w obrębie osiedla?
+2. Na czym polegał jej „doświadczalny” charakter: nowy model organizacji handlu, samoobsługa, nietypowy asortyment, rozwiązania logistyczne czy inna forma eksperymentu?
+3. Czy placówkę rzeczywiście otwarto? Jeśli tak, kiedy i pod jaką nazwą?
+4. Kto ją prowadził i jaki podmiot odpowiadał za jej uruchomienie?
+5. Jak długo działała i co później stało się z lokalem lub obiektem?
+6. Czy informacja o otwarciu i dalszym funkcjonowaniu pojawiła się w kolejnych numerach *Stolicy*, prasie lokalnej, dokumentach handlu uspołecznionego lub materiałach administracji osiedla?
+
+**Ważne zastrzeżenie:** zapowiedź prasowa z 1977 r. potwierdza, że planowano uruchomienie placówki, ale sama w sobie nie dowodzi, że została otwarta, kiedy to nastąpiło ani jak długo funkcjonowała. Nie należy jeszcze przedstawiać jej jako działającego sklepu czy placówki.
+
+### Kierunki dalszej kwerendy
+
+- Odczytać pełną treść artykułu ze skanu, w tym ewentualny adres, nazwę organizatora, datę planowanego otwarcia i opis eksperymentu.
+- Przejrzeć kolejne numery *Stolicy* z 1977 r. pod kątem relacji z otwarcia, a także numery z 1978 r. i późniejsze pod kątem dalszych losów placówki.
+- Szukać w prasie warszawskiej z lat 1977–1979 fraz „placówka doświadczalna”, „Stegny-Rożek”, „Rożek” i nazw ewentualnych przedsiębiorstw handlowych.
+- Sprawdzić dokumentację lokalizacji i działalności placówki w materiałach administracji osiedla oraz ówczesnych przedsiębiorstw handlowych.
+
+*Status: odnaleziono i umieszczono w repozytorium skan zapowiedzi prasowej; faktyczne otwarcie, lokalizacja, organizator i dalsze losy placówki pozostają do ustalenia.*
+
