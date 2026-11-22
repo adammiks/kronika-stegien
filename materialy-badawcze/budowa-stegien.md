@@ -53,3 +53,36 @@ Rok 1973 jest potwierdzoną datą formalnego nazwania trzech ulic Stegien-Rożka
 ---
 
 *Notatka badawcza — materiał do dalszej kwerendy, nie tekst przeznaczony obecnie do publikacji na stronie.*
+
+## „Gazeta Rożka” — lokalne czasopismo Rady Osiedla (od 2004)
+
+### Źródło bibliograficzne
+
+- **Tytuł:** *Gazetka Rożka / Rada Osiedla*.
+- **Opis numeru:** 2004, nr kwietniowy.
+- **Miejsce wydania:** Warszawa.
+- **Wydawca:** Rada Osiedla Stegny-Rożek.
+- **Częstotliwość / początek ukazywania się:** katalog podaje „Wychodzi od kwietnia 2004 r.”.
+- **Uwaga katalogowa:** „Brak adresu w nr [1]”.
+- **Źródło opisu:** *Warszawska Prasa Lokalna i Środowiskowa (Warszawa i okolice): ze zbioru Varsavianów. 2005 (25 II)*.
+- **Rekord katalogowy wskazany przez użytkownika:** [Cyfrowe Mazowsze — Warszawska Prasa Lokalna i Środowiskowa](https://cyfrowemazowsze.pl//dlibra/metadatasearch?action=AdvancedSearchAction&type=-3&val1=Title%3A%22Warszawska+Prasa+Lokalna+i+%C5%9Arodowiskowa+%28Warszawa+i+okolice%29%3A+ze+zbioru+Varsavian%C3%B3w.+2005+%2825+II%29%22).
+
+### Co ustalono
+
+1. „Gazetka Rożka” była wydawnictwem Rady Osiedla Stegny-Rożek.
+2. Jej ukazywanie się rozpoczęło się w kwietniu 2004 r. — zgodnie z opisem bibliograficznym.
+3. Opis dotyczy numeru kwietniowego z 2004 r.; katalog odnotowuje brak adresu w numerze [1].
+
+### Znaczenie dla badań nad historią osiedla
+
+Gazetka może być źródłem do poznania późniejszej historii społecznej i administracyjnej Stegien-Rożka, lokalnych problemów, inicjatyw, zmian w otoczeniu oraz wspomnień mieszkańców. Należy sprawdzić, czy poszczególne numery zawierają retrospekcje, relacje świadków, fotografie archiwalne lub informacje o początkach budowy.
+
+### Ograniczenia i dalsze pytania
+
+- Sam opis bibliograficzny nie potwierdza, że gazetka zawiera informacje o budowie osiedla w latach 70.
+- Nie ustalono jeszcze częstotliwości wydawania, daty zakończenia ukazywania się ani pełnej listy numerów.
+- Należy odnaleźć i przejrzeć numer 1 z kwietnia 2004 r. oraz kolejne numery.
+- Warto sprawdzić katalogi Biblioteki Narodowej, Biblioteki Publicznej m.st. Warszawy i zasoby varsavianistyczne pod kątem zachowanych egzemplarzy.
+
+*Status: zidentyfikowany tytuł i opis bibliograficzny; zawartość numerów wymaga kwerendy.*
+
