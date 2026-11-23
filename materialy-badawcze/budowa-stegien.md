@@ -268,6 +268,18 @@ Na obecnym etapie najpewniejsze są informacje powtarzane w opisach wystawy: lok
 - **Fragment przekazany przez użytkownika:** „... Stegny - Rożek. Największy pokój w mieszkaniu został przeznaczony na pracownię. Dwurnikowie mieszkali tam do 1983. Patrz VI 1983. 1 poł. 1976 W styczniu otrzymał nagrodę – zakup CRZZ na VII Ogólnopolskiej Wystawie Grafiki za ...”
 - **Uwaga:** zapis jest fragmentaryczny i zawiera skróty oraz urwane zdania. Nie ustalono jeszcze numeru strony ani pełnego kontekstu wpisu.
 
+### Dodatkowy zapis w kalendarium — przeprowadzka na Burgaską (marzec 1976)
+
+Użytkownik udostępnił fragment strony 91 tej samej publikacji, z części zatytułowanej „Kalendarium 1976”. Widnieje w niej zapis:
+
+> **III 1976** Przeprowadzka z Międzylesia do własnego mieszkania (70 m²) przy ul. Burgaskiej na osiedlu Stegny-Rożek.
+
+Zapis ten podaje konkretną datę przeprowadzki (marzec 1976 r.), poprzednie miejsce zamieszkania (Międzylesie), ulicę (Burgaska), nazwę osiedla (Stegny-Rożek) oraz powierzchnię mieszkania (70 m²). Mieszkanie określono jako własne.
+
+Jest to bezpośredni zapis kalendarium w publikacji, udokumentowany na stronie 91. W połączeniu z przytoczonym wyżej fragmentem o pracowni i zamieszkiwaniu Dwurników na Rożku do 1983 r. pozwala ustalić, że przeprowadzili się na Burgaską w marcu 1976 r. i mieszkali tam co najmniej do okresu wskazanego w dalszym zapisie publikacji. Sam pokazany fragment nie podaje numeru budynku ani mieszkania.
+
+**Uwaga dotycząca numeru domu:** numer 6 przy ul. Burgaskiej pojawia się w odrębnym źródle internetowym („Ulice Twojego Miasta”), ale nie wynika z kalendarium na stronie 91. Wymaga niezależnego potwierdzenia i nie należy przedstawiać go jako informacji pochodzącej z tej publikacji.
+
 ### Co wynika z przytoczonego fragmentu
 
 1. Edward Dwurnik i jego rodzina (określeni w źródle jako „Dwurnikowie”) mieszkali na Stegnach-Rożku do 1983 r.
