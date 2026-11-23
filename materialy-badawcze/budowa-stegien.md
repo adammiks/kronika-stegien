@@ -308,3 +308,54 @@ To istotny trop dotyczący mieszkańców osiedla i jego związków ze środowisk
 5. Przy ewentualnym kontakcie z rodziną artysty pytać o zgodę na wykorzystanie wspomnień i materiałów w kronice.
 
 *Status: odnaleziony trop bibliograficzny i fragment przekazany przez użytkownika; okres zamieszkania do 1983 r. oraz urządzenie pracowni są informacjami zapisanymi w tym fragmencie. Adres, dokładne daty i pełny kontekst wymagają sprawdzenia. Notatka badawcza — nie tekst przeznaczony obecnie do publikacji na stronie.*
+
+
+## Kira Gałczyńska — mieszkanie przy ul. Sozopolskiej na Stegnach-Rożku
+
+### Źródło
+
+- **Autorka:** Kira Gałczyńska.
+- **Publikacja:** *W zgiełku wieku...*, Warszawa: BGW, 1992, 179 s.
+- **Rodzaj źródła:** wspomnienia autobiograficzne.
+- **Miejsce odczytania:** podgląd książki w Google Books.
+- **Wskazane strony:** 121 i 123.
+- **Opis bibliograficzny:** katalogi biblioteczne potwierdzają wydanie książki w Warszawie w 1992 r. przez BGW; opis bibliograficzny odnotowuje 179 stron.
+
+### Informacje odczytane z podglądu Google Books
+
+Na stronie 121 Gałczyńska opisuje uzyskanie mieszkania na osiedlu Stegny-Rożek:
+
+> „Wreszcie zostaliśmy właścicielami czterech pokoi, małej kuchni i dziwnie pokręconego hallu na osiedlu Stegny-Rożek, w kamiennej, szarej…”
+
+Cytat został przytoczony w zakresie widocznym w podglądzie; zdanie w udostępnionym fragmencie urywa się po słowach „w kamiennej, szarej”.
+
+Z informacji odczytanych przez użytkownika na stronie 123 wynika, że:
+1. Gałczyńska wskazuje **ul. Sozopolską** jako adres swojego zamieszkania na Stegnach-Rożku.
+2. Wspomina, że w jej sąsiedztwie mieszkali amerykańscy Polonusi.
+3. Opisuje konieczność rozpoczęcia od generalnego remontu.
+4. Zwraca uwagę na nietypowe korytarze mieszkań, przypominające labirynt.
+
+Informacje ze strony 123 zapisano jako relację użytkownika z podglądu Google Books, bez dosłownego cytowania, ponieważ nie przekazano pełnego brzmienia tego fragmentu.
+
+### Co wynika z relacji
+
+1. Kira Gałczyńska wspomina, że została właścicielką mieszkania na osiedlu Stegny-Rożek.
+2. Lokal miał cztery pokoje, małą kuchnię i nietypowy, „dziwnie pokręcony” hall.
+3. Adresem zamieszkania była ul. Sozopolska.
+4. Wspomnienie zawiera obserwacje dotyczące sąsiedztwa — obecności amerykańskich Polonusów — oraz stanu mieszkania wymagającego generalnego remontu.
+5. Autorka opisuje również korytarze mieszkań jako układy przypominające labirynt.
+
+### Ograniczenia i kwestie do dalszego sprawdzenia
+
+- Nie ustalono numeru budynku ani mieszkania przy ul. Sozopolskiej.
+- Na podstawie przekazanych fragmentów nie można określić daty wprowadzenia się Gałczyńskiej ani długości jej zamieszkiwania na osiedlu.
+- Nie znamy pełnego kontekstu stron 121–123 ani dalszego ciągu zdania ze strony 121.
+- Określenie „amerykańscy Polonusi” należy zachować jako sformułowanie z relacji autorki; bez dodatkowych źródeł nie należy dopowiadać, kim byli sąsiedzi ani dlaczego mieszkali na osiedlu.
+- Opis generalnego remontu i labiryntowych korytarzy dotyczy doświadczenia autorki i nie stanowi sam w sobie dowodu na stan wszystkich mieszkań na Rożku.
+- Warto dotrzeć do pełnego egzemplarza książki, aby sprawdzić ciąg dalszy opisu, dokładne brzmienie strony 123 i kontekst wspomnienia.
+
+### Znaczenie dla historii Stegien-Rożka
+
+Relacja Kiry Gałczyńskiej jest kolejnym autobiograficznym świadectwem dotyczącym pierwszych mieszkańców i codziennego doświadczenia życia na Stegnach-Rożku. Wskazuje konkretną ulicę — Sozopolską — oraz zawiera szczegóły dotyczące układu mieszkania, jego stanu w chwili objęcia i społecznego otoczenia. Można ją zestawić z zapisem o Edwardzie Dwurniku, który według kalendarium przeprowadził się w marcu 1976 r. do własnego mieszkania przy Burgaskiej. Nie należy jednak zakładać, że obie osoby mieszkały na osiedlu w tym samym czasie, dopóki nie zostaną ustalone daty pobytu Gałczyńskiej.
+
+*Status: zidentyfikowano autobiograficzną relację w książce i odnotowano informacje z podglądu Google Books ze stron 121 i 123. Dokładny numer budynku, daty zamieszkania i pełny kontekst wymagają sprawdzenia w egzemplarzu książki. Notatka badawcza — nie tekst przeznaczony obecnie do publikacji na stronie.*
