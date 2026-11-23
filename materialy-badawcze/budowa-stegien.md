@@ -359,3 +359,62 @@ Informacje ze strony 123 zapisano jako relację użytkownika z podglądu Google 
 Relacja Kiry Gałczyńskiej jest kolejnym autobiograficznym świadectwem dotyczącym pierwszych mieszkańców i codziennego doświadczenia życia na Stegnach-Rożku. Wskazuje konkretną ulicę — Sozopolską — oraz zawiera szczegóły dotyczące układu mieszkania, jego stanu w chwili objęcia i społecznego otoczenia. Można ją zestawić z zapisem o Edwardzie Dwurniku, który według kalendarium przeprowadził się w marcu 1976 r. do własnego mieszkania przy Burgaskiej. Nie należy jednak zakładać, że obie osoby mieszkały na osiedlu w tym samym czasie, dopóki nie zostaną ustalone daty pobytu Gałczyńskiej.
 
 *Status: zidentyfikowano autobiograficzną relację w książce i odnotowano informacje z podglądu Google Books ze stron 121 i 123. Dokładny numer budynku, daty zamieszkania i pełny kontekst wymagają sprawdzenia w egzemplarzu książki. Notatka badawcza — nie tekst przeznaczony obecnie do publikacji na stronie.*
+
+
+## Andrzej Celiński — ogłoszenie w paryskiej „Kulturze” i adres „Burgacka 3 m. 13” (1978)
+
+### Źródło
+
+- **Publikacja:** „Kultura”, nr 9/372, wrzesień 1978 r.
+- **Wydawca:** Instytut Literacki, Paryż.
+- **Miejsce odczytania:** podgląd książki w Google Books, w zbiorze opisanym jako *Kultura — Wydania 372–375*.
+- **Strona:** 115.
+- **Link do podglądu:** [Google Books — wyszukiwanie „Stegny Rożek” w wydaniu „Kultury”](https://books.google.pl/books?id=cN04AAAAIAAJ&q=Stegny+Ro%C5%BCek&dq=Stegny+Ro%C5%BCek&hl=pl&newbks=1&newbks_redir=1&printsec=frontcover).
+
+### Treść ogłoszenia
+
+W ogłoszeniu Andrzej Celiński poszukuje lokali o różnej powierzchni na wykłady, seminaria i podobne spotkania. W widocznym tekście podano adres:
+
+> „Andrzej Celiński, Warszawa, Burgacka 3 m. 13, tel.: 42-71-74 [...]”
+
+W transkrypcji zachowano zapis „Burgacka” dokładnie w takiej postaci, w jakiej został odczytany w podglądzie Google Books. Nie należy go automatycznie poprawiać na „Burgaska”.
+
+### Kontekst
+
+Andrzej Celiński był związany z Towarzystwem Kursów Naukowych (TKN); źródła biograficzne i opracowania dotyczące TKN wymieniają go jako sekretarza Rady Programowej. TKN organizowało niezależne wykłady i seminaria, które odbywały się m.in. w prywatnych mieszkaniach i salach przykościelnych.
+
+W tym kontekście ogłoszenie o poszukiwaniu lokali na wykłady i seminaria jest interesującym śladem organizacyjnego zaplecza niezależnego nauczania. Podany adres może mieć związek z działalnością Celińskiego i TKN, ale samo ogłoszenie nie dowodzi, że pod tym adresem odbywały się zajęcia.
+
+### Hipoteza dotycząca zapisu „Burgacka”
+
+Możliwe, że „Burgacka” jest celowo zmienioną lub zniekształconą formą nazwy ulicy **Burgaska** na Stegnach-Rożku. W realiach działalności opozycyjnej w PRL można rozważyć, czy taka forma nie miała utrudnić przypadkowym lub niepożądanym odbiorcom rozpoznania rzeczywistego adresu. Jest to jednak wyłącznie hipoteza interpretacyjna — nie ma obecnie dowodu, że Celiński lub redakcja „Kultury” celowo zastosowali zmyłkę.
+
+Należy zachować rozróżnienie między:
+- **zapisem źródłowym:** „Burgacka 3 m. 13”;
+- **hipotezą identyfikacyjną:** być może chodzi o „Burgaską 3 m. 13” na Stegnach-Rożku;
+- **hipotezą o intencji:** możliwe celowe zniekształcenie adresu ze względów bezpieczeństwa, którego nie można obecnie potwierdzić.
+
+Inne możliwe wyjaśnienia to błąd drukarski/redakcyjny, niedokładny odczyt skanu lub rzeczywista nazwa/adres inny niż ul. Burgaska. Dopóki nie zostanie sprawdzony obraz oryginalnej strony i nie pojawią się niezależne potwierdzenia, nie należy przedstawiać adresu jako pewnego adresu na Rożku.
+
+### Co można uznać za ustalone, a co pozostaje otwarte
+
+1. W numerze 9/372 „Kultury” z września 1978 r., na stronie 115, opublikowano ogłoszenie Andrzeja Celińskiego o poszukiwaniu lokali na wykłady i seminaria.
+2. W dostępnym odczycie ogłoszenia adres zapisano jako „Warszawa, Burgacka 3 m. 13”.
+3. Celiński był związany z TKN, którego działalność obejmowała organizowanie niezależnych wykładów i seminariów.
+4. Nie potwierdzono, że „Burgacka” oznacza ul. Burgaską ani że lokal pod tym adresem był miejscem wykładów TKN.
+5. Ogłoszenie podaje adres do kontaktu z Celińskim; nie dowodzi samo w sobie, że był to jego adres zamieszkania, lokal wykładowy ani miejsce spotkań.
+6. Nie ustalono, czy numer telefonu 42-71-74 może pomóc w identyfikacji adresu lub osoby.
+
+### Kierunki dalszej kwerendy
+
+- Obejrzeć obraz oryginalnej strony 115 i zweryfikować, czy wydrukowano „Burgacka”, czy „Burgaska”; nie polegać wyłącznie na OCR i transkrypcji Google Books.
+- Sprawdzić, czy adres „Burgaska 3 m. 13” pojawia się w innych źródłach: książkach telefonicznych, spisach adresowych, dokumentach TKN, wspomnieniach lub korespondencji.
+- Poszukać niezależnego potwierdzenia związku Celińskiego z tym adresem, nie zakładając z góry, że był to jego dom lub miejsce prowadzenia zajęć.
+- Ustalić, czy zachowały się relacje uczestników wykładów TKN, które wymieniają lokalizację przy Burgaskiej.
+- Traktować hipotezę o celowej zmyłce jako pytanie badawcze, a nie ustalony fakt.
+
+### Znaczenie dla historii Stegien-Rożka
+
+Jeżeli zapis „Burgacka 3 m. 13” rzeczywiście odnosi się do ul. Burgaskiej 3 na Stegnach-Rożku, byłby to bardzo interesujący ślad łączący konkretny adres na osiedlu z Andrzejem Celińskim i organizacyjnym zapleczem niezależnego nauczania w drugiej połowie lat 70. Na obecnym etapie jest to jednak trop wymagający potwierdzenia, a nie dowód, że mieszkanie nr 13 było miejscem wykładów TKN lub że mieszkał tam Celiński.
+
+*Status: odnaleziono ogłoszenie w „Kulturze” nr 9/372 z września 1978 r. i odnotowano adres w brzmieniu „Burgacka 3 m. 13”. Związek adresu z ul. Burgaską, funkcja lokalu oraz ewentualna intencja celowego zniekształcenia nazwy pozostają hipotezami do sprawdzenia. Notatka badawcza — nie tekst przeznaczony obecnie do publikacji na stronie.*
