@@ -418,3 +418,67 @@ Inne możliwe wyjaśnienia to błąd drukarski/redakcyjny, niedokładny odczyt s
 Jeżeli zapis „Burgacka 3 m. 13” rzeczywiście odnosi się do ul. Burgaskiej 3 na Stegnach-Rożku, byłby to bardzo interesujący ślad łączący konkretny adres na osiedlu z Andrzejem Celińskim i organizacyjnym zapleczem niezależnego nauczania w drugiej połowie lat 70. Na obecnym etapie jest to jednak trop wymagający potwierdzenia, a nie dowód, że mieszkanie nr 13 było miejscem wykładów TKN lub że mieszkał tam Celiński.
 
 *Status: odnaleziono ogłoszenie w „Kulturze” nr 9/372 z września 1978 r. i odnotowano adres w brzmieniu „Burgacka 3 m. 13”. Związek adresu z ul. Burgaską, funkcja lokalu oraz ewentualna intencja celowego zniekształcenia nazwy pozostają hipotezami do sprawdzenia. Notatka badawcza — nie tekst przeznaczony obecnie do publikacji na stronie.*
+
+
+## „Freie Welt” (1972) — wzmianka o osiedlu Stegny i nierozstrzygnięte „Rozek”
+
+### Dane bibliograficzne
+
+- **Tytuł czasopisma:** *Freie Welt*.
+- **Rekord Google Books:** *Freie Welt — Tomy 27–53*.
+- **Rok wskazany w etykiecie rekordu:** 1972.
+- **Miejsce odnalezienia:** fragment indeksowany w Google Books przy wyszukiwaniu frazy „Stegny Rożek”.
+- **Link:** [Google Books — Freie Welt, tomy 27–53](https://books.google.pl/books?id=xLFHAQAAIAAJ&q=Stegny+Ro%C5%BCek&dq=Stegny+Ro%C5%BCek&hl=pl&newbks=1&newbks_redir=1&printsec=frontcover).
+
+*Freie Welt* było niemieckojęzycznym ilustrowanym czasopismem wydawanym w NRD. Sam charakter pisma stanowi kontekst publikacji, ale bez odnalezienia pełnego artykułu nie pozwala ustalić, kto przygotował tekst o Stegnach ani na jakich materiałach się opierał.
+
+### Fragment dotyczący Stegien
+
+W podglądzie / wyimku Google Books widoczny jest tekst:
+
+> „Die neue Siedlung Stegny : 1975 wird sie 40 000 Einwohner zählen.”
+
+Tłumaczenie:
+
+> „Nowe osiedle Stegny: w 1975 roku będzie liczyć 40 000 mieszkańców”.
+
+Jest to zapowiedź lub prognoza dotycząca osiedla Stegny, odnotowana w publikacji z rocznika oznaczonego przez Google Books jako 1972. Nie jest to potwierdzenie, że osiedle rzeczywiście osiągnęło w 1975 r. taką liczbę mieszkańców. Wartość 40 000 należy traktować jako ówczesną prognozę podaną w tekście.
+
+### Osobny fragment „Rozek” — nieustalony związek ze Stegnami-Rożkiem
+
+W tym samym wyimku Google Books pojawia się również:
+
+> „Rozek : Ausgebildet in der Moskauer Häuserfabrik Nummer 1.”
+
+Przybliżone tłumaczenie:
+
+> „Rozek: przeszkolony / wykształcony w moskiewskiej Fabryce Domów nr 1”.
+
+Nie wiadomo, czy „Rozek” jest nazwiskiem, nagłówkiem osobnego tekstu, nazwą własną czy fragmentem innego materiału. Układ wyimka może łączyć teksty lub hasła pochodzące z różnych miejsc publikacji. Nie ma obecnie podstaw, by utożsamiać „Rozek” z warszawskim osiedlem Stegny-Rożek ani łączyć go z artykułem o Stegnach.
+
+W tym samym ciągu indeksowanego tekstu pojawiają się także inne urwane elementy, m.in. „NEKRASSOW”, „Bauelemente”, „P 44” i „Waleri Brumel”. Bez obrazu strony i kontekstu typograficznego nie należy zakładać, że należą do jednego artykułu.
+
+### Co można obecnie uznać za ustalone
+
+1. Rekord Google Books jest opisany jako *Freie Welt — Tomy 27–53*, z rokiem 1972.
+2. Indeksowany wyimek zawiera niemieckie zdanie o nowym osiedlu Stegny i prognozie 40 000 mieszkańców w 1975 r.
+3. W wyimku występuje również zapis „Rozek” z następującym po nim zdaniem o przeszkoleniu w moskiewskiej Fabryce Domów nr 1.
+4. Nie ustalono konkretnego zeszytu, numeru, daty wydania ani strony, na której znajdują się te fragmenty.
+5. Nie zweryfikowano wyimka na podstawie obrazu oryginalnej strony; dostęp do podglądu Google Books był w czasie kwerendy ograniczony.
+6. Nie ustalono, czy „Rozek” ma jakikolwiek związek z warszawskimi Stegnami-Rożkiem.
+
+### Kierunki dalszej kwerendy
+
+- Ustalić, który konkretny zeszyt *Freie Welt* z 1972 r. zawiera artykuł „Die neue Siedlung Stegny”, oraz odnaleźć jego pełny tekst i stronę.
+- Sprawdzić, czy artykuł zawiera fotografie, podpisy, nazwisko autora, informacje o projektantach, technologii budowy lub źródłach danych o prognozowanej liczbie mieszkańców.
+- Obejrzeć oryginalny układ strony, aby rozstrzygnąć, czy „Rozek” występuje w tym samym artykule, czy jest odrębnym hasłem lub tekstem.
+- Dopiero po ustaleniu kontekstu sprawdzić, czy „Rozek” może odnosić się do osiedla Stegny-Rożek, osoby związanej z budownictwem prefabrykowanym lub innego tematu.
+- Wrócić do tego tropu, jeśli uda się uzyskać skan, egzemplarz czasopisma lub pełniejszy podgląd Google Books.
+
+### Znaczenie dla badań nad Stegnami
+
+Wzmianka o „nowym osiedlu Stegny” jest interesującym śladem zagranicznej, niemieckojęzycznej prezentacji warszawskiej inwestycji w 1972 r. Może uzupełnić obraz tego, jak osiedle przedstawiano poza Polską. Nie należy jednak wykorzystywać prognozy 40 000 mieszkańców jako danych o rzeczywistej liczbie ludności ani łączyć jej automatycznie z późniejszym rozwojem Stegien-Rożka.
+
+Zapis „Rozek” zachowujemy jako odrębny, nierozstrzygnięty trop. Być może dalsza kwerenda pozwoli odnaleźć ciąg dalszy tekstu lub ustalić, czego dotyczy to słowo.
+
+*Status: zachowany wyimek i dane etykiety Google Books; brak numeru zeszytu, strony i weryfikacji oryginalnego układu. Związek „Rozek” ze Stegnami-Rożkiem niepotwierdzony. Notatka badawcza — nie tekst przeznaczony obecnie do publikacji na stronie.*
