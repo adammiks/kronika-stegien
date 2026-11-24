@@ -68,6 +68,74 @@ I tak, krok po kroku, z planów i placu budowy wyłaniało się miejsce, które 
 
 *Uwaga kronikarska: nie ustalono jeszcze wiarygodnych dat rozpoczęcia i zakończenia budowy ani pierwszego zasiedlenia poszczególnych budynków przy Burgaskiej, Neseberskiej i Sozopolskiej. W kalendarium rozróżniono zatem wydarzenia dotyczące całych Stegien od tych, które można przypisać bezpośrednio Rożkowi.*
 
+
+
+## Stegny-Rożek — opowieść o ludziach, którzy tu zamieszkali
+
+*Gawęda dziadka dla wnuków*
+
+– Dziadku, a kto właściwie mieszkał na Rożku? Czy od początku byli tu tacy sami ludzie jak dzisiaj?
+
+– O, nie. Ludzie się zmieniali, jedni przychodzili, inni odchodzili, dzieci dorastały i zakładały własne rodziny. Ale właśnie z tych ludzkich historii powstał Rożek. Bo domy to przecież tylko ściany, okna i schody. Osiedle zaczyna żyć dopiero wtedy, kiedy ktoś zapali w nim światło, wniesie meble, zapuka do sąsiadów i powie: „Dzień dobry, właśnie się wprowadziliśmy”.
+
+### Nowi lokatorzy, nowe życie
+
+Kiedy w pierwszej połowie lat siedemdziesiątych Rożek nabierał kształtu, jego budynki stopniowo stawały się domem dla kolejnych rodzin. Wprowadzali się ludzie, którzy szukali własnego miejsca w Warszawie. Dla wielu przeprowadzka do nowego mieszkania oznaczała początek nowego rozdziału: nowe pokoje, nowy adres, nowi sąsiedzi i nieznana jeszcze okolica.
+
+– Wyobraźcie sobie, że dostajecie klucze do mieszkania, ale za oknem wszystko jest jeszcze nowe. Nie znacie ludzi z klatki, nie wiecie, gdzie najlepiej pójść na zakupy ani którędy najwygodniej dojść do przystanku. Trzeba dopiero urządzić nie tylko mieszkanie, ale i swoje życie na osiedlu.
+
+Tak powstawały sąsiedztwa. Najpierw ostrożne „dzień dobry” na schodach, potem krótkie rozmowy, pożyczanie cukru, przekazywanie wiadomości i znajomości, które czasem trwały latami. Nie zachowała się kronika wszystkich tych spotkań, ale źródła pozwalają przywołać kilka osób, które rzeczywiście mieszkały na Rożku.
+
+### Mieszkanie, które stało się pracownią
+
+Wśród mieszkańców Rożka znalazł się człowiek, który patrzył na świat przez pryzmat sztuki. W marcu 1976 roku malarz Edward Dwurnik przeprowadził się z Międzylesia do własnego mieszkania o powierzchni około 70 metrów kwadratowych przy ulicy Burgaskiej. Największy pokój przeznaczył na pracownię.
+
+– Czyli w zwyczajnym bloku miał swoją pracownię malarską?
+
+– Właśnie tak. Pomyślcie: za jednym z okien Burgaskiej ktoś rozstawiał sztalugi, przygotowywał farby i pracował nad obrazami. Na zewnątrz toczyło się zwyczajne życie osiedla, a za drzwiami mieszkania powstawały dzieła sztuki.
+
+Dwurnikowie mieszkali na Rożku do 1983 roku. Nie udało się ustalić numeru budynku, ale sama wiadomość o ich obecności jest ważnym śladem w historii mieszkańców. Przypomina, że wśród lokatorów byli ludzie, których twórczość wykraczała daleko poza granice osiedla.
+
+### Sozopolska i pamięć o mieszkaniu
+
+Inną opowieść o życiu na Rożku pozostawiła Kira Gałczyńska. W książce *W zgiełku wieku...*, wydanej w 1992 roku, wspominała mieszkanie z czterema pokojami, małą kuchnią i „dziwnie pokręconym hallu”. Z dalszego fragmentu wynika, że chodziło o Sozopolską.
+
+– A dlaczego ktoś po latach pamięta akurat przedpokój?
+
+– Bo człowiek nie zapamiętuje domu tak, jak architekt rysuje go na planie. Pamięta miejsca, w których rozmawiał, gdzie stał stół, jak wyglądał korytarz, przez który codziennie przechodził. Czasem właśnie taki szczegół – trochę krzywy hall albo mała kuchnia – zostaje w pamięci na całe życie.
+
+Wspomnienie Gałczyńskiej pokazuje Rożek od środka, z perspektywy mieszkania i jego mieszkańców. To inny rodzaj świadectwa niż plan budynku czy urzędowy dokument.
+
+### Sąsiedzkie mieszkania i spotkania
+
+W relacjach biograficznych Janusza Grzelaka pojawiają się Ludwika i Henryk Wujcowie, którzy mieszkali na Rożku. Wspominane są także spotkania odbywające się u nich.
+
+Nie znamy dokładnego adresu ich mieszkania ani pełnego obrazu tych spotkań. Wiemy jednak, że Rożek był również miejscem prywatnych rozmów i kontaktów ludzi zaangażowanych w życie społeczne. W czasach PRL mieszkanie bywało czymś więcej niż prywatną przestrzenią rodziny. Mogło stać się miejscem dyskusji, wymiany informacji i spotkań, które nie zawsze odbywały się publicznie.
+
+Jest też drobny, intrygujący ślad z września 1978 roku. W miesięczniku „Kultura” ukazało się ogłoszenie Andrzeja Celińskiego z adresem zapisanym jako „Warszawa, Burgacka 3 m. 13”. Być może chodziło o Burgaską, ale zapis wymaga weryfikacji. Nie ma też potwierdzenia, że pod tym adresem odbywały się spotkania. W kronice warto zachować ten trop – z wyraźnym zaznaczeniem, że nie jest jeszcze rozstrzygnięty.
+
+### Rożek widziany oczami mieszkańców
+
+– To znaczy, że historię Rożka można opowiedzieć przez kilka mieszkań? – zapytała wnuczka.
+
+– Można zacząć właśnie od nich. Od pracowni malarza przy Burgaskiej, od mieszkania z pokręconym holem na Sozopolskiej, od spotkań u Wujców. Ale to dopiero początek.
+
+Bo za każdą z tych historii kryją się inni lokatorzy, których nazwisk nie zapisano w książkach. Rodzice, którzy urządzali mieszkania. Dzieci, które poznawały podwórka. Sąsiedzi, którzy przez lata mijali się na klatkach schodowych. Ludzie, którzy przyjechali tu z różnych stron i z czasem zaczęli mówić o Rożku „u nas”.
+
+Nie znamy jeszcze ich wszystkich opowieści. Nie wiemy, kto był pierwszym lokatorem każdego mieszkania, kto pamięta pierwsze sąsiedzkie spotkania, kto zachował fotografie z przeprowadzki albo rodzinne zdjęcia z podwórka. To właśnie te wspomnienia mogłyby uzupełnić obraz osiedla.
+
+### Każde mieszkanie ma swoją kronikę
+
+– Widzicie, dzieciaki – zakończył dziadek – można opisać Rożek, podając nazwy ulic i numery budynków. Można wymienić daty i nazwiska. Ale żeby naprawdę poznać to miejsce, trzeba zajrzeć do ludzkich wspomnień.
+
+Jedni zapamiętali Rożek jako miejsce pierwszego własnego mieszkania. Inni jako adres, pod którym dorastały ich dzieci. Dla kogoś był przystanią na kilka lat, dla kogoś domem na całe życie. Dla artysty stał się miejscem pracy, dla innych – przestrzenią rodzinnych spotkań i sąsiedzkich znajomości.
+
+I dlatego warto pytać dawnych mieszkańców o ich historie. O pierwsze meble, pierwszych sąsiadów, o to, jak wyglądało życie w mieszkaniu i na klatce schodowej. O nazwiska, fotografie, listy i drobne pamiątki.
+
+**Bo kronika Rożka nie powinna opowiadać wyłącznie o budynkach. Powinna opowiadać o ludziach, którzy przez lata zamieniali te budynki w dom.**
+
+*Nota kronikarska: opowieść opiera się na dostępnych świadectwach dotyczących Edwarda Dwurnika, Kiry Gałczyńskiej, Ludwiki i Henryka Wujców oraz ogłoszeniu Andrzeja Celińskiego. Nieznane adresy i niepotwierdzone szczegóły pozostawiono jako niewyjaśnione. Ogólne obrazy sąsiedzkiego życia mają charakter gawędziarskiego tła, a nie udokumentowanych relacji konkretnych osób.*
+
 ---
 
 ## Stegny-Rożek — uchwała o nadaniu nazw ulic (1973)
