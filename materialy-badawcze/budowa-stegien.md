@@ -1,4 +1,4 @@
-# Materiały badawcze: projektowanie i budowa osiedla Stegny
+# Materiały badawcze: projektowanie i budowa osiedla Stegny-Rożek
 
 ## Stegny-Rożek — opowieść o projekcie i budowie
 
