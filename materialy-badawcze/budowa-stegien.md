@@ -1,5 +1,75 @@
 # Materiały badawcze: projektowanie i budowa osiedla Stegny
 
+## Stegny-Rożek — opowieść o projekcie i budowie
+
+*Gawęda kronikarska: dziadek opowiada wnukom, jak powstawała ich najbliższa okolica.*
+
+– Dziadku, a jak to się właściwie zaczęło? Kto wymyślił nasz Rożek? Czy najpierw były bloki, czy może ulice?
+
+– Żeby opowiedzieć wam o Stegnach-Rożku, trzeba cofnąć się do początku lat siedemdziesiątych. Wtedy Warszawa szybko się rozrastała, a na południu miasta przygotowywano tereny pod nowe osiedla. Nasz Rożek nie powstał od razu. Najpierw trzeba było go zaplanować, wytyczyć ulice, przygotować teren, a dopiero później stawiać budynki.
+
+### Rok 1970 – najpierw był projekt
+
+– W 1970 roku opracowano projekt osiedla Stegny. Było to duże przedsięwzięcie mieszkaniowe, a projekt otrzymał nagrodę Ministra Budownictwa. Wśród architektów pracujących nad projektem wymienia się Jadwigę Grębecką, Jana Szpakowicza i Romualda Weldera. Wśród konstruktorów – S. Haulera i M. Wilbika.
+
+Projektowanie takiego zespołu mieszkaniowego oznaczało znacznie więcej niż narysowanie samych bloków. Trzeba było rozplanować budynki, dojścia, drogi i przestrzeń pomiędzy nimi. To, co dzisiaj wydaje się oczywistym układem osiedla, najpierw istniało na planach i w dokumentacji.
+
+Pamiętajcie jednak o jednym: data 1970 dotyczy projektu całych Stegien. Nie mamy dotąd dokumentu, który pozwalałby stwierdzić, że właśnie w tym roku powstał osobny, szczegółowy projekt samego Stegien-Rożka.
+
+### Rok 1971 – rusza budowa
+
+W 1971 roku rozpoczęto budowę osiedla Stegny. Ważną rolę odgrywały prefabrykaty produkowane w Fabryce Domów na Służewcu. W październiku 1971 roku rozpoczęto montaż pierwszego budynku z elementów przywożonych z tej fabryki.
+
+– A co to jest prefabrykat? – zapytały dzieci.
+
+– To gotowy element budowlany, przygotowany wcześniej w fabryce. Przywożono go na plac budowy i łączono z innymi elementami. Można powiedzieć, że budynki składano z wielkich betonowych części, trochę jak z klocków. Tyle że takie „klocki” ważyły całe tony i trzeba je było ustawiać dźwigami.
+
+Ta technologia pozwalała budować szybciej i na dużą skalę. W przypadku Rożka trzeba jednak oddzielić historię całej inwestycji od historii konkretnych budynków. Początek budowy Stegien w 1971 roku nie jest jeszcze dowodem, że w tym samym roku rozpoczęto montaż lub oddano do użytkowania bloki przy Burgaskiej, Neseberskiej czy Sozopolskiej.
+
+### 15 maja 1973 – Rożek otrzymuje nazwy ulic
+
+– A skąd wzięły się nasze nazwy ulic?
+
+Ważna data to **15 maja 1973 roku**. Tego dnia Rada Narodowa m.st. Warszawy podjęła uchwałę nr 105, nadając nazwy ulicom na osiedlu Stegny-Rożek. Były to **Burgaska, Neseberska i Sozopolska**.
+
+Nazwy nawiązują do bułgarskich miejscowości nad Morzem Czarnym: Burgas, Nesebyru i Sozopola. Dzięki uchwale Rożek otrzymał własny, rozpoznawalny układ nazw ulic.
+
+– Czyli wtedy już wszystko było gotowe?
+
+– Nie tak szybko! Nadanie ulicom nazw nie oznacza, że wszystkie drogi były już urządzone, a budynki ukończone i zamieszkane. Uchwała potwierdza, że władze formalnie posługiwały się nazwą „Stegny-Rożek” i określiły nazwy oraz wzajemne położenie trzech ulic. Nie podaje natomiast dat zakończenia budowy ani zasiedlenia poszczególnych bloków.
+
+### Rok 1975 – Burgaska w terenie
+
+W materiałach dotyczących ulic odnotowano, że **w 1975 roku wybudowano ulicę Burgaską wraz z drogą pożarową**. Wcześniej w tym miejscu znajdowały się pola.
+
+To już konkretna informacja o przemianie przestrzeni samego Rożka. Tam, gdzie wcześniej była otwarta przestrzeń, pojawiła się ulica obsługująca powstającą zabudowę. Droga pożarowa była częścią niezbędnego układu dojazdowego i bezpieczeństwa budynków.
+
+– A więc najpierw nazwa na papierze, a później ulica w terenie?
+
+– Tak można to dziś opowiedzieć na podstawie znanych nam materiałów. Ale nie zakładajmy, że wszystkie prace przebiegały dokładnie w tej kolejności albo że w 1975 roku zakończono całą budowę Rożka. Na to potrzebujemy jeszcze dokumentacji poszczególnych inwestycji.
+
+### Jak powstawał Rożek?
+
+– Widzicie, dzieciaki, historia naszego Rożka to nie jedna data i nie jeden plac budowy. To kilka etapów: projektowanie, przygotowanie terenu, wyznaczanie ulic, budowa dróg i montaż budynków. Znamy już kilka ważnych punktów tej opowieści, ale wciąż szukamy dat, które pozwolą dokładnie odtworzyć, kiedy powstawały poszczególne domy.
+
+Najważniejsze jest, żeby nie pomylić historii całych Stegien z historią naszej części osiedla. Rok 1970 i początek budowy w 1971 roku opisują szerszą inwestycję. Dla samego Rożka mamy mocny, urzędowy punkt chronologii – uchwałę z 15 maja 1973 roku – oraz informację o wybudowaniu Burgaskiej w 1975 roku.
+
+I tak, krok po kroku, z planów i placu budowy wyłaniało się miejsce, które dziś nazywamy Stegnami-Rożkiem.
+
+### Kalendarium projektu i budowy
+
+| Data | Wydarzenie | Zakres ustalenia |
+|---|---|---|
+| **1970** | Opracowanie projektu osiedla Stegny; projekt otrzymuje nagrodę Ministra Budownictwa. | Całe Stegny; nie potwierdza osobnej daty projektu Rożka. |
+| **1971** | Rozpoczęcie budowy osiedla Stegny. | Całe Stegny; nie jest to automatycznie data rozpoczęcia budowy każdego budynku Rożka. |
+| **Październik 1971** | Rozpoczęcie montażu pierwszego budynku z prefabrykatów Fabryki Domów na Służewcu. | Informacja o inwestycji na Stegnach; dokładna lokalizacja tego budynku wymaga ustalenia. |
+| **15 maja 1973** | Uchwała nr 105 nadaje nazwy ulicom Burgaska, Neseberska i Sozopolska. | Bezpośrednio Stegny-Rożek. |
+| **1975** | Wybudowanie ulicy Burgaskiej wraz z drogą pożarową. | Bezpośrednio Stegny-Rożek. |
+
+*Uwaga kronikarska: nie ustalono jeszcze wiarygodnych dat rozpoczęcia i zakończenia budowy ani pierwszego zasiedlenia poszczególnych budynków przy Burgaskiej, Neseberskiej i Sozopolskiej. W kalendarium rozróżniono zatem wydarzenia dotyczące całych Stegien od tych, które można przypisać bezpośrednio Rożkowi.*
+
+---
+
 ## Stegny-Rożek — uchwała o nadaniu nazw ulic (1973)
 
 ### Źródło
